@@ -10,3 +10,6 @@ import numpy as np
 
 index = faiss.read_index("vector_db.faiss")
 
+def get_form_inputs(input_list):
+    print(f"Received: {input_list}")
+
