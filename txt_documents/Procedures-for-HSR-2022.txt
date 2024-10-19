@@ -1,0 +1,1760 @@
+ 
+ARIZONA STATE UNIVERSIT Y 
+ 
+ 
+PROCEDURES FOR THE REVIEW OF  
+HUMAN SUBJECTS RESEARCH 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LAST REVISION DATE : December 29, 2022  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+   2 TABLE OF CONTENTS  
+ 
+ 
+I. Introduction…………………………………………………………………………………………3 
+II. Federalwide Assurance…………………………………………………………………………... 5 
+III. General 
+Information………………………………………………………………………… ...………… ..9 
+IV. Administrative 
+Responsibilities………………………………………………………………..... .................... 12 
+V. Training……………………………………………………………………………………………18 
+VI. IRB 
+Membership………………………………………………………………………………..... ....20  
+VII. Review 
+Procedures…………………………………………………………………………........ ......... 23 
+VIII. Informed Consent  and 
+Recruitment ………………………………………………………………………………... ......39 
+IX. Special Populations and 
+Considerations………………………………………………………………………………….45 
+X. FDA-regulated 
+research ……………………………………………………………………………... ............... 49 
+XI. Genetics Research and Biological 
+Materials……………………………….…………..……………………………………………52 
+XII. Reportable New Information, Adverse Events and Unanticipated Problems Involving Risks 
+to Subjects or Others….… ……………………………………………………………………………………….53 
+XIII. Continuing Review and Close 
+Out……………………………………………….………………………………………………56 
+XIV. Glossary  of 
+Terms…………………………………………………………………………… ..……………. .59 
+ 
+  3 I. INTRODUCTION  
+ 
+A.  Institutional Authority and Purpose  
+ 
+These standard operating procedures govern the use of human subjects participating in 
+research at Arizona State University (ASU) or by ASU faculty at other sites.  ASU’s 
+Institutional Review Board (IRB) has been established under  the authority of the 
+National Research Act and implemented by university Policy at RSP-201.University 
+requires that all research projects involving humans as subjects be reviewed, and 
+approved by ASU ’s IRB prior to  implementing studies, including recruitment  and 
+screening activities.  
+ 
+Federal government regulations control human subjects research conducted at ASU. 
+ASU assure s that it complies with the federal regulations for federally funded, aided, or 
+“otherwise regulated” human subjects research and University Policy regardless of 
+funding.  The University does this using the “Federalwide Assurance” method.   ASU 
+Policy at RSP 201 -01 provides for the protections of human subjects as participants in 
+research.   
+ The purpose of the IRB is to protect the rights and welfare of human subjects participating in bioscience and social -behavioral research. The IRB review s and 
+provides overs ight of such research to ensure that it meets the ethical principles and 
+that it complies with federal regulations that pertain to human subject protection s at 
+45 
+CFR 46  and 21 CFR 50  and 21 CFR 56  (as applicable), and other pertinent regulations, 
+guidance, state and local laws.  
+ 
+B. Scope  
+ As a matter of policy, all ASU faculty, students, staff, and administrators are responsible for protecting the rights and well -being of human subjects in research. The following 
+principles are the basis for ASU’s human subject research procedures . 
+ 
+1. All res earch involving humans as subjects must protect the subjects' safety, 
+privacy, health, and welfare.  
+ 
+2. The benefit of the research proposed must outweigh the potential for risk to t he 
+subjects participating in the research. Only the IRB at ASU is authorized to make 
+this determination.  3. The participation of humans as research subjects must be voluntary. Voluntary is 
+defined as the subject and/or subject’s representative has given informed consent. Researchers must document  informed consent except where the law explicitly 
+waives such documentation as determined by the appropriate IRB . 
+  4 4. A human subject surrenders no rights by participating in research. In no case 
+shall a hum an subject lose any benefit or entitlement by refusing to participate. In 
+addition, subjects may withdraw from research at any time without penalty . 
+ 
+5. Researchers are responsible for protecting private information about human 
+subjects that is obtained during research.  Health Insurance Portability and 
+Accountability Act (HIPAA) Privacy Rule regulations may apply to some research performed at ASU. ASU is a "hybrid entity" with "covered components" which must comply  with the provisions of the Health Insurance Portability and Accountability Act 
+of 1996 and the implementing regulations (45 CFR Parts 160, 162 and 164). The HIPAA Privacy Regulations will impact research projects involving protected health information, if  the information is obtained from one of the "covered components" or 
+from another covered entity outside ASU, such as a hospital or pharmacy. Particularly in cases where a project is associated with a hospital or other clinical partner, HIPAA related issues may need to be addressed. In most cases the ASU IRB will defer to the clinical partner’s HIPAA requirements and will acc ept any 
+necessary forms as part of the ASU IRB submission. The preference of the ASU IRB is to defer under affiliation to the clinical partner for collaborative studies performed at a clinical site. The ASU IRB will accept the hospital or clinical partner requirements and forms as part of the ASU IRB protocol submission.  
+ 
+6. All researchers, whether students, faculty members or staff, are responsible for 
+complying with these procedures and all applicable laws, regardless of where the research is performed.  
+ 7. All researchers whether students, faculty members or staff are responsible for 
+safeguarding their data in accordance with data standards as promulgated by University Technology Office ( UTO ) 
+https://getprotected.asu.edu/policy -
+compliance/guidelines -procedures  
+ 
+  
+C. Updating  
+ In the event of a regulatory, procedural,  or statutory change to governing regulations, 
+these procedures shall be construed to conform to that change. Changes should be brought to the attention of the IRB or Office of Research Integrity and Assurance ( ORIA ) 
+and the procedures will be revised accordingly.   IRB members and researchers will 
+have access to the updated policies and procedures via a posting on the IRB website: https://researchintegrity.asu.edu/human- subjects
+ 
+    5 II. FEDERALWIDE ASSURANCE (FWA)  
+ 
+Arizona State University, also referred to as the "institution" or “ASU” hereby gives assurance, as specified below, that it will comply with the Department of Health and Human Services (DHHS) regulations for the protection of human research subjects, 45 CFR Part 46, as amended to include provisions of the Federal Policy for the Protection of Human Subjects (56F R28003) as Subpart A, and as may be further amended during 
+the approval period for this Assurance. The coverage also applies to other Departments and Agencies that have adopted the Common Rule. Information about the FWA is posted on the IRB website: https://researchintegrity.asu.edu/human- subjects
+. 
+ 
+A.  Ethical Principles  
+ 
+1. ASU is guided by the ethical principles regarding all research involving humans 
+as subjects, as set forth in the report of the National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research (entitled: Ethical Principles and Guidelines for the Protection of Human Subjects of Research [the "Belmont Report"]), regardless of whether the research is subject to Federal regulation or with whom conducted or source of support (i.e. sponsorship).   2. All research performance sites under the auspices of ASU, domestic or foreign, 
+will be obligated by the University to conform to ethical principles which are at l east 
+equivalent to those of this institution, as cited in the previous paragraph or as may be determined by the DHHS Secretary.  
+ 
+B. Institutional Policy  
+ 
+1. All requirements of Title 45, Part 46, of the Code of Federal Regulations (45 CFR 
+46) will be met for federally supported human subjects research. F unds for which our 
+Assurance applies may not be expended for research involving human subjects unless the requirements of ASU’s Assurance have been satisfied.  
+ 2. In accordance with 45 CFR 46, all research involving human subjects are 
+covered by ASU’s Assurance and will be reviewed and approved by ASU’s IRB 
+which has been established under a Federalwide Assurance (FWA) with the Office 
+for Human Research Protections (OHRP).  The involvement of human subjects in research covered by our Assurance will not be permitted until an appropriate IRB has reviewed and approved the research protocol and informed consent has been obtained from the subject or the subject's legal representative.  
+ 3. ASU assures  that before human subjects are involved in nonexempt research 
+covered by this policy, the IRB will give proper consideration to the:  
+ 
+a. Risks to the subjects  
+b. Anticipated benefits to the subjects and others  
+c. Importance of the knowledge that may reasonably be expected to result   6 d. Informed consent process to be employed  
+e. Provisions to ensure the safety of subjects  
+f. Provisions to maintain privacy and confidentiality of subjects and their dat a 
+ 
+4. Institutions that are not direct signatories to this Assurance are not authorized to 
+cite ASU’s Assurance. ASU will ensure that other  such institutions and investigators 
+not bound by the provisions of DHHS -sponsored research will satisfactorily assure 
+compliance with 45 CFR 46, as required, as a prior condition for involvement in 
+human subject research which is under the auspices of this institution.   
+ 5. ASU will ensure that any of its affiliates materially engaged in the conduct of 
+research involving human subjects will possess mechanisms to protect human research subjects that are at least equivalent to those procedures provided for in the ethical principles to which this institution is committed (see Part A).  
+ 
+6. ASU will comply with the requirements set forth in 45 CFR 46 § 114 of the 
+regulations regarding cooperative research projects.  When research covered by ASU’s Assurance is conducted at or in cooperation with another entity, all provisions of our Assurance remain in effect for that research.  Acceptance of the terms must be (a) in writing, (b) recommended by an authorized official of this institution's  
+Knowledge Enterprise, and (c) approved and signed by an Institutional Official or 
+Institutional Official ’s Designee authorized to execute cooperative agreements 
+between the institution and other organizations, to  establish reliance on IRBs of 
+record for collaborative research (e.g., IRB Authorization Agreements, Individual 
+Investigator Agreements) .  
+ 
+The ASU IRB will provide review and oversight for an external partner when the project covers collaborative work between ASU and an external entity (e.g. external entity receives federal award and subcontracts part of work to ASU which includes providing the IRB services or vice versa ).   Any decision to provide IRB oversight for 
+collaborators and any associated fees will be made on a case by case basis. Other requests by external entities will be referred to a private authorized IRB . 
+ 7. ASU will exercise appropriate administrative oversight to ensure that policies and 
+procedures designed for protecting the rights and wel fare of human subjects are 
+being effectively applied in compliance with the FWA.  
+ 
+C. Applicability  
+ 
+1. ASU’s FWA applies to federally sponsored research involving human subjects, 
+and all  other activities which, even in part, involve such research if one or more of 
+the following apply : 
+ a. Research is sponsored by ASU  
+b. Research is conducted by or under the direction of any employee or agent of ASU in connection with his or her institutional responsibilities   7 c. Research is conducted by or under the direction of any e mployee or agent of 
+ASU using any property or facility of ASU  
+d. Research involves the use of ASU’s non- public information to identify or 
+contact human research subjects or prospective subjects  
+e. All human subject research which is exempt under Section 101(b)(1- 6) or 
+101(i) will be conducted in accordance with: (1) the Belmont Report, (2) 
+ASU’s administrative procedures to ensure valid claims of exemption, and (3) orderly accounting for such activities  
+f. Components of this University are bound by the provisions of  our Assurance. 
+Those components which can be expected to participate in human subject research sponsored by DHHS or other Federal departments or agencies for which our Assurance will apply are identified under Assurance # FWA00009102 at  https://www.hhs.gov/ohrp/irbs -and-assurances.html
+ 
+g. The FWA must be accepted by other Federal departments or agencies that are bound by the Federal Policy for the Protection of Human Subjects when appropriate for the research in question and therefore applies to all human subject research so sponsored.  Research that is neither conducted nor supported by a Federal department or agency but  is subject to regulation as 
+defined in Section 102(e) must  be reviewed and approved, in compliance with 
+Sections 101, 102, and 107 through 117.  
+ 
+D. Local Review , Affiliation Agreements, and Multisite research  
+ The ASU IRB may enter into affiliation agreements with other institutions based on 
+recommendation and approval from the ASU Institutional Official  and/or IRB Manager . 
+The institutions may cover single protocols or enter into general agreements for reciprocity between institutions. Finalized agreements are recorded in the applicable study  record .  
+ When another IRB is designated as the IRB of record, then the ASU IRB will rely on the review, approval, and continuing oversight by the responsible IRB. ASU requires that a local contextual review form and copy of the approved protocol be submi tted through 
+the ERA IRB module to the ASU IRB for local review (see https://researchintegrity.asu.edu/human- subjects/forms
+).  
+ 
+E. Fee Structure  
+ The ASU IRB charges a fee for protocols funded by private industry sponsors as well as 
+protocols submitted to external IRBs  in some cases.  There is no charge for ASU IRB 
+review of ASU research protocols funded from other sources or for unfunded research. 
+The fee is not based on whether the project is actually initiated, but rather on the fact that the project received review by the ASU IRB. The fee is paid up- front at the time of 
+protocol submission and covers the initial and subsequent review of amendments and adverse event reports during the 12- month period of approval. Investigators and/or 
+departments are responsible for the payment of this fee at the time of protocol  8 submission. The payment schedule and information about payment options can be 
+found at:  https://researchintegrity.asu.edu/human- subjects/special -considerations  
+ For assistance in submitting payment , contact ORIA staff at 480 -965-6788 or 
+asuirb@asu.edu
+. Payment is required before final IRB approval can be granted.  
+ 
+F. Special Circumstances  
+ There are cases where researchers submit protocols for funding when the plans for human subjects research are not finalized. However, they will only conduct human subject’s  research if the project is funded.  In other cases, the first year of the project will 
+be designing the study. In these cases, the IRB will evaluate the situation and determine if the protocol can be excluded from review based on federal regulations at 45CFR46.118 of the Code of Federal Regulations which provides for grants where definite individual project -specific details for human subject participation are not yet 
+finalized .  When the circumstance is appropriate, the IRB can determine that IRB review 
+is not required until details of human subjects participation is finalized. Additional information is available by contacting the IRB at asuirb@asu.edu
+. 
+                           9  
+ III. GENERAL INFORMATION  
+ 
+A. Overview 
+ 
+ASU is guided by the ethical principles regarding all research involving humans as subjects as set forth in the report of the National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research entitled “Ethical Principles and Guidelines for the Protection of Human Subjects of Research” (The Belmont Report).  
+ Underlying ASU’s policy are the following basic principles embodied in the policy statement contained in part 46 of Title 45. These principles will serve to assist the Unive rsity in discharging its responsibilities, through its authorized representatives: the 
+Knowledge Enterprise (KE), the Office for Research Integrity and Assurance (ORIA), and the IRB, to protect the rights and welfare of human subjects, as well as to assist  
+faculty engaged in relevant research from unknowingly committing unethical acts. ASU bears full responsibility for the performance of all research involving human subjects covered by this set of policies and procedures.   No member or staff supporting the IRB 
+has a business development function related to the organization.  
+ 
+B. Conduct of Research  
+ Research involving human subjects is an important and necessary activity of the University and must be conducted in an ethical manner. Such research has the encouragement of the University when the following principles are fulfilled:  
+ 
+1. Risks are minimized by using the safest procedures consistent with sound research design.  
+ 2. The privacy of the subject is protected,  and confidentiality of data is maintained.  
+ 3. Before any person is a subject of research, information must be obtained from 
+that person that wishes to become a participant or  completed by a legally 
+authorized representative of the participant. This information includes an 
+informed, voluntary  consent , unless a waiver or alteration of authorization has 
+been approved by the IRB.  
+ 
+This involves a full and careful explanation in language that is understandable by lay persons. The consent of the subject must be obtained without duress, 
+deception (unless this is considered part of the research plan—refer below  for 
+details ) or withholding of information. This means that the purpose of the 
+research, procedures to be followed, possible  risks involved, and the benefits to 
+result from the activity  are clearly explained to the subject and the subject’s rights 
+are clearly represented.  
+  10 In cases where the research design involves deception, an information letter  is 
+used initially to obtain participants’ agreement to take part in the study, and a 
+debriefing should occur immediately after conclusion of participation. After the debriefing occurs the participants should be given the opportunity to consent or have their data withdrawn from use by researchers. In general, research involving deception and the use of these procedures is allowed if participation involves no more than minimal risk. This will be evaluated on a study -by-study  basis. 
+ 4. The subject should also be told that he/she is free to withdraw from the research at any time without penalty.  
+ 
+C. Review Process  
+ Before any research project involving the use of human subjects can commence at ASU, the project must be reviewed and approved by the IRB. Under federal regulation, classroom activity, laboratory courses and/ or ‘field’ assignments  are normally not 
+classified as research, and typically are not reviewed by the IRB. Independent student research projects must, however, be reviewed by the IRB.  All proposals submitted to Federal agencies that require IRB review prior to submission must be reviewed and if 
+required, approved by the IRB before proposal submission.  For Federal agencies that allow for just -in-time compliance oversight , the IRB will accept the protocol in 
+accordance with agency directives.  Protocols must comply with the University's 
+Federalwide Assurance, DHHS Policies and Regulations on Protection of Human Subjects, FDA regulations, and this document.  
+ 
+D. Principal Investigator  
+ 
+The Principal Investigator (PI) must be a  regular faculty or staff member  per the 
+Research and Sponsored Projects Manual RSP 102: Principal Investigator Eligibility. (https://www.asu.edu/aad/manuals/rsp/rsp102.html ). In the event that the primary  
+researcher is an undergraduate or graduate student , then the supervising faculty 
+member must act as the PI. It is the responsibility of the PI to make certain that all current policies and procedures governing the participation of humans as research subjects are adhered to in the research project. Supplemental to DHHS and FDA regulations or applicable law are ethical codes developed and adopted by various professional associations which will assist and guide investigators in various disciplines in protecting the rights of human subjects. They do not supplant or substitute for DHHS and FDA regulations or this document.  
+ Graduate students, research assistants or others performing research activities which exceed minimal risk to research subjects, under the supervision of a faculty advisor, which has been approved by the IRB may be considered "agents" of the University for risk management purposes.  
+ Principal investigators are responsible for supervising co- investigators and other key 
+personnel. A co- investigator is defined as anyone who has responsibility for:  the  11 project’s design, implementation, data collection, and/or data analysis. Key personnel 
+are individuals who may have contact with study participants but who do not have 
+program specific responsibilities.  
+   12 IV. ADMINISTRATIVE RESPONSIBILITES  
+ 
+A. Knowledge Enterprise (KE)  
+ 
+It is the responsibility of KE to assure that the policies and procedures for research 
+involving human subjects are carried out in accordance with Federal Regulations.  The 
+University President appoints an Institutional O fficial. The University assumes the 
+following responsibilities:  
+ 
+1. Oversight of the human subject’s  protection program and the IRB.  
+2. Institutional determinations concerning sponsorship and certification.  
+3. Oversight for ensuring compliance with 45  CFR 46, 32 CFR 219 and 42 CFR 11. 
+4.  Oversight for ensuring compliance with the Investigational New Drug or Device 
+Certification Requirement. Researchers shall comply with the Food and Drug 
+Administration  (FDA), Investigational Drugs or Medical Devices in accordance 
+with 21 CFR 50, 21 CFR 56, 21 CFR 312, 21CFR 812 and International 
+Conference on Harmonization (ICH) as adopted by the FDA . 
+ 
+B. Office of Research Integrity and Assurance (ORIA)  
+ 
+ORIA provides support to the IRB and to investigators seeking review of their protocols and is responsible for the daily activities and operations of the IRB. ORIA Staff provide support to the IRB. These individuals include IRB staff including  the IRB Mana ger who 
+are responsible for the day to day operations of the IRB. The ORIA has the following responsibilities and roles:  
+ 
+1. Receives IRB applications from investigators for research involving human subjects. Application forms for new submissions can be downl oaded from the 
+IRB website: https://researchintegrity.asu.edu/human- subjects/forms
+. They are 
+then submitted into ERA IRB  module and an ORIA staff member is assigned to 
+perform a revi ew of the submission.  
+a. Reviewing applications to determine whether the study meets exemption criteria under 45 CFR 46.101.  The IRB Chair or IRB members can also make this determination.  
+b. Schedules  review of all non- exempt research protocols with the IRB Chair 
+or a member of the IRB for review.  
+c. Disseminat es information about policies and procedures as well as 
+providing education about human subject’s  research.  Copies of the ASU 
+procedures for the review of human subject’s  research and Federal 
+Regulations and Guidance are available to faculty, staff, administrators, 
+students, subjects and all other interested persons. Each time a revision occurs, the most current version of the ASU procedures for the review of 
+human subjects research is posted on the IRB website: https://researchintegrity.asu.edu/human-subjects/
+ The website also 
+contains the IRB submission forms, FAQs, and other resources.   13 2. Promptly report s to the OHRP and FDA, through the Institutional Official, on a 
+variety of issues. In conjunction with this requirement, the University IRB must be 
+prepared to receive and act on information received from a variety of sources, such as human subjects, research investigators, the Office of Research and Sponsored Projects Administration (ORSPA) or other institutional staff.  
+3. Makes IRB records accessible for inspection to authorized representatives of 
+OHRP and FDA (and authorized institutional representatives) at reasonable times and  in a reasonable manner . Forwards copies to the agency when 
+requested by authorized representatives. Makes r ecords available for audit at 
+any time. ORIA staff members may schedule a protocol audit with an investigator at any time. The audit findings are reviewed by/with the IRB Manager  and staff , 
+IRB Chairs and committee and/or Institutional Official,  and when appropriate the 
+Office of General Counsel . Generally,  audits are done on a for -cause basis. Not -
+for-cause audits may also be performed. The ORIA prepares and maintains 
+adequate documentation of IRB activities including the following:  
+a. Related  research proposals including those for studies determined to be 
+exempt or determined not to constitute human subjects research, reviewed scientific evaluations, if any, that accompany the research proposals, approved consent documents, progress reports submitted by research investigators, and reports of adverse events and all other relevant and related materials.  
+b. Protocol modification documentation. 
+c. C opies of IRB agendas and minutes  
+i. Records of continuing review activities.  
+ii. Copies of all correspondence between the IRB and the research investigators as indicated by 45 CFR46.115 (a) (4).  
+iii. A list of IRB members as required by §46.108(a)(2)  per and, 
+21CFR56. 107, and 21CFR56.115.  
+iv. Written procedures for the IRB as required by §46.108(a)(3) and (4) 
+and 21CFR56. 108(a) and (b)  
+ 
+The ORIA provides for the maintenance of records , relating to a specific 
+protocol , for at least 3 years after termination of the last IRB  approval date. The 
+studies are stored within the ERA IRB module.  
+ 
+4. Reporting Requirements  
+The ORIA will report promptly to the IRB, appropriate institutional officials, the Office for Human Research Protections (OHRP), Food and Drug Administration (FDA) an d any other sponsoring Federal department or agency head (as 
+appropriate):  
+a. Any injuries to human subjects or other unanticipated problems involving risks to subjects or others  
+b. Any serious or continuing noncompliance with the regulations or requirements of the  IRB, and/or  
+c. Any suspension or termination of IRB approval for research.  
+  14 5. Reporting Procedures - Researchers  
+For reporting purposes, the University IRB and ORIA will follow the procedures 
+described below:  
+a. Noncompliance: Investigators, study staff and researchers are responsible 
+for reporting non- compliance directly to the IRB. Any noncompliance by 
+research investigators with the requirements of the IRB shall be reported promptly to the ORIA and IRB for appropriate f ollow- up.  The IRB will act 
+in accordance with Standard Operating Procedures (SOP ’s) 07-001 Non-
+Compliance  with IRB Policies and Procedures and SOP 07- 002 Reporting 
+Requirement for Unanticipated Events, Serious and Continuing Non-Compliance and/or suspension or termination of IRB approval. These  
+documents are internal documents and outline responsibilities for reporting noncompliance. ASU investigators will be notified of 
+noncompliance in accordance with these procedures.  
+b. Injuries to human subjects : Information received by the IRB concerning 
+injuries to subjects shall be reported promptly to the ORIA and IRB for appropriate follow -up. 
+c. Unanticipated problems or complaints : Information received by the IRB 
+concerning unanticipated problems or complaints involving ris ks to 
+subjects or others shall be reported promptly to the ORIA and IRB for appropriate follow -up. Reportable events to the IRB are submitted as 
+“reportable new information” through the ERA IRB portal and reviewed through the portal.  
+d. When reviewing non- compliance the IRB is responsible for determining 
+whether a study  modification is required to address newly -identified risks.  
+The IRB may also require additional actions to reduce the risks to participants such as, but not limited to:  
+i. Suspension of the research  
+ii. Termination of the research  
+iii. Notification of current subjects (required when such information might  relate to subjects’ willingness to continue to take part in the 
+research)  
+iv. Require that additional information be provided to subjects who have completed study procedures  
+v. Modification of the research study  
+vi. Modification of the information disclosed during the consent process  
+vii. Require re- consenting of current subjects  
+viii. Monitoring of the research 
+ix. Monitoring of the consent process  
+x. Require implementation of a Data Safety Monitoring Board, or  other 
+monitoring entity  
+xi. Shorten the continuing review cycle  
+ 
+6. Reporting Procedures -IRB and ORIA   15 a. Suspension or termination of IRB approval : Whenever the IRB suspends 
+or terminates approval of research protocols, the ORIA shall include a 
+statement of the reasons for the IRB's action and shall report the action promptly to the PI, Department Chair ( or equivalent ), College Dean,  
+university  Leadership and Federal Government where applicable.  The 
+Institutional  Official or designee can issue a suspension of IRB approval or  
+termination when in the opinion of the IRB Chair, Manager  or committee 
+subjects may be at risk of adverse events on their rights and welfare.  
+b. Reporting requirements : The ORIA shall be responsible for promptly 
+reporting information, as appropriate, to the IRB, OHRP (where applicable), FDA (where applicable), research investigators and department heads regarding issues of noncompliance. Information may 
+come from sources such as human subjects, re search investigators, the 
+IRB or other institutional staff.   
+7. Investigator Responsibilities  
+a. Principal investigators (PIs) are responsible for the conduct of the research and are responsible for ensuring that the rights and welfare of subjects are protected. PIs are responsible for placing the consent documents signed by research subjects in a repository approved by the IRB. The PI is responsible for maintaining, in a designated on- campus 
+location (unless an alternate storage facility is approved by the IRB), complete records of all documentation relating to the study which is conducted for at least 3 years after completion of the research. All records and documentation must be accessible for inspection and copying by authorized officials of ASU  including the IRB, ORIA, DHHS, the FDA (as 
+appropriate),  and regulatory agencies and/or study sponsors of  the 
+research protocol in question.  
+ 
+When an investigator leaves ASU prior to the completion of a study, the investigator is responsible for initiating mutually satisfactory arrangements with University administration as to the disposition and storage of c onsent 
+forms and other study -related materials ,  closing out  or transferring the 
+study as needed.  
+ 
+b. Statements of significant new findings developed during the course of the research which may relate to the subjects' willingness to continue participation must be provided to subjects, as required by 45 CFR 46.116( c)(5) and to the IRB.  Investigators should also demonstrate 
+diligence when  informing participants of any new findings after their 
+participation has ended as reflected in the continui ng review/study closure 
+process. This may occur due to analysis of data that reveals information 
+that may affect participants.  
+ 
+c. Principal investigators are responsible for reporting the progress of the research to the Office of Research Integrity and Assur ance  (ORIA)  as 
+necessary  and in the manner prescribed by the IRB,. The IRB will  16 determine the frequency for reporting the progress based on the nature of 
+the study.  
+ 
+d. Principal investigators are responsible for: promptly reporting, in writing, to the IRB, t hrough the ORIA any injuries to human subjects, or any 
+unanticipated problems which involve risks to the human research subjects or others.  
+ 
+e. Principal investigators are responsible for req uesting, in writing , any 
+proposed changes in research activities to the IRB through the ORIA 
+before such changes are implemented. Researchers must submit the 
+modification  to the IRB through ERA IRB. Modifications in research during 
+the period for which IRB approval has already been given shall not be initiated by research investigators without IRB review and approval, except where necessary to eliminate apparent immediate hazards to the subject. In such occurrence the IRB is to be notified as soon as possible (within 5 
+days) through the ORIA.   
+ 
+Researchers should contact ORIA  (asuirb@asu.edu
+) with questions 
+regarding the modification process. Modifications to full board studies that do not increase the risk may  be reviewed under  expedited review  
+categories . Those changes that increase risk to participants are reviewed 
+by the convened IRB  as a full board study. As part of the review process, 
+the reviewer will determine whether the changes are substantial and require review by the convened IRB.  
+ 
+f. Principal investigators are responsible for reporting promptly to the IRB 
+any serious or continuing non- compliance with the requirements of 
+University policy and procedures in this document or the determinations of the IRB.  
+ 
+g. To facilitate the review of research and the protection of the rights and welfare of human subjects, occasionally research investigators may be asked to attend IRB meetings to assist IRB members with any concerns regarding the protocol.  
+ 
+h. The principal investigator shall be responsible for notifyi ng the Food and 
+Drug Administration (FDA) and the IRB through the ORIA whenever it is anticipated that an investigational new drug or device exemption will be required.  
+ 
+i. All projects reviewed and approved prior to the implementation date remain under the regulations in effect prior to January 2019until their next regularly scheduled continuing review.  At the time of continuing review , 
+each study will be reviewed for transition to the new regulations.   17 Grandfathered projects will be provided information on transitioning to the 
+current regulations at the time of continuing review (if applicable).  
+ 
+   18 V. TRAINING  
+ 
+A. Federalwide Assurance and Federal Training Requirements  
+ 
+The ASU Federalwide Assurance requires education on the protections of human research participants for all investigators conducting human subjects research.  Before the study can be approved, investigators must provide documentation of education completed for every one who has contact with subjects or research data in the proposed 
+research project. Additionally , the Assurance requires training for the IRB Chair and 
+members and staff who support the IRB process.  
+ Additional information on the NIH policy regarding training is available at https://grants.nih.gov/policy/humansubjects/training- and-resources.htm
+ 
+ Information for research ethics education with certification is located in the CITI (Collaborative Institutional Training Initiative) site at: https://www.citiprogram.org/default.asp?language=english
+.   
+ Information about Department of Defense training requirements can be found at: https://www.med.navy.mil/About- Us/Human -Research- Protection- Program/
+  
+ Requirements for Human Subjects Protection (HSP) and Good Clinical Practice (GCP) Training for Clinical Research Site Personnel can be found at:  
+https://www.citiprogram.org/default.asp
+ 
+https://ocr.od.nih.gov/clinical_research_training.html  
+ 
+B. Training for Investigators  
+ The ASU IRB extends this training requirement to all ASU faculty, researchers, staff, and students conducting human subjects research.  All individuals who have any responsibilities for the research project, who have contact with subjects, or who have access to research data at any time during the conduct of the study must document compliance with the ASU IRB training requirement.  As a prerequisite for compliance with the pol icy, investigators must provide documentation that they and all relevant 
+members of their research team have completed through CITI course for human subject 
+research protections  within the past 4 years .  
+ In some circumstances, other training certificates or sessions will satisfy the training requirement such as attending an outreach session conducted by ORIA.  As part of a 
+protocol’s pre- review , staff from ORIA and the IRB reviewer will review the training 
+documentation to determine whether it meets ASU’s standards or if additional training is required. Researchers who collaborate with non- ASU personnel should contact ORIA 
+regarding training requirements. The IRB website also includes various educational resources and links to University Policy, Federal Regulations and Guidance and various ethical codes as well as an entire section on training: https://researchintegrity.asu.edu/human- subjects
+.     19  
+Training certification is valid for 48  months.  
+ PI’s conducting research in foreign countries and having oversight  of non -English 
+speaking research staff are responsible for submitting a curriculum for training their staff in the ethical conduct of research for review and approval by the IRB. They must 
+provide such training to their staff before they  begin research activities  with humans, 
+and should continue monitoring their research staff for compliance with these 
+procedures.  
+  
+C. Training for IRB Members  
+ As a requirement for their appointment to the IRB, the IRB chair and members (including alternates) are also required to take human subjects training via CITI at :  
+https://www.citiprogram.org/default.asp
+.   
+ However, in special circumstances, other forms of training may be accepted. Members 
+are provided reference training materials such as the Institutional Review Board 
+Handbook and relevant research articles. Ongoing education is provided routin ely at 
+convened meetings . The IRB Chair is encouraged to attend at least one national level 
+professional meeting related to human subject protections and funds may be made 
+available by ORIA to cover the expense of attending.  
+ 
+D. Training for Office of Research Integrity and Assurance Staff Members  
+ All staff in the Office of Research Integrity and Assurance with responsibilities for supporting the IRB is required to be familiar with the following:  
+ 
+1. ASU Procedures for the Review of Human Subjects Research  
+2. IRB website  
+3. Applicable Federal Regulations  
+ 
+Attendance at regional and national meetings related to human subjects is encouraged for all staff.  
+   20 VI. IRB MEMBERSHIP  
+ 
+A. Membership Composition  
+ 
+Each IRB is a standing committee of ASU. The IRB must be composed of sufficient members with varying backgrounds to assure complete and adequate review of research projects involving human subjects. In addition to a balance of research expertise, the IRB shall also include persons able to determine the acceptability of a research proposal with respect to institutional commitments and regulations, applicable law, standards of professional conduct and practice, and community viewpoints.  
+ The IRB is primarily comprised of representatives from the colleges and departments involved in and  experienced with research projects involving human subjects as 
+participants. The IRB includes at least one individual who is unaffiliated with ASU and 
+who is not part of the immediate family of a person who is affiliated with the institution.  The person represents the perspective of research participants . 
+ The IRB will be sufficiently qualified through the experience and expertise of its members, and the diversity of the members' backgrounds (including consideration of the racial and cultural backgrounds of members and sensitivity to such issues as community attitudes ) to promote respect for its advice and counsel in safeguarding the 
+rights and welfare of human subjects.  
+ If the IRB regularly reviews research that involves a vulnerable category of subjects as defined by the Federal Regulations (45 CFR 46), the IRB shall  include one or more 
+individuals whose background is in protecting the welfare of those subjects.  
+ No ASU IRB may consist entirely of men or entirely of women, or entirely of members of one profession. The IRB shall include at least one member whose primar y concerns are 
+in nonscientific areas; for example: lawyers, ethicists, or members of the clergy. The IRB shall include at least one member who is not otherwise affiliated with the institution and who is not part of the immediate family of a person who is affiliated with the institution.  The IRB will include at least 5 members as required by the Federal 
+Regulations . The Institutional Official and the IRB Manager and Administrator may 
+serve as alternate members of the IRB. The IO may appoint alternate members for the 
+members when there is an individual who has a similar background to the regular member. Alternate members have the same training requirements as regular members.  
+ The members shall be identified to the Federal Government by name, earned degrees (if any), position or occupation, representative capacity, and pertinent experience indicative of members' anticipated contribution to IRB deliberations. Membership rosters 
+are maintained by ORIA  and posted on the Provost website
+. 
+ No IRB may have a member participating in its initial or continuing review of any project in which the member has a conflicting interest, except to provide information requested by the IRB. The IRB may, in its discretion, invite individuals with competence in special  21 areas to assist in the review of complex issues which require expertise beyond or in 
+addition to that available on the IRB. These individuals may not vote with the University IRB. All guests are at the invitation of the IRB Chair and/or IRB members.   Guests must 
+be approved by the IRB Chair  and/or Institutional Official , and any IRB member may 
+request approval from the Chair to bring a guest.  At any scheduled IRB meeting, at the 
+request of the IRB Chair or any IRB member, the meeting will move into executive session.  
+B. Method of Appointment  
+ The administrative authority for the protection of human subjects at Arizona State University is delegated by the University President to the Institutional Official (IO). The 
+members of the University IRB are nominated by the IO  in consultation with Chairs, and 
+other stakeholders . Credentials of the members and gaps on the committee are 
+considered when selecting the members. The IRB is a standing committee of the 
+University and is administratively responsible to the Institutional Official. Appointments to the IRB normally are for a period of one year and may be  renewable.  
+ Membership terms are staggered - to ensure continuity within the committee. In 
+advance of appointments to the IRB, membership is reviewed by the Institutional 
+Official , IRB Chair  and other stakeholders . The IRB Chair generally serves for a one -
+year renewable term, coinciding with the academic calendar.  
+  
+C. Responsibility of Members  
+ IRB member’s primary responsibility is the protection of the rights and welfare of the individuals  who are participants in research. IRB members are expected to be versed in 
+regulations governing human subject protections, biomedical and behavioral research ethics, and IRB policies and procedures . 
+ Members are expected to attend majority  of the meetings . Members  are expected to 
+notify the ORIA IRB staff of unavailability for a previously confirmed assignment, i.e. 
+convened meeting attendance.  
+ When possible, send  the member’s written review to ORIA IRB staff when attendance is 
+not possible due to an emergency  arising after the meeting agenda is distributed.  
+ Members are expected to pursue current knowledge of human subjects regulations . 
+ 
+D. Evaluation  
+  
+IRB membership participation is evaluated annually as part of the appointment process  
+to ensure appropriate cov erage for topical areas of research is provided. The evaluation 
+is done by the ORIA Asst. Director, IRB Manager , the Institutional Official  and 
+Committee Chairs .  Evaluation criteria includes knowledge base of the committee , and  22 individual skills when appropriate.  If area s of improvement are identified during the 
+evaluation an enhanced education and development plan will be developed to improve 
+and monitor the individual’s and IRB’s knowledge, skills and performance. Recommendati ons for continued appointment are sent to the Institutional Official for 
+acceptance. Each member receives an annual appointment renewal or thank you letter . 
+                    
+                
+ 
+ 
+   23 VII. REVIEW PROCEDURES  
+The ASU IRB must review and approve all research activities involving human subjects 
+before data collection can begin.  
+  IRB exempt wizard:  
+ 
+As of December 19th 2022, ASU IRB has implemented a Wizard tool to streamline the 
+IRB review process for studies that fall under one or more exempt categories.  The IRB  
+has set the following criteria for researchers to submit their studies through the Wizard – 
+ 
+  
+Criteria*:  
+1. Unfunded research (studies that are funded by federal agencies, industries, 
+foundations and local partners are not eli gible)  
+2. Not a clinical trial  
+3. Single site study (only conducted at ASU)  
+4. Participants are adults, non- military, non - Native American, non- prisoner 
+population (18 years or older)  
+5. Single component of data collection (surveys/interviews/focus groups etc.)  
+6. Resear chers do not have a dual role (conduct research on participants that they 
+supervise/oversee)  
+7. Study conducted in the U.S.  
+8. Research does not involve sensitive topics related to drug/alcohol use,   sexual 
+behavior, mental health, criminal behavior, immigration  status, personal financial 
+information  
+9. Research does not involve other info that could put participants at risk of 
+criminal/civil liability  
+10. Research involves use of secondary human subjects data that are publicly 
+available  
+ Once the Wizard makes a determination, researchers are requested to submit a copy of this determination into the ERA IRB module to receive a formal IRB approval letter.  
+Audits of studies determined exempt by the Wizard will be done  on a periodic basis  to 
+ensure compliance.  
+ Studies that  do not meet criteria for a determination through the Wizard go through  the 
+regular ASU IRB review process  as identified further below . 
+ Non-wizard/regular review process:  
+ There are three categories of IRB review for research activities provided under federal regulations: 1) exempt review, (with/without limited review) , 2) expedited review, 3 ) full 
+board review.   24  
+ After review of the study, an IRB Coordinator, the IRB Administrator, or other authorized staff member in ORIA shall recommend whether the research protocol meets the criteria necessary for designating Exempt status, Expedited Review, or Full Board review. This responsible reviewer m ay consult with the IRB Chair and/or members as necessary in 
+making this determination. In some cases, protocols may be determined to “not be human subjects research” as defined by 45  CFR 46 and the investigators will receive 
+notification of this determination.  
+ During the review process, Institutional Review Board (IRB) members review applications to determine if each research study has the necessary resources to protect subjects’ rights and welfare. In the process of evaluating adequate resources, the IRB  
+considers the following: monetary and non- monetary resources, provisions for monetary 
+resources if the study is unfunded, whether there are adequate staff, including expertise and qualifications to conduct the research, need for and access to counseling, medical, 
+or health care for subjects, confidentiality and necessary safeguards to protect privacy of subjects (e.g., space for consent and process) and confidentiality of data (e.g., physical and electronic records), and if the resources described are adequate to protect subjects effectively.  
+ 
+A. Exempt  and Limited IRB  Review  
+ 
+Review under these criteria are conducted as defined by 45  CFR 46.104 . If the study is 
+not found exempt, it must go through expedited or full board review. The IRB has developed guidelines pertaining to exempt research that are posted on the IRB website. Studies that meet criteria for exemption must be submitted for review by the IRB.  
+ 
+1. Categories of  Research Activities : 
+I. Research, conducted in established or commonly accepted educational s ettings, 
+that specifically involves normal educational practices that are not likely to 
+adversely impact students' opportunity to learn required educational content or 
+the assessment of educators who provide instruction. This includes most 
+research on regular and special education instructional strategies, and research 
+on the effectiveness of or the comparison among instructional techniques, 
+curricula, or classroom management methods.  
+II. Research that only includes interactions involving educational tests (cognitive, 
+diagnostic, aptitude, achievement), survey procedures, interview procedures, or 
+observation of public behavior (including visual or auditory recording) if at least 
+one of the following criteria is met:  
+a. The information obtained is recorded by the investigator in such a 
+manner that the identity of the human subjects cannot readily be 
+ascertained, directly or through identifiers linked to the subjects . 
+b. Any disclosure of the human subjects' responses outside the research 
+would not reasonably place the subjects at risk of criminal or civil  25 liability or be damaging to the subjects' financial standing, employability, 
+educational advancement, or reputation. 
+c. The information obtained is recorded by the investigator in such a 
+manner that the identity of the human subjects can readily be 
+ascertained, directly or through identifiers linked to the subjects, and an 
+IRB conducts a limited IRB review to make the determination required 
+by §46.111(a)(7).  
+III. Research involving benign behavioral interventions in conjunction with the 
+collection of information from an adult subject through verbal or written 
+responses (including data entry) or audiovisual recording if the subject 
+prospectively agrees to the intervention and information collection and at least 
+one of the following criteria is met:  
+a. The information obtained is recorded by the investigator in such a 
+manner that the identity of the human subjects cannot readily be 
+ascertained, directly or through identifiers linked to the subjects . 
+b. Any disclosure of the human subjects' responses outside the research 
+would not reasonably place the subjects at risk of criminal or civil 
+liability or be damaging to the subjects' financial standing, employability, 
+educational advancement, or reputation. 
+c. The information obt ained is recorded by the investigator in such a 
+manner that the identity of the human subjects can readily be 
+ascertained, directly or through identifiers linked to the subjects, and an 
+IRB conducts a limited IRB review to make the determination required 
+by §46.111(a)(7).  
+i. For the purpose of this provision, benign behavioral interventions 
+are brief in duration, harmless, painless, not physically invasive, 
+not likely to have a significant adverse lasting impact on the 
+subjects, and the investigator has no reason to think the subjects 
+will find the interventions offensive or embarrassing. Provided all 
+such criteria are met, examples of such benign behavioral 
+interventions would include having the subjects play an online 
+game, having them solve puzzles under various noise conditions, 
+or having them decide how to allocate a nominal amount of 
+received cash between themselves and someone else.  
+ii. If the research involves deceiving the subjects regarding the 
+nature or purposes of the research, this exemption is not 
+applicable unless the subject authorizes the deception through a 
+prospective agreement to participate in research in 
+circumstances in which the subject is informed that he or she will 
+be unaware of or misled regarding the nature or purposes of the 
+research.  
+IV. Secondary research for which consent is not required: Secondary 
+research uses of identifiable private information or identifiable biospecimens, if 
+at least one of the following criteria is met:  
+a. The identifiable private information or identifiable biospecimens are 
+publicly available .  26 b. Information, which may include information about biospecimens, is 
+recorded by the investigator in such a manner that the identity of the 
+human subjects cannot readily be ascertained directly or through 
+identifiers linked to the subjects, the investigator does not contact the 
+subjects, and the investigator will not re- identify subjects . 
+c. The research involves only information collection and analysis involving 
+the investigator's use of identifiable health information when that use is 
+regulated under 45 CFR parts 160 and 164, subparts A and E, for the 
+purposes of “health care operations” or “research” as those terms are 
+defined at 45 CFR 164.501 or for “public health activities and purposes” 
+as described under 45 CFR 164.512(b) . 
+d. The research is conducted by, or on behalf of, a Federal department or 
+agency using government -generated or government -collected 
+information obtained for non-research  activities, if the research 
+generates identifiable private information that is or will be maintained on 
+information technology that is subject to and in compliance with section 
+208(b) of the E -Government Act of 2002, 44 U.S.C. 3501 note, if all of 
+the identifiable private information collected, used, or generated as part 
+of the activity will be maint ained in systems of records subject to the 
+Privacy Act of 1974, 5 U.S.C. 552a, and, if applicable, the information 
+used in the research was collected subject to the Paperwork Reduction 
+Act of 1995, 44 U.S.C. 3501 et seq.  
+V. Research and demonstration projects  that are conducted or supported by a 
+Federal department or agency, or otherwise subject to the approval of 
+department or agency heads (or the approval of the heads of bureaus or other 
+subordinate agencies that have been delegated authority to conduct the 
+research and demonstration projects), and that are designed to study, evaluate, 
+improve, or otherwise examine public benefit or service programs, including 
+procedures for obtaining benefits or services under those programs, possible 
+changes in or alternatives to those programs or procedures, or possible 
+changes in methods or levels of payment for benefits or services under those 
+programs. Such projects include, but are not limited to, internal studies by 
+Federal employees, and studies under contracts or consulting arrangements, 
+cooperative agreements, or grants. Exempt projects also include waivers of 
+otherwise mandatory requirements using authorities such as sections 1115 and 
+1115A of the Social Security Act, as amended.  
+a. Each Federal department or agency conducting or supporting the 
+research and demonstration projects must establish, on a publicly 
+accessible Federal Web site or in such other manner as the department 
+or agency head may determine, a list of the research and 
+demonstration projects that the Federal department or agency conducts 
+or supports under this provision. The research or demonstration project 
+must be published on this list prior to commencing the research 
+involving human subjects.  
+b. [Reserved]  
+VI. Taste and food quality evaluation and consumer acceptance studies:   27 a. If wholesome foods without additives are consumed  
+b. If a food is consumed that contains a food ingredient at or below the 
+level and for a use found to be safe, or agricultural chemical or 
+environmental contaminant at or below the level found to be safe, by 
+the Food and Drug Administration or approved by the Environmental 
+Protection Agency or the Food Safety and Inspection Service of the 
+U.S. Department of Agriculture.  
+VII. Storage or maintenance for secondary research for which broad consent 
+is required: Storage or maintenance of identifiable private information or 
+identifiable biospecimens for potential secondary research use if an IRB 
+conducts a limited IRB review and makes the determinations required by 
+§46.111(a)(8).  
+VIII. Secondary research for  which broad consent is required: Research involving the 
+use of identifiable private information or identifiable biospecimens for secondary 
+research use, if the following criteria are met:  
+a. Broad consent for the storage, maintenance, and secondary research 
+use of the identifiable private information or identifiable biospecimens 
+was obtained in accordance with §46.116(a)(1) through (4), (a)(6), and 
+(d). 
+b. Documentation of informed consent or waiver of documentation of 
+consent was obtained in accordance with §46 .117. 
+c. An IRB conducts a limited IRB review and makes the determination 
+required by §46.111(a)(7) and makes the determination that the 
+research to be conducted is within the scope of the broad consent 
+referenced in paragraph (d)(8)(i) of this section; and (iv) The 
+investigator does not include returning individual research results to 
+subjects as part of the study plan. This provision does not prevent an 
+investigator from abiding by any legal requirements to return individual 
+research results.  
+ 
+2. Submission Req uirements : Researchers whose studies fall into one of the 
+exemption categories must submit either a Social Behavioral Application or 
+Bioscience Application to ORIA for review.  
+ 
+Applications for exempt status are  submitted through the ERA IRB module . 
+Research which qualifies for exempt status does not require a written informed consent form. It is the recommendation of the IRB that a short form consent template  be utilized for exempt research that informs the respondent of the 
+elements of informed consent. Copies of  questionnaire, survey outline (written or 
+verbal) and any other documentation is to be submitted with the application, supporting the determination of exempt status.  
+ 
+Exempt Review /Limited IRB review Procedures  
+The determination of an exempt status can be made by an authorized ORIA staff member, IRB Chair , or their designee.  Designee is  28 determined by the IRB Chair or, in his or her absence, the IRB 
+Manager .  Applications which have been determined to be Exempt a re 
+listed in the IRB agenda on a regular basis and held on file electronically. IRB members receive a list of studies that were determined to be exempt at each IRB meeting. Per 2018 Common Rule,there is a requirement  for a limited IRB review  for certain ex empt 
+review categories. These categories are:  
+i. Exempt (d)(2) research involving interviews, observations, 
+surveys, interviews that are identifiable  
+ii. Exempt (d)(3) research involving benign interventions that are 
+identifiable (directly or through links) and the responses may be damaging to the subject’s reputation, financial standing, employability, educational advancement, criminal or civil liability  
+iii. Exempt (d)(7) involving storage or maintenance of identifiable 
+private information or biospecimens for secondary research for which broad consent is not required  
+iv. Exempt (d)(8) involving secondary research for which broad 
+consent is required  
+ 
+3. Turnaround time: Exempt stud ies, take approximately 1 – 2 weeks to review and 
+approve from the date received in the Office of Research Integrity and Assurance.  
+ 
+4. Notification to Researchers : For studies determined to be exempt  and those 
+requiring only limited review, researchers recei ve system notification through the 
+ERA module. The notification include s the protocol number and the category or 
+categories of review . 
+a. Recordkeeping: When a protocol is determined to be exempt /reviewed 
+under limited review , the study file is maintained in the ERA IRB module .  
+b. The ASU IRB does not issue expiration dates for studies determined to meet exempt /l imited review criteria. Researchers should contact the IRB 
+at (480) 965- 6788 or at asuirb@asu.edu
+ with any questions pertaining to 
+modifications to research determined to meet exemption criteria.  
+ 
+B. Expedited Review  
+ Research activities involving no more than minimal risk and in which the only involvement of human subjects will be in one or more of the following categories (carried out through standard methods) may be reviewed by the IRB through the expedited review procedure authorized in 46.110 of 45 CFR Part 46.  
+ 
+1. Categories of Expedited Review  
+The IRB may use the Expedited Review procedure to review minor changes in previously approved research during the period for which approval is authorized.  Similarly, modifications and amendments to an approved study that contain only insignificant changes  from the currently approved protocol may be approved  29 through the Expedited Review procedure.  The only other research for which the 
+IRB may use an Expedited Review procedure is that which involves no more 
+than minimal risk to the subjects and in which the only involvement of human subjects will be in one or more of the following categories:  
+I. Clinical studies of drugs and medical devices only when condition (a) or (b) is met. 
+a. Research on drugs for which an investigational new drug application (21 CFR Part 312 ) is not required. (Note: Research on marketed drugs that 
+significantly increases the risks or decreases the acceptability of the risks associated with the use of the product is not eligible for expedited review.)  
+b. Research on medical devices for which (i) an investigational device exemption application (21 CFR Part 812) is not required; or (ii) the medical device is cleared/approved for marketing and the medical device is being used in accordance with its cleared/approved labeling.  
+II. Collection of blood sampl es by finger stick, heel stick, ear st ick, or venipuncture 
+as follows : 
+a. From  healthy, nonpregnant adults who weigh at least 110 pounds. For 
+these subjects, the amounts drawn may not exceed 550 ml in an 8 week period and collection may not occur more f requently than 2 times per 
+week  
+b. From other adults and children, considering the a ge, weight, and health 
+of the subjects, the collection procedure, the amount of blood to be collected, and the frequency with which it will be collected. For these subjects, the amount drawn may not exceed the lesser of 50 ml or 3 ml per kg in an 8 -week  period and collection may not occur more frequently 
+than 2 times per week  
+III. Prospective collection of biological specimens for research purposes by noninvasive means.  
+a. Hair and nail clippings in a nondisfiguring manner  
+b. Deciduous teeth at time of exfoliation or if routine patient care indicates a 
+need for extraction  
+c. Permanent teeth if routine patient care indicates a need for extraction 
+d. Excreta and external secretions (including sweat)  
+e. Uncannulated saliva collected either in an unstimulated fashion or 
+stimulated by chewing gumbase or wax or by applying a dilute citric 
+solution to the tongue  
+f. Placenta removed at delivery  
+g. Amniotic fluid obtained at the time of rupture of the membrane prior to or 
+during labor  
+h. Supra-  and subgingival dental plaque and calculus, provided the 
+collection procedure is not more invasive than routine prophylactic 
+scaling of the teeth and the process is accomplished in accordance with 
+accepted prophylactic techniques  
+i. Mucosal and skin cells collected by buccal scraping or swab, skin swab, 
+or mouth washings   30 j. Sputum collected after saline mist nebulization.  
+ 
+IV. Collection of data through noninvasive procedures (not involving general 
+anesthesia or sedation) routinely employed in clinical practice, excluding procedures involving x -rays or microwa ves. Where medical devices are 
+employed, they must be cleared/approved for marketing. (Studies intended to evaluate the safety and effectiveness of the medical device are not generally eligible for expedited review, including studies of cleared medical dev ices for 
+new indications.) . Examples include:  
+a. Physical sensors that are applied either to the surface of the body or at a 
+distance and do not involve input of significant amounts of energy into the subject or an invasion of the subjects privacy  
+b. Weighing or testing sensory acuity  
+c. Magnetic resonance imaging  
+d. Electrocardiography , electroencephalography, thermography, detection of 
+naturally occurring radioactivity, electroretinography, ultrasound, diagnostic infrared imaging, doppler blood flow, and echocardiography  
+e. Moderate exercise, muscular strength testing, body composition 
+assessment, and flexibility testing where appropriate given the age, weight, and health of the individual.  
+ 
+V. Research involving materials (data, documents, records, or specimens)  that 
+have been collected, or will be collected solely for non -research  purpos es 
+(such as medical treatment or diagnosis). (NOTE: Some research in this 
+categor y may be exempt from the HHS regulations for the protection of 
+human subjects. 45 CFR 46.101(b) (4). This listing refers only to research that is not exempt.)  
+ 
+VI. Collection of data from voice, video, digital, or image recordings made for research purposes.  
+ 
+VII. Research on individual or group characteristics or behavior (including, but not limited to, research on perception, cognition, motivation, identi ty, language, 
+communication, cultural beliefs or practices, and social behavior) or  research 
+employing survey, interview, oral history, focus group, program evaluation, human factors evaluation, or quality assurance methodologies. (NOTE: Some 
+research in this category may be exempt from the HHS regulations for the 
+protectio n of human subjects. 45 CFR 46.101(b) (2) and (b) (3). This listing 
+refers only to research that is not exempt.)  
+ 
+VIII. Continuing review of research previously approved by the convened IRB as 
+follows : 
+a. The research is permanently closed to the enrollment of new subjects  all 
+subjects have completed all  research- related interventions, and the 
+research remains active only for long -term follow -up of subjects   31 b. Where no subjects have been enrolled and no additional risks have been 
+identified  
+c. Where the remaining research activities are limited to data analysis.  
+ 
+IX. Continuing review of research, not con ducted under an investigational new 
+drug application or investigational device exemption where categories two (2) 
+through eight (8) do not apply but the IRB has determined and documented at 
+a convened meeting that the research involves no greater than mini mal risk 
+and no additional risks have been identified.  
+ The IRB also has the additional procedures related to DEXA and blood draws.  
+ 
+Blood Draws  are eligible for expedited review  
+• If weight <110 pounds:   the amount drawn may not exceed the lesser of 50 ml or 
+3 ml per kg in an 8- week  period and collection * may not occur more frequently 
+than 2 times per week  
+• For weight ≥110 pounds:  
+Requirements:    
+o <550 ml extracted per 8 weeks and collection * may not occur more frequently 
+than 2 times per week  
+o Insertion of a needle must be by a trained/certified phlebotomist or health practitioner (e.g., RN, RT, MD)  
+o Insertion of catheter must be by an RN or other practitioner with this in their scope of practice and not extend past 8 hours.    
+ *Details:  
+1. Collection’ is defined as acquiring blood for a specified outcome measure and does not generally exceed an 8- hour period.   For example, ‘post -prandial’ 
+glycemia, an OGTT, or fasting glucose are common outcome measures in diabetes research.  
+2. Require full board review of venous blood draws if any of the requirements are not met.  
+3. Funded and unfunded studies will follow the same guidelines  
+ 
+DEXA  
+The ASU IRB reviews studies by expedited review with adults that involve DEXA if 
+all other criteria for expedited review are met. After discussion the committee agreed that if the use of DEXA is justified, these protocols can be considered under expedited criteria if the number of DEXA sessions does not exceed 2 spaced by at least four weeks. This does not apply to federally  funded studies or studies involving 
+minors  
+ 
+2. Expedited Review Submission Requirements  
+Researchers should complete either a Social Behavioral Application or a Bioscience Application depending on the area of the research. Forms can be found at: https://researchintegrity.asu.edu/human- subjects
+. Researchers then submit the   32 application using ERA IRB.  In addition to submitting the IRB application, the  
+researchers must submit their recr uitment materials, data collection tools, informed 
+consent document and funding proposal (where applicable).  
+ 
+The Bioscience IRB is responsible for reviewing research involving invasive procedures  (saliva, tissue, urine, or blood samples etc.), exercise science, dietary 
+manipulation, human physiology, and studies that evaluate the safety or effectiveness of a medical  product or procedure.  The Social Behavioral IRB is 
+responsible for reviewing research in  behavioral or social science examining topics 
+such a s behavior, non- medical issues, opinions, personal and social history, and 
+educational practice.   Researchers who are not sure what form to submit should 
+contact the ORIA for advice.  
+  Expedited Review Procedures  
+Expedited review shall be conducted by the IRB Chair or by an experienced IRB member designated to conduct the review on the Chair’s behalf. Only individuals with the appropriate discipline -based  experience, knowledge and 
+skills are assigned as designated reviewers. For minor modifications to 
+studies such as changes in study personnel or for studies closed to the enrollment of new participants, these submissions can be reviewed by an alternate mem ber of the IRB . The IRB member(s) conducting the expedited 
+review may exercise all the authorities of the IRB except that the reviewer(s) 
+may not disapprove the research. The reviewer(s) shall refer any research protocol which the reviewer(s) would have di sapproved to the full board for 
+review as well as any protocol that does not meet criteria for expedited 
+review.  
+3. Expedited Review Turnaround Time  
+Expedited studies take approximately 2- 4 weeks to re view and approve from 
+the date received in the Office of Research Integrity and Assurance 
+depending on the quality of the information provided in the original application 
+and resear chers’ responsiveness to staff members’ queries.  
+I. Notification to Researchers : Researchers will receive notification of study 
+approval by email and consent forms and supplemental material watermarked 
+with the IRB approval date and expiration date. The approval notice will list the type of review,  approval date, expiration date.  
+II. Notification to IRB : In accordance with 45 CFR 110(c), the IRB receives a 
+report listing all studies that are approved by expedited review. This report is 
+distributed to members  at regular IRB meetings  and will include  exempt and 
+expedited studies  as well as those that are determined not to require IRB 
+review.  
+III. At a convened IRB meeting, any member may request that an activity which 
+has been approved under the Expedited or Exempt procedure be reviewed by 
+the IRB in accordance with non- expedited or exempt procedures. A vote of 
+the members shall be taken concerning the request and the majority shall 
+decide the issue.  
+  33 C. Full Board Review  
+ 
+All research which does not qualify for either exempt or expedited review or is deemed appropriate for a full -board review by the IRB shall be reviewed by the Full Board.  
+This type of review is carried out for studies that pose greater than minimal risk to subjects. All protocols requiring IRB initial review and continuing review by the Full Board shall be reviewed at convened meetings and at timely intervals.  
+1. Meeting overview :  
+I. Each IRB normally meets  approximately  monthly during the fiscal year when 
+there are protocols to review. If there are no submissions, then the Chair 
+may cancel a meeting.  If an emergency meeting is necessary in order that the IRB's action conform to any aspect of DHHS and FDA regulations and/or institutional policies, such a meeting will be called by the IRB Chair.  
+II. In some cases, the principal investigator and co- investigators are formally 
+invited and may be required to attend the meeting at which their protocol is considered.  In such cases, if a representative of the review team knowledgeable about the study design  is not present, the IRB reserves the 
+right to schedule a meeting time convenient for both the IRB and research 
+team  
+III. The Institutional Official, IRB Manager , and IRB staff attend Full Board IRB 
+meetings to provide support. Other individuals who support ing the IRB  are 
+welcome to attend IRB meetings. In addition, any member of the ASU community may request permission of the appropriate IRB Chair to attend a meeting as a guest. All  guests must sign a confidentiality statement.  
+ 
+a. Quorum and Meeting  
+ 
+A quorum of the IRB is defined as a majority of the total membership, 
+and in order for official Board business to be conducted, a majority must be present. When it is determined that consultants or experts will be required to advise the IRB in its review of a protocol, the research protocol shall also be distributed to the consultants or experts prior to the meeting.  
+At least one IRB member whose concerns are primarily in non- scientific 
+areas must be present at the convened meeting before the IRB can conduct its review  of research. If quorum is lost during a meeting, the IRB 
+does not take votes until quorum is restored.  
+ Assigned Reviewers  
+ 
+For each item to be considered by a fully convened IRB meeting, assigned reviewers are selected from the regular or alternate members of that specific IRB. Assigned reviewers  may be designated as primary reviewers 
+or additional reviewers. The primary reviewer conducts a comprehensive 
+review of all submitted materials for the assigned item, presents findings resulting from that review, provides an assessment of the criteria for approval, and recommends specific actions to the IRB. The primary  34 reviewer leads the discussion of the assigned item. One or more 
+additional reviewers is assigned to new applications and to selected 
+continuing reviews and modifications. Additional reviewers also conduct comprehensive reviews to supplement those provided by the primary reviewer, focusing on areas or issues not otherwise addressed. The additional reviewer may serve as the discussion leader in the unexpected absence of the primary reviewer.  
+ All assigned reviewers are authorized to contact investigators or other study personnel (if appropriate) to resolve questions or concerns whenever possible prior to the convened IRB meeting or they may ask the 
+IRB staff to obtain additional information directly for them. Checklists and/or Reviewer Worksheets are available to assist in organizing and documenting reviews for presentation at the fully convened meeting.  
+ 
+b. Voting  
+ 
+For a research protocol to be approved, it must receive the approval of a majority of those members present at the convened meeting. The IRB follows Roberts Rules of Order.  
+ No member of an IRB shall be involved in either the initial or continuing review of an activity in which he or she has a professional responsibility, except to provide information requested by the IRB and may not vote on any activity in which he or she has a conflicting interest.  The IRB members are briefed on what constitutes a conflict of interest. The IRB operates under HRP -001 and HRP -050 and in accordance with university 
+policies RSP 206: Objectivity in Research, 
+ACD 204 -08, Conflict of 
+interest  and ABOR 3 -901 Conflict of Interest .  In cases that research 
+activities were initially approved under expedited procedures and 
+subsequently reviewed by non- expedited procedures, the decisions 
+reached at the convened meeting may supersede any decisions made through the expedited review.  
+ As part of its deliberation, the IRB assesses whether the study is appropriately categorized as more than minimal risk, thereby requiring review by the convened IRB. This is done for new submissions as well as the continuations of protocols. In some cases, the IRB may vote to defer review to expedited review if the research falls under a category of 
+research eligible for expedited review under 45 CFR 46.110.  This decision 
+must receive approval by a majority of the members.   
+i. If the IRB has approved the study, then researchers may begin the study, but only upon receiving a written approval letter from ORIA on behalf of the IRB.  
+  35 ii. The expiration date of the study usually will be 364 days from the date of 
+the convened meeting; in certain conditions, particularly in research 
+that includes th e possibility of risk to participants, the IRB may approve 
+a study for less than 364 days.   
+ 
+iii. If the protocol submission is a modification, there is no change to the expiration date of the protocol (usually 364 days from the original approval date).  
+ 
+iv. Modifications required to secure approval is when: the IRB approves a protocol with specific conditions that must be met by the PI before proceeding with the protocol. As part of its vote and deliberation, the IRB determines whether the modifications are c onsidered minor or 
+substantial . If the modifications are minor, the IRB Chair or primary 
+reviewer may be assigned to review the required revisions to determine if the conditions were satisfactorily met.  Modifications may be considered minor only if they w ill not change the risk to the 
+participant regardless of the response. An IRB Coordinator will send the list of required revisions to the PI and Co- Investigators within 1 
+week of the IRB meeting. The PI or one of the co- Investigators must 
+submit the changes back to ORIA who will coordinate the review of the changes. The anniversary date for protocols approved with minor required revisions is generally 364 days from the date of the fully convened IRB meeting.  
+ 
+v. When the required revisions are substantial: this is defined as a study that does not meet criteria for approval as defined by 45  CFR 46.111; 
+the IRB requires that the modifications be reviewed by the convened IRB. As part of its deliberation, the IRB will determine whether any revisions to the IRB application, informed consent document or other documents will require review by the convened IRB and if the risk -
+benefit ratio can be assessed. The IRB will also determine whether there are contingencies or modifications regarding the protocol or informed co nsent documents that are required for the IRB to make a 
+determination under 45CFR46.111. When the IRB needs additional information to review the protocol in accordance with 45CFR46.111, approval must be deferred, pending subsequent review by the fully conv ened IRB.  
+ Disapproved; is defined as the IRB does not approve of the project. The concerns  are of such significance that the IRB feels approval of the study to be 
+unwarranted. An investigator has the right to appeal the disapproval of the research study to the IRB and to have the decision reconsidered.  The appeals 
+must be submitted in writing to the ORIA to the attention of the IRB Chair.  Investigators may resubmit a revised study to be considered as a new application requiring review by the convened IR B.  36  
+c. Minutes  
+ 
+IRB staff is responsible for recording and drafting the minutes of the IRB meeting.  The minutes or recordings must include at least the following information: date, time of meeting, members of the IRB present or excused,  any applicable confli cts of 
+interest,  an accurate description of all actions proposed, identification of the 
+applicable regulatory subcategory of the regulations (e.g. 45 CFR 46 Part B for 
+Pregnant Women, Fetuses and Neonates involved in research) discussed or taken. The minut es also shall include applications discussed, the name of the primary 
+reviewer, the action taken with respect to the statements and material presented, and a document listing Expedited and Exempt Reviews by the Chair or member of the IRB since the previous  minutes, and other business submitted to the IRB at the 
+fully convened meeting.   All minutes will be stored and are available for a period of at least three years.  
+ 
+Minutes of IRB meetings shall be in sufficient detail to show the names of attendees at the meetings; actions taken by the IRB; the vote on these actions including the number of members voting for, against, and abstaining; the basis for requiring changes in or disapproving research; a written summary of the discussion of issues and their resol ution; and dissenting reports and opinions.   
+ d. Notification  
+ Staff members in the ORIA are responsible for notifying the research investigators in 
+writing of the IRB's decisions, conditions,  and requirements regarding research 
+protocols. If a study is disapproved, an investigator may submit a new application to be considered independently.  The research team may be invited to meet with an 
+ORIA staff member, and/or the IRB Chair for assistance in developing a new application prior to resubmitting the study.  
+ 
+When there is harm to subjects or if a project is not conduct ed in accordance with 
+the Board's requirements and/or conditions, the IRB has the authority to terminate or suspend its approval of the research. Investigators are notified of the IRB requirements particularly of suspensions or terminations in writing.  
+ 
+When a study is approved, the decision is emailed to the research team. The PI and 
+research team receive an electronic copy of the approval letter and stamped consent forms.  
+ 
+e. Recordkeeping  
+ 
+IRB records are stored by the ORIA . Records include:  
+ 
+i. IRB submissi on documentation and approvals . 
+  37 ii. Minutes of IRB meetings  
+iii. Records of continuing review activities  
+iv. Written procedures for the IRB.  
+ 
+These records shall be retained for at least 3 years, and records relating to research 
+which is conducted shall be retained for at least 3 years after completion of the research. All records shall be accessible for inspection and copying by authorized representatives of the applicable regulatory agency at reasonable times and in a reasonable manner.  
+ 2. Submission Requirements :  
+Researchers should complete either a Social Behavioral Application or a 
+Bioscience Application depending on the area of the research.  The Bioscience IRB reviews research involving invasive procedures (saliva, tissue, urine, or blood samples  etc.), exercise science, dietary manipulation, human physiology, 
+and studies that evaluate the safety or effectiveness of a medical product or procedure. The Social Behavioral IRB reviews research in  behavioral or social 
+science examining topics such as b ehavior, non- medical issues, opinions, 
+personal and social history, and educational practice.  Protocol applications must be submitted with complete responses to each section of the Application (including “Not Applicable,” when appropriate) and, together with required supplemental documents  (i.e. copies of questionnaires, consent and recruitment 
+materials, sponsored proposal and external IRB authorizations) . The IRB 
+submission must contain all the information necessary for reviewers to make 
+informed judgments about the impact of the research on participants. In some cases, letters of permission may be required when research is conducted at an off-campus  location.  Submissions  are reviewed in the order in which they are 
+received.  Meeting dates and deadlines for studies requiring full board review are posted to the IRB website: https://researchintegrity.asu.edu/human- subjects
+ 
+• Review criteria : In evaluating a research project, the following are ba sic 
+considerat ions as outlined by 45 CFR 46.111: 
+o Risks to subjects are minimized:  
+ By using procedures which are consistent with sound research design and which do not unnecessarily expose subjects to risk  
+ Whenever appropriate, by using procedures already being 
+performed on the subjects for diagnostic or treatment purposes.  
+o Risks to subjects are reasonable in relation to anticipated benefits, if any, to subjects, and the importance of the knowledge that may reasonably be expected to result  
+o In evaluating risks and benefits, the IRB consider s only those risks and 
+benefits that may result from the research (as distinguished from risks and benefits of therapies subjects would receive even if not participating in the research).  
+o The IRB does not cons ider possible long- range effects of applying 
+knowledge gained in the research (for example, the possible effects of  38 the research on public policy) as among those research risks that fall 
+within the purview of its responsibility.  
+o Benefits do not include any  compensation that subjects will be paid for 
+participating.  
+o Selection of subjects is equitable. In making this assessment the IRB takes  into account the purposes of the research and the setting in 
+which the research will be conducted and if the investigator is  
+particularly cognizant of the special problems of research involving vulnerable populations, such as children, prisoners, pregnant women, mentally disabled persons, or economically or educationally disadvantaged persons.  
+o Informed consent is  sought from each prospective subject or the 
+subject's legally authorized representative, in accordance with, and to the extent required by §46.116.  
+o Informed consent is  appropriately documented, in accordance with, 
+and to the extent required by §46.117.  
+o When appropri ate, the research plan makes adequate provisions when  
+monitoring the data collected to ensure the safety of subjects.  
+o When appropriate, there are adequate provisions to protect the privacy of subjects and to maintain the confidentiality of data.  
+ The IRB reviews the protocol in its entirety to assess risks and benefits to subjects. As part of the review process, the IRB assesses issues such as compensation. There is not a set policy on the amount that subjects can be compensated. The IRB considers compensat ion provided and costs to participants including for example:  
+• Is the amount or type of compensation reasonable? 
+• Are there adequate provisions to avoid out of pocket expenses by participants or is there strong justification for allowing participants to pay?  
+• If compensation is provided to minors is it appropriate?  
+ 
+When appropriate, the research plan makes adequate provisions for monitoring the data 
+collected to ensure the safety of subjects. The IRB will require that there are appropriate 
+provisions for monitoring data collected to ensure the safety of participants or ensure that negative outcomes do not occur.   
+ 
+If it is determined that the research requires data and safety monitoring, the investigator 
+must describe the provisions for monitoring the data to ensure the safety of subjects. 
+When required or appropriate, the PI includes a Data Safety and Monitoring Plan 
+(DSMP) with the IRB application.  
+  
+Oversight and monitoring requirements would depend on the nature and complexi ty of 
+the study.  The IRB review includes a description of the required monitoring provisions to ensure participant safety.  
+   39 VIII. INFORMED  CONSENT  AND RECRUITMENT  
+ 
+A. Overview 
+ 
+Informed Consent is defined as person's voluntary agreement, based upon adequate 
+knowledge and understanding of relevant information, to participate in research or to 
+undergo a diagnostic, therapeutic, or preventive procedure. In giving informed consent, subjects may not waive or appear to waive any of their legal rights, or release or appear to release the investigator, the sponsor, the institution or agents thereof from liability for negligence [Federal Policy §116; 21 CFR 50.20 and 50.25] (IRB Guidebook , no date).  
+ Investigators are responsible for ensuring that the subjects, or their representatives, are given sufficient opportunity to consider whether or not to participate and must have sufficient protections in place to avoid coercion or undue influence. The IRB is 
+responsible for evaluating the informed consent process. Researchers may not involve a human being as a participant in research unless an investigator has obtained the legally effective informed consent of the participant or the participant’s legally authorized representative. Information given to potential subjects or their representatives must be in a language that is understandable to the subject or representative. No process of obtaining consent may include exculpatory language through which subjects waive any of their legal rights or releases or appear to release the investigator, sponsor, or institution or its agents from liability for negligence. The consent process must provide sufficient information and an opportunity to consider whether to participate.  
+ 
+B. Elements of Informed Consent  
+ A current sample of informed consent documents with boilerplate language may be found on the IRB web page at: https://researchintegrity.asu.edu/human- subjects . The 
+sample consent forms contain all the required consent elements. In seeking informed consent,  the following information shall be provided to each subject.  The following are 
+the basic required elements (extracted from 45 CFR Part 46.116):  
+ 
+1. A statement that the study involves research, an explanation of the purposes of the research and expected dur ation of the subject's participation, a description of 
+the procedures to be followed, and identification of any procedures which are experimental  
+ 2. A description of any reasonably foreseeable risks or discomforts to the subject  
+ 3. A description of any benefits to the subject or to others which may reasonably be expected from the research 
+ 4. A disclosure of appropriate alternative procedures or courses of treatment, if any, that might be advantageous to the subject  
+  40 5. A statement describing the extent, if any, to which confidentiality of records 
+identifying the subject will be maintained  
+ 
+6. For research involving more than minimal risk, an explanation as to whether there is any compensation and whether any medical treatments are available if injury occurs and, if so, what they consist of, or where further information may be obtained  
+ 7. An explanation of whom to contact for answers to pertinent questions about the research and research subjects' rights, and whom to contact in the event of a research- related injury to the subject and , 
+ 8. A statement that participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled and the subject may discontinue participation at any time without penalty or los s of 
+benefits to which the subject is otherwise entitled.  
+ 9. One of the following statements about any research that involves the collection of identifiable private information or identifiable biospecimens:  
+(i) A statement that identifiers might be removed from the identifiable private 
+information or identifiable biospecimens and that, after such removal, the 
+information or biospecimens could be used for future research studies or 
+distributed to another investigator for future research studies without additional 
+informed consent from the subject or the legally authorized representative, if this 
+might be a possibility; or  
+(ii) A statement that the subject's information or biospecimens collected as part of 
+the research, even if identifiers are removed, will not be used or distributed for 
+future research studies.  
+ 
+C. Additional elements of informed consent  
+ When appropriate, one or more of the following elements of informed consent shall also be provided to each subject:  
+ 
+1. A statement that a particular treatment or procedure may involve risks to the 
+subject (or the embryo or fetus, if the subject is or may become pregnant) which are currently unforeseeable  
+ 2. Anticipated circumstances under which the subject's participation may be 
+terminated by the investigator without regard to the subject's consent  
+ 3. Any additional costs to the subject that may result from participation in the 
+research   41  
+4. The consequences to the subject’s health or wellbeing of a subject's decision to 
+withdraw from the research and procedures for orderly termination of participation by the subject  
+ 5. A statement that significant new findings developed during the source of the 
+research which may relate to the subject's willingness to continue participation will be provided to the subject and  
+ 6. The approximate number of subjects involved in the study.  
+ 
+D. Documentation of Consent  
+ Federal regulations governing the use of human subjects in research activities and University Policy require written documentation of informed consent unless the research meets the criteria for Waiver of Documentation of Consent. This can be accomplished as part of the total consent process by using a consent form that has been reviewed and approved by the IRB.  The PI will receive a copy of the stamped consent for m that 
+indicates the approval and expiration date for the study; the PI will use copies of this stamped consent form when consenting subjects. The following are the acceptable methods for documentation of informed consent of human research subjects at Ariz ona 
+State University.  
+ 
+1. Research investigators are responsible for obtaining informed consent in accordance with 45CFR 46.116 and 21  CFR 50, and for ensuring that no human 
+subject will be involved in the research prior to the obtaining of the consent.  
+ 2. Unless otherwise authorized by the IRB, research investigators are responsible 
+for ensuring that legally effective informed consent shall be:  
+ a. Obtained in writing from the subject or the subject's legally authorized representative  
+ b. In language understandable to the subject or the representative  
+ c. Obtained under circumstances that offer the subject or the r epresentative 
+sufficient opportunity to consider whether the subject should or should not 
+participate, and 
+ d. does  not include exculpatory language through which the subject or the 
+representative is made to waive or appear to waive any of the subject's legal rights, or releases or appears to release the research investigator, the sponsor, the institution or its agents from liability for negligence.  
+ 3. Research investigators are responsible for ensuring that informed consent is documented by the use of a written consent form approved by the IRB and  42 signed by the subject or the subject's legally authorized representative, unless 
+this requirement is spec ifically waived by the IRB.  
+ 4. Research investigators shall ensure that each person signi ng the written consent 
+form is offered a copy of that form.  
+ 5. Research investigators are responsible for retaining the consent documents signed by human subjects in a repository approved by the IRB. In accor dance 
+with federal regulations , consent documents must be maintained for three years 
+after completion of the study.  
+ 6. Faculty members assume responsibility for compliance with IRB policies and 
+procedures in all research conducted by students under their supervision. As 
+such , the supervising f aculty member's name and contact information must be 
+included  on the informed consent forms used by students so that subjects may 
+be able to contact  them with questions about the study.  
+ 7. When minors (persons under 18) are involved in research, informed consent 
+must include adequate provisions for written assent of t he minor (when able, with 
+appropriate language, usually 7 years or older), or oral assent by younger 
+children, and permission of the parents or guardians. Parental or guardian permission may be waived by the IRB provided that an appropriate mechanism 
+for the protection of the minor is substituted or conditions  justifying modification 
+of the waiver exist. This must be determined on an individual protocol basis.  
+ 8. Researchers are expected to modify the language used on assent or scripts  to 
+match the abilities of individuals not competent to give legally valid informed consent (e.g., children and individuals who are cognitively impaired). In research with such individuals, assent of the subject is required in addition to the written informed consent of the subject's legal guardian before data collection may begin.  
+ 9. Short Form Consent  
+ 
+Short Form Consent forms  may be used for some categories of exempt research 
+with adults that involves data collection using surveys,  interview s and/or  focus 
+groups . The form should state the purpose of the study, a description of the topic 
+of the research and the content of the questions on the survey or interview, a statement about confidentiality or anonymity, and a statement about how the participant may obtain additional information about the study. He or she need not sign it, because responding to the survey or interview indicates a willingness to 
+participate in the study . In a study where a participant is taking part in a single 
+survey or interview, and identifyi ng information is not being collected with study 
+responses, collection of written consent is not required. In a study involving a 
+focus group or another group activity where confidentiality cannot be guaranteed by the research team, documentation of written consent is required.   43  
+10. Prospective participants must be advised at the outset  (such as at the time they 
+are filling out the informed consent forms)  as to the availability or non- availability 
+of medical treatment or monetary compensation for physical injur ies incurred as 
+a result of participating in research, especially where behavioral or biomedical research presents risk of physical injury.  
+ 11.  Audio/video recording  
+ 
+Participants and subjects must be advised in the Informed Consent Form or in the cover let ter or information letter if their participation includes the use of 
+audio/video recording. For more than minimal risk studies, subjects should be advised of the current and planned use of the recorded materials including 
+storage and access by persons other than the researcher and of any steps that will be taken, if any, to prevent participants from being recognized by others not on the research team who might be exposed during recordings . 
+ 
+In studies which do not include written informed consent (i.e., taped interviews in person or over the telephone); the elements of informed consent must be 
+included as a preamble to the taped procedure.  In such cases, the PI must make 
+provisions for documenting that informed consent was obtained through methods such as th e signature of a witness other than the interviewer, recording of the 
+interviewee’s oral response, or other method acceptable to the IRB.  
+ 
+The researcher must make proper arrangements for secure storage of all audio 
+and video tapes /recordings . Plans may include storage, erasing, or destroying 
+after a given time period  per ASU/sponsor required retention policies . 
+ 
+12. If the consent form (or information letter or cover letter) requires translation into a language other than English, the researchers  should submit a copy of the form in 
+that language as well as in English (even if no participant will see a copy in English). Any other forms that will be given to subjects should be submitted in English as well as any other languages in which they will be administered. 
+Researchers should also submit a signed attestation certifying that someone has done the back translation by using the Translation and Back -Translation 
+Certification Form which can be downloaded from the forms section of the IRB website:  https://researchintegrity.asu.edu/human- subjects . The translation can 
+be done by any individual the principal investigator chooses; however, the back -
+translation should be done by someone different than the original translator.   The 
+IRB recommends that the translation material not be submitted until the IRB has 
+approved the English version of materials.  
+ 
+13. Recruitment Materials  
+ 
+The IRB reviews any recruitment materials that will be provided to participants. All advertisements should be limited to providing i nformation that prospective  44 participants need to determine their eligibility and interest in participating in the 
+study. 
+ 
+E.  Waiver of Requirement of General Requirements for Informed Consent  
+ 
+The provisions for waiver of informed consent do not apply to FDA regulated research involving human subjects.  
+The IRB may approve a consent procedure which does not include, or which alters, 
+some or all of the elements of informed consent set forth above, or waive the requirement to obtain informed consent provided the IRB finds and documents that:  
+ The research or demonstration project is to be conducted by  or subject to the 
+approval of state or local government officials and is designed to study, evaluate, or otherwise examine:  
+ 
+1. Public benefit of service programs ; 
+ 2. Procedures for obtaining benefits or services under those programs;  
+ 3. Possible changes in or alternatives to those programs or procedures; or  
+ 4. Possible changes in methods or levels of payment  for benefits or services under  
+ those programs; and  
+ 5. The research could not practicably be conducted without the waiver or alteration.  
+ An IRB may approve a consent procedure which does not include, or which alters, some or all of the elements of informed consent set forth in this section, or waive the requirements  to obtain informed consent provided the IRB finds and documents that:  
+ 
+1. The research involves no more than minimal risk to the subjects  
+ 2. The waiver or alteration will not adversely affect the rights and welfare of the 
+subjects  
+ 3. The research could not practicably be carried out without the waiver or alteration 
+and 
+ 4. Whenever appropriate, the subjects will be provided with additional pertinent 
+information after participation (e.g., in the case of research involving deception).  
+  
+Waiver or alteration of consent procedures does not reduce researchers’ responsibility to follow all elements of the consent process approved by the IRB 
+including being sure that participants understand the process.  
+ 
+  45 IX. SPECIAL POPULATIONS AND CONSIDERATIONS  
+ 
+A. Vulnerable populations  
+There are special procedures in place in the Federal Regulations 45 CFR 46 that 
+provide additional safeguards for the protection of vulnerable populations. These 
+groups include pregnant women, neonates, fetuses, prisoners and children. The 
+ASU IRB will adhere to 45 CFR Part 46 Subpart B, C, and D (https://www.hhs.gov/ohrp/regulations -and-policy/regulations/45-cfr- 46/index.html ).  
+ 1. Pregnant Women, Neonates, and Fetuses  
+The IRB reviews all guidelines as set forth in Subpart B of 45 CFR 46 and 
+approves only those studies it has determined to fulfill all necessary regulatory requirements. Investigators should describe the rationale and details for the inclusion of pregnant women, fetuses, or neonates in the research. Researchers should ensure that the informed consent form adequately addresses the risk(s) to the fetus or neonate and pregnant women. The IRB ensures that there is adequate scientific and scholarly expertise to review the research and reserves the right to request expert consultation as necessary.  
+ 2. Prisoners  
+The IRB will adhere to Subpart C of 45  CFR 46. As such, the IRB will apply the 
+prisoner specific definition of minimal risk as stated in 45 CFR 46.303(d)  and will 
+follow the requirements for IRB membership outlined in 45 CFR 46.107. 
+Investigators using prisoners as human subjects should provide specific detail and rationale in the IRB  application. Investigators are also required to take extra 
+measures to ensure appropriate informed consent, since prisoners may be influenced by their incarceration to participate in research. If at some point a participant in a study becomes incarcerated, it is the responsibility of the PI to notify the IRB  and to postpone the participation of that individual in the research 
+until approval has been received from the IRB. The protocol will then be re-
+reviewed according to Subpart C . Subpart C of 45 CFR 46 provides four research 
+categories that IRB may approve for prisoner research per §46.306 . The IRB will 
+review the proposed research to ensure one of the four categories is  applicable.  
+ 3.  Children  
+The exemptions listed in 45  CFR 46.104(d ) (1) through b (6) apply to research 
+involving children except for 45 CFR 46.10 4(d) (2) for research involving surveys, 
+interview procedures, or observations of public behavior. Activities listed under 45  
+CFR 46.10 4(d)(2) do not apply to research covered by subpart D, except research 
+involving observation of public behavior when the investigator(s) do not participate in the activities being observed. Nonexempt studies involving children require parental or guardian consent and participant assent unless this can be waived under the Federal Regulations. As part of the review by the convened IRB the 
+committee reviews whether the protocol is permissible under Federal Regulations 45 CFR 46 and 21CFR  50 where applicable. The IRB website contains a section 
+specific to research with children.   46  
+B. Classroom Research Assignments  
+ 
+Classroom or fieldwork projects that involve systematic collection of data and for which the objective or design is to develop or contribute to generalized knowledge are 
+considered research. If a student plans to use the data outside of the classroom or fieldwork placement,  then the project is considered research. Such projects should be 
+reviewed by the IRB.  
+Classroom or internship projects  that are designed with the objective  of providing 
+students with  training about  and experience with research methods  are not considered 
+research. In these cases, students will not use the data outside of the classroom or fieldwork placement.  Such projects do not require IRB review or oversight. In general, 
+projects conducted as part of fieldwork placements are not considered human subjects research.  Applied projects for which the data will not be published or presented outside of the classroom do not constitute human subjects research and as such do not require review by the IRB. If the project will be bound in a library  or submitted for publication, 
+then this requires IRB review.  
+C. Guidance Documents  
+For more information about whether a classroom research project requires IRB approval, researchers may review the Guidance Document on Student Research Projects : https://researchintegrity.asu.edu/human- subjects .   
+https://researchintegrity.asu.edu/human- subjects/regulations -and-resources
+ 
+ Responsibility of Course Instructors  
+ 
+1. Make the decision about whether student research activities involving human 
+participants meet eligibility for exclusion from IRB review  
+ 
+2. Oversee these activities  
+ 
+3. Ensure that ethical principles are adhered to in the conduct of those activities. 
+Specifically all participants must be invited to voluntarily participate and receive 
+an explanation of what the activity is about and understand that their participation 
+is voluntary, and the Principles of the Belmont Report regarding Respect for 
+Persons, Beneficence and Justice should be adhered to when conducting the 
+activity.  
+D. T hes is and  Dissertations  
+Research for undergraduate honor’s thes is, master's thes is, dissertations, and most 
+independent research studies must be reviewed by the IRB  if the work constitutes 
+human subjects research. The same guidelines apply that apply to classroom research.   
+ 
+E. Subject Pools   47 Subject pools are undergraduate students enrolled in particular departmental courses 
+requiring participation in one or more research projects  or alternative opportunities for 
+learning about the research process . The IRB provides guidance and oversight of 
+departmental subject pools and reviews all research requesting subject pool participation by reviewing individual protocols. All student participation in subject pool research must be completely voluntary. Departments may provide students with incentives (usually extra credit) to participate in the subject pool. Reimbursement for participation must not jeopardize the rights of t he participants. Any subject pools offering 
+extra credit to participating students must provide alternative opportunities to earn extra credit to students declining to participate in research. There can be no penalties to participants in the studies  or tho se who choose not to participate. All steps of the 
+research process must be voluntary. It is up to the student to decide whether to 
+participate in any study; instructors cannot mandate or require student participation. Instructors are strongly discouraged from recruiting subjects they directly supervise or selecting subjects on such basis. Subject pool requirements and procedures vary by department,  so it is best for researchers to consult with their individual departments for 
+specific guidelines and additional requirements.  
+ When experiments include minors, then the investigator must  obtain parental 
+permission and child assent prior to the minor’s involvement in the research project. Instructors cannot mandate or require student participation.  
+ If participa tion as a subject is part of the academic work of a subject, informed consent 
+procedures must be sufficiently sensitive not to be coercive and clearly not be made a mandatory requirement of the course. Students not wishing to participate should be given a choice of a reasonable alternate academic activity. The IRB has additional 
+guidance on research with subject pools:  https://researchintegrity.asu.edu/human-
+subjects  
+ 
+F. Scopes of Work or Department Level Procedures  
+In some cases, the IRB will review the scope of work or relevant set of guidelines for a particular department. For example, the Department of Exercise and Wellness has Sub maximal  and Maximal Exercise Participation and Testing Guidelines that are applied to 
+research projects in that discipline.  
+ 
+G. N ative Americans  
+All studies recruiting subjects who live on tribal land or that take place on tribal land are 
+reviewed by a university advocate for Native Americans as part of the review process. ORIA facilitate s the review.  Researchers must document Tribal Counsel or other 
+appropriate tribal approval as part of the application process. Research with Native American participants is reviewed using the categories of 45CFR46 and in accordance 
+with ABOR 118  available on the ORIA webpage. 
+https://researchintegrity.asu.edu/human- subjects/regulations -and-resources . 
+ 
+H. Oral History   48 The ASU IRB reviews oral history projects in a manner that is consistent with Federal 
+Regulations at 45  CFR 46. Oral history projects conducted by ASU faculty, staff , and 
+students are not required to be submitted for review by the IRB unless they constitute human subjects research.  Oral history interviews that document experiences of individuals or document specific events do not constitute human subjects research as  
+they would not lead to the development of a hypothesis or generali zed knowledge. If 
+oral history activities are conducted in such a way that there is a systematic investigation that is likely to lead to generalized knowledge, then t his is human subject’s  
+research.  
+ 
+I. Other Population Groups  
+Research involving populations such as the mentally or physically infirm  or with 
+diminished  cognitive  capacity , and others in conditions of dependency, helplessness, or 
+deprivation, may require additional precautions and procedures to assure their protection.  Subjects may be paid to encourage their participation. Where subjects are drawn from particularly vulnerable groups, however, compensation under certain circumstances may cast doubt upon the voluntary nature of their  consent. In such 
+circumstances the IRB may either limit or disapprove compensation.  
+An individual’s capacity to provide informed consent to research can be affected by such conditions as mental disorders, neurological disorders, metabolic impairments, or head trauma, or by psychoactive medications and substance abuse. Consent capacity  
+can also be affected by poverty or deficits in education, or transient situations where an individual is in emotional or physical crisis . 
+ The IRB is responsible for evaluating the role of a legally  authorized representative 
+when participants have impaired consent capacity and for ensuring adequate 
+protections to ensure voluntary participation and comprehensi on by the participant of 
+informed consent.  
+ 
+The ASU IRB drafts guidance documents to supplement policies that pertain to special issues and populations. Guidance documents can be found at: https://researchintegrity.asu.edu/human- subjects . The topics covered include those 
+such as stem cell research, recruitment using subject pools, and classroom research. New guidance documents will be developed and posted based on requests from researchers, the Institutional Official, and IRB members.  
+ 
+J. Clinical Trials  
+Principal Investigators (PIs) are responsible for making the determination if their study meets the definition  of a clinical trial.  Information is posted at:  
+https://grants.nih.gov/ct- decision/index.htm
+ which  outlines requirements for registration 
+of the trial. The ASU IRB will review the study to see if it should be reviewed by the ASU IRB or if review by an external IRB is required.  This is done on a study by study basis.   
+If a researcher determines that their study meets the definition of a clinical trial, all the study team members engaged in the clinical trial must complete Good Clinical Practices (GCP) training through CITI program ( www.citiprogram.org
+). The IRB may consider 
+other training options on a case- by-case basis.    49 X. FDA- regulated research  
+ 
+Research involving drugs , devices , biologics or products  regulated primarily by the Food 
+and Drug Administration (FDA).   The FDA requires IRB review in cases in which the study 
+involves human s ubjects  and involves products regulated by the  FDA. Clinical trials 
+conducted under an IND (Investigational New Drug) or IDE (Investigational Device Exemption) issued by the FDA must adhere to the protocol submitted to the FDA.   Subject 
+safety protocol deviations must be reported to the IRB.  The Principal Investigator must 
+maintain study records, consent documents and all study correspondence. The records must also relate to the control of investigational study drugs and devices and need to include receipt and disposition (used, returned and/or destroyed).  
+A. Research involving devices  
+The FDA and the IRB have the responsibility for assuring subject safety and effectiveness of devices intended for human use.   The FDA has classified 
+investigational devices as either Significant Risk Devices or as Non- Significant Risk 
+Devices.  
+1. Non-Significant Risk (NSR)  
+A non -significant risk device is one that does not present a significant risk to the 
+research subject, taking into account all of the  risks inherent in the 
+study.  Following the determination of the risk factor, the IRB will review the 
+protocol to make a risk/benefit assessment and review the consent document for appropriateness.  
+2. Significant Risk (SR)  
+The Sponsor is responsible for making the initial assessment regarding whether an investigational device is a significant risk.   A significant risk device is an 
+investigational medical device that presents a serious risk to the health and safety of the subject.  The device is:  
+a. Intended for use as an implant; or  
+ b. Purported to be useful in supporting or sustaining human life; or  
+ c. Intended for a use that is of substantial importance in diagnosing, curing, 
+mitigating or treating disease, or otherwise preventing impairment of human health; or  
+ d. One that otherwise prevents a serious risk to the health, safety or welfare of 
+subjects  
+ 
+The IRB will make an independent assessment of the risk of the device to be used for the study.  After risk determination, the IRB will make a risk/benefit assessment and 
+determine the appropriateness of the consent document as part of the review process. The IRB will review whether the device is considered to be non- significant and will consult  50 the investigator and/or sponsor when appropriate. The IRB also has an internal checklist 
+for review of devices.   
+ 
+B. Research involving medical devices  
+ Research involving medical devices shall be conducted in accordance with regulations 21CFR812. For more information, refer to the following website: 
+http://ww w.accessdata.fda.gov/scripts/cdrh/cfdocs/cfCFR/CFRSearch.cfm?CFRPart=81
+2  
+ 
+C. Research involving Investigational Drugs -Review 21 CFR 56  
+ 
+1. An investigational drug may be defined by one of the following:  
+ 
+a. A drug in any of the clinical stages of evaluation (Phase I, II, III) which has not 
+been released by the FDA for general use or cleared for sale in interstate commerce.  
+ b. Any commercially available drug proposed for a new use.  
+ c. Any commercially available drug to be used in a new dosage form or method of administration.  
+ d. Any commercially available drug which contains a new component such as an excipient, coating or menstruum.  
+ e. A new combination of two or more commercially available drugs.  
+ f. A combination of commercially available drugs in new proportions.  
+ g. Any commercially available drug involved in a post -marketing surveillance.  
+ 
+2. The investigational use of an approved, marketed product suggests the use of an approved product in the context of a study protocol. When the principal int ent of 
+the investigational use of the drug is to develop information about its safety or effica cy, IRB review and approval is required.  
+ 3. As provided by 21 CFR 312.34, during the clinical investigation of a drug, it may be appropriate to use the drug in the treatment of patients not in the clinical trials, in accordance with a Treatment Investigational New Drug (IND). The purpose of a Treatment IND is to facilitate the availability of promising new drugs to desperately ill patients as early in the drug development process as possible. 
+FDA shall permit  an investigational drug to be used for a treatment use under a 
+Treatment IND if:  
+  51 a. The drug is intended to treat a serious or immediately life- threatening 
+disease;  
+ 
+b. There is no comparable or satisfactory alternative drug or other therapy available to treat that stage of the disease in the intended patient population.  
+ c. The drug is under investigation in a controlled clinical trial under an IND in effect for the trial, or all clini cal trials have been completed; and  
+ d. The sponsor of the controlled clinical trial is actively pursuing marketing approval of the investigational drug with due diligence.  
+ 
+4. Charging for an investigational drug in a clinical trial under an IND is not permitted without the prior approval of the FDA. A sponsor or investigator may, however, charge for an investigational drug under a Treatment IND providing the criteria specified under 312.7 are met.  
+ 
+To determine whether an investigational new drug application or  investigational 
+device exemption (IND or IDE) is required for a study of a drug or device, the IRB, Office of Research Integrity and Assurance or researcher may contact the Document Management and Reporting Branch, Center for Drug Evaluation and Research (CDER), for a biological product, the Division of Biological Investigational New Drugs Office of Biological Research and Review, Center for Biologics Evaluation and Research, and for a medical device, the Office of Device Evaluation, Center for Devices and  Radiological Health (CDRH). Researchers should contact the Office of 
+Research Integrity and Assurance (480) 965- 6788 for assistance in contacting any 
+of the offices referenced above.  
+    52 XI. GENETICS RESEARCH AND BIOLOGICAL MATERIALS  
+ 
+A. Genetics Research  
+Risks to the subjects of genetic research may include potential psychological and social harms, such as anxiety, damage to familial relationships, or discrimination. These risks may further extend to members of the participant's family who did not  have the 
+opportunity for prior informed consent. An understanding of the actual risks posed by a given research project is critical to the ASU IRB's decision whether (a) the protocol must be reviewed by the Full Board or can be reviewed by the Expedited Review, (b) the proposed consent is adequate, and (c) whether the scientific and/or clinical benefits outweigh the risks. The principal investigator must give careful consideration to the possible risks to the participants and include a full discussion of those risks in the submission to the ASU IRB.  
+ 
+B. Biological Materials           
+  IRB approval must be obtained when research activities include the use of data from records or stored specimens (blood, urine, tissue, and other human products). Researchers should refer to OHRP Guidance on Research Involving Coded Private 
+Information or Biological Specimens:  http://www.hhs.gov/ohrp/policy/cdebiol.html
+  to 
+determine if these provisions apply and questions can be referred to ORIA staff.  
+ Basic information such as age, gender, date, what the specimen is and diagnosis may be retained with the specimen. The specimen may be shared with researchers from other institutions and or sent elsewhere for analysis. The specimen may be stored indefinitely.  Information about the future use and retention must be explained to subjects.  The consent form must clearly state that the specimen was donated for research purposes. The consent form should indicate if the specimen may be used for research purposes  that has not yet been determined. If the biological material will be used for 
+future genetic research any details available must be fully explained. The consent form 
+should include information related to future use of data including a description of any genetic analyses. Additional information on the requirement for Broad consent is available on the  OHRP website
+ 
+    53 XII. REPORTABLE NEW INFORMATION, ADVERSE EVENTS AND 
+UNANTICIPATED PROBLEMS INVOLVING RISKS TO SUBJECTS AND OTHERS  
+ 
+ 
+A. Definitions  
+ 
+1. Adverse Events  
+An adverse event is any injury, trauma, or illness experienced by a subject that 
+required medical or psychological treatment. Only a subset of adverse events will need to be reported to the IRB. The IRB requires the reporting of adverse events that may repres ent unanticipated problems involving risks to participants or 
+others. Any risks that were listed in the consent form do not constitute adverse events and do not have to be reported to the IRB.  
+ 2. ASU uses the definitions provided in the OHRP Guidance Document “Guidance on Reviewing and Reporting Unanticipated Risks to Subjects or Others and Adverse Events”. Researchers are urged to consult this document:  
+https://www.hhs.gov/ohrp/regulations -and-policy/guidance/reviewing-
+unanticipated- problems/index.html   
+ 
+ 
+3. A serious adverse event (SAE) is any adverse event that  
+ a. Results in death  
+ b. Is life-threatening (places the subject at immediate risk of death from the 
+event)  
+ c. Results in inpatient hospitalization or prolongation of existing hospitalization  
+ d. Results in a persistent or significant disability/incapacity  
+ e. Results in a congenital anomaly/birth defect or  
+ f. Based upon appropriate medical judgment,  may jeopardize t he subject’s 
+health and may require medical or surgical intervention to prevent one of the 
+other outcomes listed in this definition  
+ 
+4. An unexpected adverse event is any adverse event occurring in one or more 
+subjects participating in a research protocol, the nature, severity, or frequency of 
+which is not  consistent with either:  
+ 
+i. The known or foreseeable risk of adverse events  associated with the 
+procedures involved in the research that are described in the protocol -related 
+documents, such as the IRB -approved research protocol, any applicable  54 investigator brochure, and the current IRB -approved informed consent 
+document, and  
+ 
+ii. Other relevant  sources of information, such as product labeling and package 
+inserts; or  
+ 
+iii. The expected natural progression of any underlying disease, disorder, or 
+condition of the subject(s) experiencing the adverse event and the subject’s predisposing risk factor profile for the adverse event.  
+ 
+C. Unanticipated Problems Involving Risks to Subjects or Others  
+ 
+a. The following are used to define unanticipated risks:  
+ b. Unexpected (in terms of nature, severity, or frequency) given (a) the research 
+procedures that are described in the protocol -related documents, such as the 
+IRB-approved research protocol and informed consent document; and (b) the 
+characteristics of the subject population being studied  
+ c. Related or possibly related to participation in the research (in thi s guidance 
+document, possibly related is defined as there is a reasonable possibility that 
+the incident, experience, or outcome may have been caused by the procedures involved in the research) and  
+ d. Suggests that the research places subjects or others at a greater risk of harm (including physical, psychological, economic, or social harm) than was previously known or recognized.  
+  
+B. Reporting  
+ 
+The PI must make the initial determination that the event is an unanticipated problem involving risks to others. Unanticipated Problems and unexpected adverse events experienced by research subjects must be reported to the IRB in a timely manner using the reportable new information tab in ERA IRB . The procedures vary based on the 
+nature of the event, whether serious, unexpected, both or neither.   It is the responsibility 
+of the ASU PI to make the initial determination of a relationship between an 
+unanticipated problem   and unexpected adverse event (either internal or external) and any investigational agent(s), intervention, or research study procedure. An adverse event is "related to the research" if in the opinion of the principal investigator, it was more  likely than not related to the investigational agent(s) or intervention. If there is any 
+doubt, then the event needs to be reported to the IRB.  
+ An adverse event that is serious must be reported to the IRB within 24 hours of the researcher becoming aware of it. Reporting through the ERA IRB Module  is preferred . 
+Alternatives include email ( asuirb @asu.edu), or a phone call (480- 965-6788) to ORIA.  55 Information to be included is a description of the nature of the event, the medical 
+treatment that the subject received, the likelihood that the event was related to the 
+research protocol, and any changes in the protocol or informed consent that the researcher feels may be needed to protect other subjects. A consulting physician must also comment on the severity of the event and the likelihood that it was related to the protocol.   
+ 
+All other unexpected adverse events or unanticipated problem involving risk to the subject or others must be reported to the IRB within 5 business days of the researcher becoming aware of them, using the report new information button within ERA IRB . 
+However, if the event is not serious, a consulting physician is not required.  Reporting of 
+all adverse events (including any that may have been anticipated risks) is required as part of  the application material for continuing review.  
+ If after a study is complete, researchers become aware of adverse or unanticipated events related to the study that were not initially disclosed in the consent form they should notify the IRB and participants when applicable. The continuing review/study closure form  should be updated to reflect this change.  
+ Researchers should contact an IRB staff member in the ORIA at 480 -965-6788 with 
+questions regarding adverse events and the reporting process.  
+    56 XIII. CONTINUING REVIEW , CLOSE OUT, AND MODIFICATIONS  
+ 
+A. Approval Period  
+ 
+Research that does not meet the criteria for exemption requires ongoing monitoring.  The interval for continuing review is made at the discretion of the IRB but shall occur as determined by the IRB based on an evaluation of the risks and benefits.    
+ Following initial approval, the PI must seek review for  expedited and full board studies 
+that last longer than the approval period. Researchers should submit a continuing Review ( CR) to ERA IRB  if the project is to last longer than the approval period. 
+Additionally, the PI must ensure that progress reports are submitted more frequently when required by the IRB. If a non-exempt  study will last for longer than 5 years, then 
+the PI should close the study at the fifth year  and submit a new (renewal) application if 
+the study is open to enrollment or follow up of participants.  The IRB staff may determine 
+on a case- by-case basis that studies permanently closed to enrollment and follow -up 
+may remain active without submission of  a new application. 
+  In addition to continuing review, PIs are still required to submit modifications for personnel changes and changes to other parts of the study  to get IRB approval before 
+implementing the changes . 
+ 
+B. Reminder Notices  
+ To assist investigators in meeting the deadlines for submitting requests for continuing review reminder notices are sent through ERA IRB .  The first remi nder is sent out 
+approximately 90 days prior to the expiration date. A second reminder is sent approximately 60 days prior to the expiration date  and a third notice is sent 
+approximately 30 days prior to the expiration date .  A termination notice is sent to the PI 
+after the expiration date.  ORIA staff will administratively close the study after expiration 
+date.  
+ 
+C. Application and Review Process  
+ 
+For studies requiring a continuing review , the PI shall  submit  the CR through ERA IRB . 
+This should be submitted no later than approximately three weeks  prior to the expiration 
+date of the project approval. This allows the IRB to review the study well before it expires, thus avoiding a lapse in the research. Failure to seek annual review  and 
+approval in time may  jeopardize the conduct of the study for the researcher.  
+ If any changes to the protocol or the consent form are being requested at the time of this continuing review, researchers should provide an explanation of the requested changes and submit the new informed consent document/ revised forms in place of the previously approved documents.  
+  57 The continuing review is done in accordance with Federal regulations. If the study was 
+originally approved by the Full Board and the study is open to enrollment of new subjects, the study must be reviewed by the Fully convened Board which will continue 
+to assess the risk and determine the appropriate level of review.  For continuing review 
+of protocols reviewed by the fully convened I RB, the Primary Reviewer is responsible 
+for reviewing the complete protocol including modifications previously approved by the IRB including that that current consent document is still accurate and complete.  If the 
+study was originally approved by the Full Board but the study activities are limited to data analysis or the study is closed to enrollment, then review can be done by expedited review in accordance with Federal Regulations. Protocols that were originally approved by expedited review and for which researchers propose to continue research longer than the original approval period can be reviewed by expedited review.    The continuing review form in IRB -ERA contains all required element for status 
+reporting including:  
+1. Participants accrued  2. Wit hdraw als and reason for withdrawal  
+3. Adverse events and unanticipated problems involving risks  
+4. Complaints  
+5. Interim findings  6. Recent literature  
+7. Changes to the benefits and risks  
+8. Report of multi centered investigations  
+9. Current consent  document if study is active/open to participant enrollment  
+ Continuing review applications approved before the expiration date will be issued a new approval date. Continuing review applications submitted prior to their expiration date but not formally reviewed and approved by the expiration date are considered 
+expired/lapsed  studies and all research related activities (including data analysis) must 
+cease until formal IRB approval is provided.   
+Failure to submit continuing review materials on t ime will result in administrative closure 
+of the study.  If this should happen researchers will be required to permanently close the study and submit a new application if they wish to continue the research. All research, 
+including data analysis must cease when IRB approval expires.  
+ The IRB has the authority to observe the conduct of research or to appoint an independent party to act on its behalf to monitor  the consent process.  The IRB may 
+require verification of the study procedures during continuing review when materials submitted  for continuing review are inconsistent with those previously submitted, 
+inconsistencies cannot be resolved by communications, or when it is determined that additional protections are necessary as part of a corrective action plan when unanticipated problem s or adverse events have occurred.  
+  58 When findings of observational investigations warrant corrective actions, the IRB may 
+terminate or suspend the study.  An investigator may appeal the suspension by submitting a written request to ORIA  to the attention of  the IRB Chair.  
+ 
+D. Project Close Out  
+ Researchers shall submit a continuation through ERA IRB  when the study is complete. 
+A nonexempt study is considered complete when data collection and data analysis are done.  
+   
+E. Modifications  
+ Researchers are required to submit modifications for review by the IRB for any changes 
+to non- exempt studies. For questions on submitting a Modification for an exempt study, 
+contact  ORIA by emailing asuirb@asu.edu  
+ 
+The criteria for approving modifications to previously approved research is  the same as 
+for any new protocol. Proposed revisions including those to recruitment and consent must meet the same requirements as those for initial approvals. Primary considerations include:  
+1. Risks to currently enrolled participants.  
+2. Risks to future participants.  
+3. If risks are increased, does the revision meet the criterial for 
+approval?  
+              59 XIV. GLOSSARY  OF TERMS  
+ADVERSE EVENT An undesirable and unintended, although not necessarily 
+unexpected, result of therapy or other intervention (e.g., headache following spinal tap or intestinal bleeding associated with aspirin therapy).  
+ASSENT Explicit agreement by an individual not competent to give legally valid 
+informed consent (e.g., a child or cognitively impaired person) to participate in research.  
+ASSURANCE A formal written, binding commitment that is submitted to a federal 
+agency in which an institution promises to comply with applicable regulations g overning 
+research with human subjects and stipulates the procedures through which compliance will be achieved.  
+AUTHORIZED INSTITUTIONAL OFFICIAL An officer of an institution with the authority 
+to speak for and legally commit the institution to adherence to the requirements 
+regarding the involvement of human subjects in biomedical and behavioral research.  
+AUTONOMY The capacity of an individual to consider alternatives, make choices, and 
+act without undue influence or interference of others.  
+BELMONT REPORT  A statement of basic ethical principles governing research 
+involving human subjects issued by the National Commission for the Protection of Human Subjects.  
+BENEFICENCE  An ethical principle discussed in the Belmont Report  that entails an 
+obligation to protect persons from harm. The principle of beneficence can be expressed in two general rules: (1) do not harm; and (2) protect from harm by maximizing possible benefits and minimizing possible risks of harm.  
+BENEFIT A valued or desired outcome; an advantage.  
+CERTIFICATE OF CONFIDENTIALITY The National Institutes of Health and other HHS agencies issue these to protect identifiable research information from forced or compelled disclosure.  
+CHILDREN Persons who have not attained the legal age for consent to treatment or 
+procedures involved in the research, as determined under the applicable law of the jurisdiction in which the research will be conducted.  
+CLINICAL TRIAL  A prospective, biomedical, or behavioral research study of human 
+subjects that is designed to answer specific questions about biomedical or behavioral 
+interventions (drugs, biologics, treatments, devices, or new ways of using known drugs, 
+biologics, treatments, or devices). Behavioral interventions are intended to prevent or 
+treat an acute or chronic disease or condition. Clinical trial research involves the 
+evaluating effects of an intervention on biomedical or behavioral human health related  60 to outcomes. This definition is not intended to be inclusive of all clinical research 
+activities.  
+COGNITIVELY IMPAIRED Having a psychiatric disorder (e.g., psychosis, personality or 
+behavior disorders, or dementia) or a developmental disorder (e.g., mental retardation)  
+that affects cognitive or emotional functions to the extent that capacity for judgment and 
+reasoning is significantly diminished. Others, including persons under the influence of or dependent on drugs or alcohol, those suffering from degenerative diseases  affecting the 
+brain, terminally ill patients, and persons with severely disabling physical handicaps, may also be compromised in their ability to make decisions in their best interests.  
+COMPENSATION Payment or medical care provided to subjects injured in research; 
+does not refer to payment (remuneration) for participation in research. (Compare: Remuneration.)   
+CO-INVESTIGATOR (CO- I) Co-investigators are responsible for any of the following for 
+a project involving human subjects: the project’s design, implementation, data collection, and/or data analysis.  
+COMPETENCE Technically, a legal term, used to denote capacity to act on one's own 
+behalf; the ability to understand information presented, to appreciate the consequences 
+of acting (or not acting) on that information, and to make a choice. (See also: 
+Incompetence, Incapacity.)  
+CONFIDENTIALITY  Pertains to the treatment of information that an individual has 
+disclosed in a relationship of trust and with the expectation that it will not be divulged to others without permission in ways that are inconsistent with the understanding of the original disclosure.  
+CONFLICT OF INTEREST An investigator is deemed to have a conflict of interest whenever the researcher, spouse, dependent child or other family members living w ithin 
+the household:  
+• Is involved in a financial arrangement with the sponsor where the outcome of the study could result in a substantial economic benefit; Acts as an officer, director, or agent of the sponsor;  
+• Has equity interest of 5% or more of the spon sor; 
+• Receives payment or other considerations form the sponsor of $10,000 or more;  
+• Independently identifies a non- financial conflicting interest.  
+CONSENT See: Informed Consent.  
+CONTRACT An agreement; as used here, an agreement that a specific research 
+activity will be performed at the request, and under the direction, of the agency providing the funds. Research performed under contract is more closely controlled by the agency than research performed under a grant. (Compare: Grant.)   61 DATA SAFETY MONITORING BOARD (DSMB) Is an independent body that reviews 
+the integrity, safety and progress of a study with the purpose of protecting participants during the course of the study and periodically recommends continuance, modification 
+or termination of the study for reasons of efficacy or safety.  
+DEBRIEFING Giving subjects previously undisclosed information about the research 
+project following completion of their participation in researc h. (Note that this usage, 
+which occurs within the behavioral sciences, departs from standard English, in which debriefing is obtaining rather than imparting information.)  
+DECLARATION OF HELSINKI  A code of ethics for clinical research approved by the 
+World Medical Association in 1964 and widely adopted by medical associations in various countries. It was revised in 1975 and 1989.  
+DHHS A federal agency: U.S. Department of Health and Human Services  
+DRUG Any chemical compound that may be used on or administered to humans as an 
+aid in the diagnosis, treatment, cure, mitigation, or prevention of disease or other abnormal conditions.  
+EMANCIPATED MINOR A legal status conferred upon persons who have not yet 
+attained the age of legal competency as defined by state law (for such purposes as consenting to medical care), but who are entitled to treatment as if they had by virtue of assuming adult responsibilities such as being self -supporting and not living at home, 
+marriage, or procreation. (See also: Mature Minor.)  
+EQUITABLE Fair or just; used in the context of selection of subjects to indicate that the 
+benefits and burdens of research are fairly distributed.  
+EXEMPT Federal regulations  define certain categories of research as being exempt 
+from IRB review. The ASU IRB must make the determination that a project meets criteria for exemption.  
+EXPEDITED REVIEW Review of proposed research by the IRB chair or a designated 
+voting member or grou p of voting members rather than by the entire IRB. Federal rules 
+permit expedited review for certain kinds of research involving no more than minimal risk and for minor changes in approved research.  
+EXPERIMENTAL Term often used to denote a therapy (drug, device. procedure) that is 
+unproven or not yet scientifically validated with respect to safety and efficacy. A 
+procedure may be considered "experimental" without necessarily being part of a formal 
+study (research) to evaluate its usefulness. (See also: Res earch.)  
+FDA Food and Drug Administration; an agency of the federal government established 
+by Congress in 1912 and presently part of the Department of Health and Human 
+Services.   62 FEDERAL POLICY (THE) Federal policy that provides regulations for the involvem ent 
+of human subjects in research. The Policy applies to all research involving human 
+subjects conducted, supported, or otherwise subject to regulation by any federal department or agency that takes appropriate administrative action to make the Policy applicable to such research. Currently, sixteen federal agencies have adopted the 
+Federal Policy. (Also known as the "Common Rule").  
+FEDERALWIDE ASSURANCE (FWA) Agreement that fulfills the requirements of 45CFR part 46 approved by the Secretary of Health and H uman Services.  Arizona 
+State University has an approved FWA on file with DHHS –  Assurance Number FWA 
+00009102.  A copy of the assurance is available upon request from the Research Compliance Office.  
+FULL BOARD REVIEW Research that is reviewed at a convened meeting at which a 
+majority of the membership of the IRB are present, including at least one member whose primary concerns are in nonscientific areas. For the research to be approved, it must receive the approval of a majority of those members present at the meeting.  
+GRANT Financial support provided for research study designed and proposed by the 
+principal investigator(s). The granting agency exercises no direct control over the conduct of approved research supported by a grant. (Compare: Contract.)  
+GUARDIAN An individual who is authorized under applicable state or local law to give 
+permission on behalf of a child to general medical care.  
+HELSINKI DECLARATION See: Declaration of Helsinki .  
+HIPAA Health Insurance Portability and Accountability Act of 1996 that protects the 
+privacy of a research participant’s health information.  
+HYBRID ENTITY  An entity that performs some business functions (“healthcare 
+functions”) that a covered entity performs and also performs some business functions that a covered entity does not perform (“non- healthcare functions”) . 
+HUMAN SUBJECTS /(e)(1) Human subject means a living individual about whom an 
+investigator (whether professional or student) conducting research:  
+(i) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the informat ion or biospecimens; or  
+(ii) Obtains, uses, studies, analyzes, or generates identifiable private information or identifiable biospecimens.  
+INCAPACITY Refers to a person's mental status and means inability to understand 
+information presented, to appreciate the consequences of acting (or not acting) on that  63 information, and to make a choice. Often used as a synonym for incompetence. (See 
+also: Incompet ence.)   
+INCOMPETENCE Technically, a legal term meaning inability to manage one's own 
+affairs. Often used as a synonym for incapacity. (See also: Incapacity .)  
+INDEPENDENT VARIABLES  The conditions of an experiment that are systematically 
+manipulated by the investigator.  
+INFORMED CONSENT  A person’s voluntary agreement  based upon adequate 
+knowledge and understanding of relevant information, to participate in research or to undergo a diagnostic, therapeutic, or preventive procedure. In giving informed consent, subjects may not waive or appear to waive any of their legal rights, or release or appear to release the investigator, the sponsor, the institution or agents thereof from liability for 
+negligence.  
+INSTITUTION (1) any public or private entity or agency (including federal, state, and 
+local agencies)  
+INSTITUTION (2)  A residential facility that provides food, shelter, and professional 
+services (including treatment, skilled nursing, intermediate or long- term care, and 
+custodial or residential care). Examples include general, mental, or chronic disease hospitals; inpatien t community mental health centers; halfway houses and nursing 
+homes; alcohol and drug addiction treatment centers; homes for the aged or dependent, residential schools for the mentally or physically handicapped; and homes for 
+dependent and neglected childr en.  
+INSTITUTIONAL OFFICIAL An officer of an institution with the authority to speak for and legally commit the institution to adherence to the requirements of the federal regulations regarding the involvement of human subjects in research.  
+INSTITUTIONAL REVIEW BOARD A  specially constituted review body established or 
+designated by an entity to protect the welfare of human subjects recruited to participate in biomedical or behavioral research.  
+INSTITUTIONALIZED Confined, either voluntarily or involuntarily ( e.g., a hospital, 
+prison, or nursing home).  
+INSTITUTIONALIZED COGNITIVELY IMPAIRED Persons who are confined, either 
+voluntarily or involuntarily, in a facility for the care of the mentally or otherwise disabled 
+(e.g., a psychiatric hospital, home, or school for the retarded).  
+INVESTIGATIONAL DEVICE EXEMPTIONS  (IDE) Exemptions from certain regulations 
+found in the Medical Device Amendments that allow shipment of unapproved devices 
+for use in clinical investigations.   64 INVESTIGATIONAL NEW DRUG OR DEVICE(IND)  A drug or device permitted by FDA 
+to be tested in humans but not yet determined to be safe and effective for a particular 
+use in the general population and not yet licensed for marketing.  
+IRB See: Institutional Review Board.  
+JUSTICE An ethical  principle discussed in the Belmont Report requiring fairness in 
+distribution of burdens and benefits; often expressed in terms of treating persons of similar circumstances or characteristics similarly.  
+LEGALLY AUTHORIZED REPRESENTATIVE A person authorized either by statute or 
+by court appointment to make decisions on behalf of another person. In human subjects research, an individual or judicial or other body authorized under applicable law to consent on behalf of a prospective subject to the subject's participation in the 
+procedure(s) involved in the research.  
+LONGITUDINAL STUDY A study designed to follow subjects forward through time.  
+MATURE MINOR Someone who has not reached adulthood (as defined by state law) 
+but who may be treated as an adult for cert ain purposes (e.g., consenting to medical 
+care). Note that a mature minor is not necessarily an emancipated minor. (See also: Emancipated Minor.)  
+MENTALLY DISABLED See: Cognitively Impaired.   
+MINIMAL RISK A risk is minimal where the probability and magnitude of harm or discomfort anticipated in the proposed research are not greater, in and of themselves, than those ordinarily encountered in daily life or during the performance of  routine 
+physical or psychological examinations or tests. For example, the risk  of drawing a 
+small amount of blood from a healthy individual for research purposes is no greater than the risk of doing so as part of routine physical examination.  
+MONITORING The collection and analysis of data as the project progresses to assure 
+the appropriateness of the research, its design and subject protections.  
+NATIONAL COMMISSION National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research. An interdisciplinary advisory body, established by Congressional legislat ion in 1974, which was in existence until 1978, and which 
+issued a series of reports and recommendations on ethical issues in research and medicine, many of which are now embodied in federal regulations.  
+NIH National Institutes of Health: a federal agency  within the Public Health Service, 
+DHHS, comprising 21 institutes and centers. It is responsible for carrying out and supporting biomedical and behavioral research.   65 NONAFFILIATED MEMBER Member of an Institutional Review Board who has no ties 
+to the parent  institution, its staff, or faculty. This individual is usually from the local 
+community (e.g., minister, business person, attorney, teacher, homemaker).  
+NONTHERAPEUTIC RESEARCH Research that has no likelihood or intent of 
+producing a diagnostic, preventi ve, or therapeutic benefit to the current subjects, 
+although it may benefit subjects with a similar condition in the future.  
+NUREMBERG CODE A code of research ethics developed during the trials of Nazi war 
+criminals following World War II and widely adopt ed as a standard during the 1950s and 
+1960s for protecting human subjects.  
+OFFICE FOR HUMAN RESEARCH PROTECTIONS (OHRP) The office within the 
+National Institutes of Health, an agency of the Public Health Service, Department of 
+Health and Human Services, responsible for implementing DHHS regulations (45 CFR 
+Part 46 ) governing research involving human subjects.  
+OHRP See: Office for Human Research Protections.  
+PERMISSION The agreement of parent(s) or guardian to the participation of their child 
+or ward in research.  
+PHS Public Health Service. Part of the U.S. Department of Health and Human Services, 
+it includes FDA, NIH, CDC, SAMHSA, and HRSA.  
+PRINCIPAL INVESTIGATOR (PI) The researcher with primary responsibility for the 
+design and conduct of a research project. At ASU, faculty or staff members can serve as the PI. (See also: Co- Investigator.)   
+PRISONER  An individual involuntarily confined in a penal institution, including persons: 
+(1) sentenced under a criminal or civil statue; (2) detained pending arraignment, trial, or sentencing; and (3) detained in other facilities (e.g., for drug detoxification or treatment of alcoholism) under statutes or commitment procedures providing such alternatives to criminal prosecution or incarceration in a penal institution.  
+PRIVACY  Control over the extent, timing, and circumstances of sharing oneself 
+(physically, behaviorally, or intellectually) with others.     
+PROPOSAL written  presentation/application to a potential source of external funds, 
+referred to as a sponsor, for a research or other sponsored project that provides pricing or cost estimates is considered a proposal. All proposals submitted by a university  
+employee to an outside entity that may directly lead to a sponsored project award, require initial review and coordination through the Office for Research & Sponsored Projects (ORSPA) prior to submission to a potential sponsor, utilizing a Proposal Routin g & Approval Form.    66 PROTOCOL  The formal design or plan of an experiment or research activity; 
+specifically, the plan submitted to an IRB for review and to an agency for research 
+support. The protocol includes a description of the research design or methodology to be employed, the eligibility requirements for prospective subjects and controls, the treatment regimen(s), and the proposed methods of analysis that will be performed on the collected data.  
+REMUNERATION Payment for participation in research. (NOTE:  It is wise to confine 
+use of the term "compensation" to payment or provision of care for research- related 
+injuries.) (Compare: Compensation.)   
+RESPECT FOR PERSONS An ethical principle discussed in the Belmont Report  
+requiring that individual autonomy be respected and that persons with diminished autonomy be protected.  
+REVIEW (OF RESEARCH) The concurrent oversight of research on a periodic basis by an IRB. In addition to a t continuing  review mandated by the federal regulations, reviews 
+may, if deemed appropriate, also be conducted on a continuous or periodic basis.  
+RISK The probability of harm or injury (physical, psychological, social, or economic) 
+occurring as a result of  participation in a research study. Both the probability and 
+magnitude of possible harm may vary from minimal to significant. Federal regulations define only "minimal risk". (See also: Minimal Risk.)   
+SERIOUS NONCOMPLIANCE action or omission taken by inves tigator or study 
+personnel  that any other reasonable investigator would have foreseen as compromising 
+the rights and/or welfare of the participant.  
+SUBJECTS (HUMAN) See: Human Subjects.  
+SURVEYS Studies designed to obtain information from many  respondents through 
+written questionnaires, telephone interviews, door -to-door canvassing, or similar 
+procedures.  
+THERAPEUTIC INTENT The research physician's intent to provide some benefit to improving a subject's condition (e.g., prolongation of life, shrinkage of tumor, or improved quality of life, even though cure or dramatic improvement cannot necessarily be effected.) This term is sometimes associated with Phase 1 drug studies in which potentially toxic drugs are given to an individual with the hope of inducing some 
+improvement in the patient's condition as well as assessing the safety and pharmacology of a drug.  
+THERAPY Treatment intended and expected to alleviate a disease or disorder.   67 VARIABLE (NOUN)  An element or factor that the research is designed to study, either 
+as an experimental intervention or a possible outcome (or factor affecting the outcome) 
+of that intervention.  
+VOLUNTARY Free of coercion, duress, or undue inducement. Used in the research 
+context to refer to a subject's decision to participate (or to continue to participate) in a 
+research activity.  
+ 
+References:  
+IRB Guidebook (no date). Office for Human Research Protections (OHRP) . Electronic 
+version. Retrieved September 28, 2011 from https ://www.hhs.gov/ohrp/education- and-
+outreach/archived- materials/index.html  

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/form.css">
+</head>
+<body>
+    
+<div class="form-box">
+    <h1>CHRP 503 A: Social Behavioral Protocol</h1>
+    <div id="multi-step-form-container">
+        <!-- Form Steps / Progress Bar -->
+        <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+            <!-- Step 0 -->
+            <li class="form-stepper-active text-center form-stepper-list" step="0">
+                <a class="mx-2">
+                    <span class="form-stepper-circle">
+                        <span>S</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 1 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="1">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>1</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 2 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>2</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 3 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>3</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 4 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+                <a class="mx-2">
+                    <span class="form-stepper-circle">
+                        <span>4</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 5 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="5">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>5</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 6 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="6">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>6</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 7 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="7">
+                <a class="mx-2">
+                    <span class="form-stepper-circle">
+                        <span>7</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 8 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="8">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>8</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 9 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="9">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>9</span>
+                    </span>
+                    </a>
+                </li>
+            <!-- Step 10 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="10">
+                <a class="mx-2">
+                    <span class="form-stepper-circle">
+                        <span>10</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 11 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="11">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>11</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 12 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="12">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>12</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 13 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="13">
+                <a class="mx-2">
+                    <span class="form-stepper-circle">
+                        <span>13</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 14 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="14">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>14</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 15 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="15">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>15</span>
+                    </span>
+                </a>
+            </li>
+            <!-- Step 16 -->
+            <li class="form-stepper-unfinished text-center form-stepper-list" step="16">
+                <a class="mx-2">
+                    <span class="form-stepper-circle text-muted">
+                        <span>E</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Step Wise Form Content -->
+        <form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" action="/submit" method="POST">
+            <!-- Step 0 Content -->
+            <section id="step-0" class="form-step">
+                <h2 class="font-normal">Instructions</h2>
+                <!-- Step 0 input fields -->
+                <div class="mt-3">
+                    Complete each section of the application. Based on the nature of the research being proposed some
+                    sections may not apply. Those sections can be marked as N/A. Remember that the IRB is concerned with
+                    risks and benefits to the research participant and your responses should clearly reflect these issues. You
+                    (the PI) need to retain the most recent protocol document for future revisions. Questions can be addressed
+                    to <a href="mailto:research.integrity@asu.edu">research.integrity@asu.edu</a>. <b>PIs are strongly encouraged to complete this application with
+                    words and terms used to describe the protocol is geared towards someone not specialized in the
+                    PI’s area of expertise.</b>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="1">Next</button>
+                </div>
+            </section>
+            <!-- Step 1 Content, default hidden on page load. -->
+            <section id="step-1" class="form-step d-none">
+                <h2 class="font-normal">IRB: 1. Protocol Title</h2>
+                <!-- Step 1 input fields -->
+                <div class="mt-3">
+                    <input type="text" name="step1-text" required style="width: 50vw;">
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="0">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="2">Next</button>
+                </div>
+            </section>
+            <!-- Step 2 Content, default hidden on page load. -->
+            <section id="step-2" class="form-step d-none">
+                <h2 class="font-normal">IRB: 2. Background and Objectives</h2>
+                <!-- Step 2 input fields -->
+                <div class="mt-3">
+                    <ol>
+                        <li>List the specific aims or research questions in 300 words or less.</li>
+                        <li>Refer to findings relevant to the risks and benefits to participants in the proposed research.</li>
+                        <li>Identify any past studies by ID number that are related to this study. If the work was done elsewhere,
+                            indicate the location.</li>
+                    </ol>
+                    <h4>TIPS for streamlining the review time:</h4>
+                    <ul>
+                        <li>Two paragraphs or less is recommended.</li>
+                        <li>Do not submit sections of funded grants or similar. The IRB will request additional information, if needed.</li>
+                    </ul>
+                    <textarea name="step2-text" rows="10" cols="100" maxlength="1950"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="3">Next</button>
+                </div>
+            </section>
+            <!-- Step 3 Content, default hidden on page load. -->
+            <section id="step-3" class="form-step d-none">
+                <h2 class="font-normal">IRB: 3. Data Use - What are the intended uses of the data generated from this project?</h2>
+                <!-- Step 3 input fields -->
+                <div class="mt-3">
+                    Examples include: Dissertation, thesis, undergraduate project, publication/journal article,
+                    conferences/presentations, results released to agency, organization, employer, or school. If other, then
+                    describe.</br>
+                    <textarea name="step3-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="2">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="4">Next</button>
+                </div>
+            </section>
+            <!-- Step 4 Content, default hidden on page load. -->
+            <section id="step-4" class="form-step d-none">
+                <h2 class="font-normal">IRB: 4. Inclusion and Exclusion Criteria</h2>
+                <!-- Step 4 input fields -->
+                <div class="mt-3">
+                    <ol>
+                        <li>
+                            List criteria that define who will be included or excluded in your final sample.
+                            Indicate if each of the following special (vulnerable/protected) populations is included or excluded:
+                            <ul>
+                                <li>Minors (under 18)</li>
+                                <li>Adults who are unable to consent (impaired decision-making capacity)</li>
+                                <li>Prisoners</li>
+                                <li>Economically or educationally disadvantaged individuals</li>
+                            </ul>
+                        </li>
+                        <li>If not obvious, what is the rationale for the exclusion of special populations?</li>
+                        <li>What procedures will be used to determine inclusion/exclusion of special populations?</li>
+                    </ol>
+                    <h4>TIPS for streamlining the review time:</h4>
+                    <ul>
+                        <li>Research involving only data analyses should only describe variables included in the dataset that will be
+                            used.</li>
+                        <li>Course evaluation data: if there is any intent to use the course evaluation data for research, submit to the
+                            IRB to get approval.</li>
+                        <li>For any research which includes or may likely include children/minors or adults unable to consent, review
+                            content <a href="https://researchcompliance.asu.edu/">here</a>.</li>
+                        <li>For research targeting Native Americans or populations with a high Native American demographic, or on
+                            or near tribal lands, review content 
+                            <a href="https://public.azregents.edu/Policy%20Manual/1-118-Tribal%20Consultation.pdf">here</a>.</li>
+                        <li>For research involving minors on campus, review content 
+                            <a href="https://cfo.asu.edu/minors-campus">here</a>.</li>
+                        <li>Research involving broader ASU student community where students are recruited outside IRB Principal
+                            Investigator's unit requires Provost Committee Approval. Please reach out to 
+                            <a href="mailto:shelly.potts@asu.edu">shelly.potts@asu.edu</a> for questions regarding this process.</li>
+                    </ul>
+                    <textarea name="step4-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="3">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="5">Next</button>
+                </div>
+            </section>
+            <!-- Step 5 Content, default hidden on page load. -->
+            <section id="step-5" class="form-step d-none">
+                <h2 class="font-normal">IRB: 5. Number of Participants</h2>
+                <!-- Step 5 input fields -->
+                <div class="mt-3">
+                    Indicate the total number of individuals you expect to recruit and enroll. For secondary data analyses, the response 
+                    should reflect the number of cases in the dataset.
+                    <textarea name="step5-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="4">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="6">Next</button>
+                </div>
+            </section>
+            <!-- Step 6 Content, default hidden on page load. -->
+            <section id="step-6" class="form-step d-none">
+                <h2 class="font-normal">IRB: 6. Recruitment Methods</h2>
+                <!-- Step 6 input fields -->
+                <div class="mt-3">
+                    <ol>
+                        <li>Identify who will be doing the recruitment and consenting of participants.</li>
+                        <li>Identify when, where, and how potential participants will be identified, recruited, and consented.</li>
+                        <li>Name materials that will be used (e.g., recruitment materials such as emails, flyers, advertisements,
+                            etc.) Please upload each recruitment material as a separate document, Name the document:
+                            recruitment_methods_email/flyer/advertisement_dd-mm-yyyy</li>
+                        <li>Describe the procedures relevant to using materials (e.g., consent form).</li>
+                    </ol>
+                    <textarea name="step6-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="5">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="7">Next</button>
+                </div>
+            </section>
+            <!-- Step 7 Content, default hidden on page load. -->
+            <section id="step-7" class="form-step d-none">
+                <h2 class="font-normal">IRB: 7. Study Procedures</h2>
+                <!-- Step 7 input fields -->
+                <div class="mt-3">
+                    <ol>
+                        <li>List research procedure step by step (e.g., interventions, surveys, focus groups, observations, lab
+                            procedures, secondary data collection, accessing student or other records for research purposes,
+                            and follow-ups). Upload one attachment, dated, with all the materials relevant to this section. Name
+                            the document: supporting documents dd-mm-yyyy</li>
+                        <li>For each procedure listed, describe who will be conducting it, where it will be performed, how long
+                            is participation in each procedure, and how/what data will be collected in each procedure.</li>
+                        <li>Report the total period and span of time for the procedures (if applicable the timeline for follow ups).</li>
+                        <li>For secondary data analyses, identify if it is a public dataset (please include a weblink where the data
+                            will be accessed from, if applicable). If not, describe the contents of the dataset, how it will be accessed,
+                            and attach data use agreement(s) if relevant.</li>
+                    </ol>
+                    <h4>TIPS for streamlining the review time:</h4>
+                    <ul>
+                       <li>Ensure that research materials and procedures are explicitly connected to the articulated aims or
+                            research questions (from section 2 above).</li>
+                        <li>In some cases, a table enumerating the name of the measures, corresponding citation (if any), number
+                            of items, sources of data, time/wave if a repeated measures design can help the IRB streamline the
+                            review time.</li>
+                    </ul>
+                    <textarea name="step7-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="6">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="8">Next</button>
+                </div>
+            </section>
+            <!-- Step 8 Content, default hidden on page load. -->
+            <section id="step-8" class="form-step d-none">
+                <h2 class="font-normal">IRB: 8. Compensation</h2>
+                <!-- Step 8 input fields -->
+                <div class="mt-3">
+                    <ol>
+                        <li>Report the amount and timing of any compensation or credit to participants.</li>
+                        <li>Identify the source of the funds to compensate participants.</li>
+                        <li>Justify that the compensation to participants to indicate it is reasonable and/or how the compensation
+                            amount was determined.</li>
+                        <li>Describe the procedures for distributing the compensation or assigning the credit to participants.</li>
+                    </ol>
+                    <h4>TIPS for streamlining the review time:</h4>
+                    <ul>
+                       <li>If partial compensation or credit will be given or if completion of all elements is required, explain the
+                            rationale or a plan to avoid coercion.</li>
+                        <li>For extra or course credit guidance, see “Research on educational programs or in classrooms” 
+                            <a href="https://researchintegrity.asu.edu/human-subjects/special-considerations">here</a>.</li>
+                        <li>For compensation over $100.00 and other institutional financial policies, review “Research Subject
+                            Compensation” <a href="https://researchintegrity.asu.edu/human-subjects/special-considerations">here</a>.</li>
+                    </ul>
+                    <textarea name="step8-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="7">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="9">Next</button>
+                </div>
+            </section>
+            <!-- Step 9 Content, default hidden on page load. -->
+            <section id="step-9" class="form-step d-none">
+                <h2 class="font-normal">IRB: 9. Risk to Participants</h2>
+                <!-- Step 9 input fields -->
+                <div class="mt-3">
+                    List the reasonably foreseeable risks, discomforts, or inconveniences related to participation in the research.
+                    <h4>TIPS for streamlining the review time:</h4>
+                    <ul>
+                       <li>Consider the broad definition of “minimal risk” as the probability and magnitude of harm or discomfort
+                            anticipated in the research that are not greater in and of themselves than those ordinarily encountered in
+                            daily life or during the performance of routine physical or psychological examinations or tests.</li>
+                        <li>Consider physical, psychological, social, legal, and economic risks.</li>
+                        <li>If there are risks, clearly describe the plan for mitigating the identified risks.</li>
+                    </ul>
+                    <textarea name="step9-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="8">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="10">Next</button>
+                </div>
+            </section>
+            <!-- Step 10 Content, default hidden on page load. -->
+            <section id="step-10" class="form-step d-none">
+                <h2 class="font-normal">IRB: 10. Potential Direct Benefits to Participants</h2>
+                <!-- Step 10 input fields -->
+                <div class="mt-3">
+                    List the potential direct benefits to research participants. If there are risks noted in 9 (above), articulated
+                    benefits should outweigh such risks. These benefits are not to society or others not considered
+                    participants in the proposed research. Indicate if there is no direct benefit. A direct benefit comes as a
+                    direct result of the subject’s participation in the research. An indirect benefit may be incidental to the
+                    subject’s participation. Do not include compensation as a benefit.
+                </div>
+                <textarea name="step10-text" rows="10" cols="100" maxlength="4000"></textarea>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="9">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="11">Next</button>
+                </div>
+            </section>
+            <!-- Step 11 Content, default hidden on page load. -->
+            <section id="step-11" class="form-step d-none">
+                <h2 class="font-normal">IRB: 11. Privacy and Confidentiality</h2>
+                <!-- Step 11 input fields -->
+                <div class="mt-3">
+                    Indicate the steps that will be taken to protect the participant’s privacy.
+                    <ol>
+                        <li>Identify who will have access to the data.</li>
+                        <li>Identify where, how, and how long data will be stored (e.g. ASU secure server, ASU cloud storage,
+                            filing cabinets).</li>
+                        <li>Describe the procedures for sharing, managing and destroying data.</li>
+                        <li>Describe any special measures to protect any extremely sensitive data (e.g. password protection,
+                            encryption, certificates of confidentiality, separation of identifiers and data, secured storage, etc.).</li>
+                        <li>Describe how any audio or video recordings will be managed, secured, and/or de-identified.</li>
+                        <li>Describe how will any signed consent, assent, and/or parental permission forms be secured and how
+                            long they will be maintained. These forms should separate from the rest of the study data.</li>
+                        <li>Describe how any data will be de-identified, linked or tracked (e.g. master-list, contact list,
+                            reproducible participant ID, randomized ID, etc.). Outline the specific procedures and processes that
+                            will be followed.</li>
+                        <li>Describe any and all identifying or contact information that will be collected for any reason during the
+                            course of the study and how it will be secured or protected. This includes contact information collected
+                            for follow-up, compensation, linking data, or recruitment.</li>
+                        <li>For studies accessing existing data sets, clearly describe whether or not the data requires a Data Use
+                            Agreement or any other contracts/agreements to access it for research purposes.</li>
+                        <li>For any data that may be covered under FERPA (student grades, etc.) additional information and
+                            requirements is available <a href="https://researchintegrity.asu.edu/human-subjects/special-considerations">
+                            here</a>.</li>
+                        <li>If your study is sponsored by HHS: NIH, you will need to comply with the revised 2023 NIH Data
+                            Management and Sharing policy. Additional information and requirements are available 
+                            <a href="https://libguides.asu.edu/NIH-2023">here</a>. Please be aware, per 2023 NIH DMS policy, DMS plan is 
+                            required at the time of proposal submission.</li>
+                    </ol>
+                    <textarea name="step11-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="10">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="12">Next</button>
+                </div>
+            </section>
+            <!-- Step 12 Content, default hidden on page load. -->
+            <section id="step-12" class="form-step d-none">
+                <h2 class="font-normal">IRB: 12. Consent</h2>
+                <!-- Step 12 input fields -->
+                <div class="mt-3">
+                    Describe the procedures that will be used to obtain consent or assent (and/or parental permission).
+                    <ol>
+                        <li>Who will be responsible for consenting participants?</li>
+                        <li>Where will the consent process take place?</li>
+                        <li>How will the consent be obtained (e.g., verbal, digital signature)?</li>
+                        <li>If your study is sponsored by HHS: NIH, you will need to comply with the revised 2023 NIH Data
+                            Management and Sharing policy. Additional information and requirements are available 
+                            <a href="https://libguides.asu.edu/NIH-2023">here</a>. To comply with this policy, the informed consent 
+                            should explain how data will be managed and shared. This sharing should be consistent with the DMS plan.</li>
+                    </ol>
+                    <h4>TIPS for streamlining the review time:</h4>
+                    <ul>
+                       <li>If participants who do not speak English will be enrolled, describe the process to ensure that the oral
+                        and/or written information provided to those participants will be in their preferred language. Indicate the
+                        language that will be used by those obtaining consent. For translation requirements, see Translating
+                        documents and materials <a href="https://researchintegrity.asu.edu/human-subjects/protocol-submission">
+                        here</a>.</li>
+                        <li>Translated consent forms should be submitted after the English is version of all relevant materials are
+                            approved. Alternatively, submit translation certification letter.</li>
+                        <li><b>If a waiver for the informed consent process is requested, justify the waiver in terms of each of
+                            the following: (a) The research involves no more than minimal risk to the subjects; (b) The waiver
+                            or alteration will not adversely affect the rights and welfare of the subjects; (c) The research
+                            could not practicably be carried out without the waiver or alteration; and (d) Whenever
+                            appropriate, the subjects will be provided with additional pertinent information after participation.</b>
+                            Studies involving confidential, one time, or anonymous data need not justify a waiver. A verbal consent 
+                            or implied consent after reading a cover letter is sufficient.</li>
+                        <li>ASU consent templates are <a href="https://researchcompliance.asu.edu/human-subjects/forms/">here</a>.</li>
+                        <li>Consents and related materials need to be congruent with the content of the application.</li>
+                    </ul>
+                    <textarea name="step12-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="11">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="13">Next</button>
+                </div>
+            </section>
+            <!-- Step 13 Content, default hidden on page load. -->
+            <section id="step-13" class="form-step d-none">
+                <h2 class="font-normal">IRB: 13. Site(s) or locations where research will be conducted</h2>
+                <!-- Step 13 input fields -->
+                <div class="mt-3">
+                    List the sites or locations where interactions with participants will occur.
+                    <ul>
+                        <li>Identify where research procedures will be performed.</li>
+                        <li>For research conducted outside of the ASU describe:
+                            <ul>
+                                <li>Site-specific regulations or customs affecting the research.</li>
+                                <li>Local scientific and ethical review structures in place.</li>
+                            </ul>
+                        </li>
+                        <li>For research conducted outside of the United States/United States Territories describe safeguards to ensure 
+                            participants are protected.</li>
+                        <li>For information on international research, review the content 
+                            <a href="https://www.hhs.gov/ohrp/sites/default/files/2020-international-compilation-of-human-research-standards.pdf">
+                            here</a>.</li>
+                    </ul></br>
+                    For research conducted with secondary data (archived data):
+                    <ul>
+                        <li>List what data will be collected and from where.</li>
+                        <li>Describe whether or not the data requires a Data Use Agreement or any other contracts/agreements to access it 
+                            for research purposes.</li>
+                        <li>For any data that may be covered under FERPA (student grades, etc.) additional information and
+                            requirements is available <a href="https://researchcompliance.asu.edu/">here</a>.</li>
+                        <li>For any data that may be covered under FERPA (student grades, homework assignments,
+                            student ID numbers etc.), additional information and requirements is available 
+                            <a href="https://researchcompliance.asu.edu/">here</a>.</li>
+                    </ul>
+                    <textarea name="step13-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="12">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="14">Next</button>
+                </div>
+            </section>
+            <!-- Step 14 Content, default hidden on page load. -->
+            <section id="step-14" class="form-step d-none">
+                <h2 class="font-normal">IRB: 14. Human Subjects Certification from Training</h2>
+                <!-- Step 14 input fields -->
+                <div class="mt-3">
+                    Provide the names of the members of the research team.</br>
+                    ASU affiliated individuals do not need attach Certificates. Non-ASU investigators and research team
+                    members anticipated to manage data and/or interact with participants, need to provide the most recent CITI training 
+                    for human participants available <a href="www.citiprogram.org">here</a>. Certificates are valid for 4 years.
+                    <h4>TIPS for streamlining the review time:</h4>
+                    <ul>
+                       <li>If any of the study team members have not completed training through ASU’s CITI training (i.e. they
+                        completed training at another university), copies of their completion reports will need to be uploaded
+                        when you submit.</li>
+                        <li>For any team members who are affiliated with another institution, please see “Collaborating with other
+                            institutions” <a href="https://researchcompliance.asu.edu/human-subjects/special-considerations/">here</a>.</li>
+                        <li>The IRB will verify that team members have completed IRB training. Details on how to complete IRB CITI
+                            training through ASU are <a href="https://researchcompliance.asu.edu/human-subjects/training/">here</a>.</li>
+                    </ul>
+                    <textarea name="step14-text" rows="10" cols="100" maxlength="4000"></textarea>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="13">Prev</button>
+                    <button class="button btn-navigate-form-step" type="button" step_number="15">Next</button>
+                </div>
+            </section>
+            <!-- Step 15 Content, default hidden on page load. -->
+            <section id="step-15" class="form-step d-none">
+                <h2 class="font-normal">IRB: 15. Conflicts of Interest</h2>
+                <div class="mt-3">
+                    <b>Financial interest:</b> The receipt or expectation of anything of pecuniary (money) or proprietary (ownership)
+                    value from a non-ASU entity (domestic or foreign, private or public). Examples of possible interests (not
+                    limited to):
+                    <ul>
+                        <li>Compensation of any amount including (not limited to) consultant fees, payments for services,
+                            honoraria, royalties, or other income.</li>
+                        <li>Ownership interest of any value including (not limited to) stocks and stock options, private equity, or
+                            other ownership interests.</li>
+                        <li>Venture capital financing.</li>
+                        <li>Intellectual property interests of any value including (not limited to) patents, trademarks, copyrights,
+                            and licensing agreements.</li>
+                        <li>Board or executive relationship, regardless of compensation.</li>
+                        <li>Reimbursed or sponsored travel by an entity other than a federal, state, or local government
+                            agency, higher-education institution or affiliated research institute, academic teaching hospital, or
+                            medical center.</li>
+                    </ul>
+                    <ol>
+                        <li>Do any of the team members have a financial interest in any entity involved in the project(s)
+                            under this IRB study?</li>
+                        <li>Who holds the interest? The individual involved in the research, or relative of this individual. Disclose
+                            financial interests in ERA MyDisclosures module. For questions related to financial interests, email at
+                            <a href="mailto:COI@asu.edu">COI@asu.edu</a>.</li>
+                    </ol>
+                    <textarea name="step15-text" rows="10" cols="100" maxlength="4000"></textarea>
+               </div>
+               <div class="mt-3">
+                <button class="button btn-navigate-form-step" type="button" step_number="14">Prev</button>
+                <button class="button btn-navigate-form-step" type="button" step_number="16">Next</button>
+                </div>
+            </section>
+            <!-- Step 16 Content, default hidden on page load. -->
+            <section id="step-16" class="form-step d-none">
+                <h2 class="font-normal">General Tips</h2>
+                <!-- Step 16 input fields -->
+                <div class="mt-3">
+                    <ul>
+                        <li>Have all members of the research team complete IRB training before submitting.</li>
+                        <li>Ensure that all your instruments, recruitment materials, study instruments, and consent forms are
+                            submitted via ERA when you submit your protocol document. Templates are 
+                            <a href="https://researchcompliance.asu.edu/">here</a>.</li>
+                        <li>Submit a complete protocol. Don’t ask questions in the protocol – submit with your best option and, if not
+                            appropriate, revisions will be requested.</li>
+                        <li>If your study has undeveloped phases, clearly indicate in the protocol document that the details and
+                            materials for those phases will be submitted via a modification when ready.</li>
+                        <li>Review all materials for consistency. Ensure that the procedures, lengths of participation, dates, etc., are
+                            consistent across all the materials you submit for review.</li>
+                        <li>Only ASU faculty, full time staff may serve as the PI. Students may prepare the submission by listing
+                            the faculty member as the PI. The submit button will only be visible to the PI.</li>
+                        <li>Information on how and what to submit with your study in ERA is <a href="https://researchcompliance.asu.edu/">
+                            here</a>. Note that if you are a student, you will need to have your Principal Investigator submit.</li>
+                        <li>For details on how to submit this document as part of a study for review and approval by the ASU IRB,
+                            visit <a href="https://researchintegrity.asu.edu/human-subjects/protocol-submission">
+                                https://researchintegrity.asu.edu/human-subjects/protocol-submission</a>.</li>
+                    </ul>
+                </div>
+                <div class="mt-3">
+                    <button class="button btn-navigate-form-step" type="button" step_number="15">Prev</button>
+                    <button class="button submit-btn" type="submit">Save</button>
+                </div>
+            </section>
+        </form>
+    </div>
+</div>
+      <script src="../static/js/form.js"></script>
+</body>
+</html>
