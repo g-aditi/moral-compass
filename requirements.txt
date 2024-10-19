@@ -11,3 +11,12 @@ llama-index-embeddings-fastembed==0.1.4
 llama-index-legacy==0.9.48
 llama-index-llms-huggingface==0.1.4
 llama-index-vector-stores-qdrant==0.2.8
+faiss_cpu==1.9.0
+faiss_gpu==1.7.2
+Flask==3.0.3
+gensim==4.3.3
+nltk==3.9.1
+numpy==2.1.2
+ollama==0.3.3
+pandas==2.2.3
+PyPDF2==3.0.1

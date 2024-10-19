@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from llm_instantiation import get_form_inputs
+from form_responses import get_form_inputs
 
 app = Flask(__name__)
 
