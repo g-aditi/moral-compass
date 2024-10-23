@@ -14,7 +14,7 @@ def submit():
         form_text.append(request.form.get(f'step{i}-text'))
 
     result = get_form_inputs(form_text)
-    return "Form submitted successfully!"
+    return render_template('submit_success.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
