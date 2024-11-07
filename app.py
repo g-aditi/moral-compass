@@ -16,5 +16,9 @@ def submit():
     result = get_form_inputs(form_text)
     return render_template('submit_success.html')
 
+@app.route('/chat')
+def chat():
+    return render_template('chat.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

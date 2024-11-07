@@ -1,0 +1,62 @@
+body {
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    display: flex; /* Flexbox to arrange elements vertically */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-end; /* Align the content to the bottom of the page */
+}
+
+h1 {
+    text-align: center;
+}
+
+#chat-box {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px; /* Optional: space between chatbox and bottom */
+}
+
+#user-message {
+    width: 100%;
+    padding: 0.8vw 1.2vw;
+    margin: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.textarea-wrapper {
+    width: 50vw;
+    padding: 0.1vw;
+    padding-bottom: 0.1vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    position: fixed; 
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.textarea-wrapper #submit-symbol {
+    margin-right: 1vw;
+    margin-bottom: 0.8vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea-wrapper #submit-symbol:hover {
+    opacity: 0.5; 
+}
+
