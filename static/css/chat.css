@@ -60,3 +60,19 @@ h1 {
     opacity: 0.5; 
 }
 
+#user-message-box {
+    width: 30vw;
+    background-color: #d3d3d3;
+    padding: 1vw;
+    margin: 1vh auto;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+.message-box {
+    font-size: 1.2vw;
+    color: #333;
+}
+
+
