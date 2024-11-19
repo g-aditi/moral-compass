@@ -1,0 +1,39 @@
+body {
+    background-color: #8d1c3f;
+}
+
+h1 {
+    color: #ffc627;
+    font-size: 10vh;
+}
+
+h2 {
+    color: #fff;
+    font-size: 4vh;
+    margin-top: -8vh;
+}
+
+.button-container {
+    margin-top: 4vh;
+}
+
+button {
+    background-color: #ffc627;
+    border: none;
+    color: #8d1c3f;
+    font-size: 2vh;
+    padding: 1vh 2vh;
+    margin: 1vh;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #8d1c3f;
+}
+
+.submit-pg-txt {
+    margin-left: 8vw;
+    margin-top: 40vh;
+}

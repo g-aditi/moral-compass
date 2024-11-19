@@ -29,7 +29,7 @@ def download_report(filename):
     if os.path.exists(adherence_output_filepath):
         return send_file(adherence_output_filepath, as_attachment=True)
     else:
-        return "File not found", 404
+        return render_template('file_404.html'), 404
 
 @app.route('/chat')
 def chat():
