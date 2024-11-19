@@ -31,7 +31,9 @@ else:
     )
 
 framework_system_context_from_faiss = retrieve_context(doc2vec_model=doc2vec_model,
-                                                       query="Belmont Report, IRB Guidelines, How should an IRB function?, Adherence",
+                                                       query="Utilitarian, Deontology, Fairness, \
+                                                              Virtue Ethics, Ethical Frameworks, Consequentialism \
+                                                              Trolley Problems, Ethical Dilemmas",
                                                        faiss_index=index)
 
 filename = safe_filename(form_answers[0])
@@ -46,44 +48,40 @@ TBD:
 2. Enable the chat UI and create a connection with JS/FLASK/LLM POST and GET
 3. Store context (chat history) in a JSON or .txt
 
-Uncomment below to make these changes.
-
 """
 
-# with open(framework_output_filepath, "w") as framework_file:
-#   for question, answer in zip(form_questions, form_answers):
-#     user_context_from_faiss = retrieve_context(question)
-#     nett_input = f"Context: {user_context_from_faiss}\n\nQuestion: {question}\n\nAnswer: {answer}"
+full_form_responses = '\n'.join(form_answers)
+# print(full_form_responses)
 
-#     messages = [
-#         {
-#             "role": "system",
-#             "content": f'''You are the preliminary step to an Institutional Review Board of an organization. 
-#                         Guided by the values in {framework_system_context_from_faiss}, analyze the answers to the question
-#                         and provide some feedback on their position with respect to various ethical frameworks. At the very least,
-#                         you should cover the ethical framworks mentioned in the the system content. Also identify potential 
-#                         ethical dilemmas or trolley problems in the paper.
-#                         If possible, keep your replies within 200 words.'''
-#         },
-#         {
-#             "role": "user", 
-#             "content": nett_input
-#         },
-#     ]
+with open(framework_output_filepath, "w") as framework_file:
+    nett_input = f"Context: {full_form_responses}"
 
-#     outputs = pipe(
-#         messages,
-#         max_new_tokens=512,
-#         do_sample=True,
-#     )
+    messages = [
+        {
+            "role": "system",
+            "content": f'''You are the preliminary step to an Institutional Review Board of an organization. 
+                        Guided by the values in {framework_system_context_from_faiss}, analyze the answers to the question
+                        and provide some feedback on their position with respect to various ethical frameworks. At the very least,
+                        you should cover the ethical framworks mentioned in the the system content. Also identify potential 
+                        ethical dilemmas or trolley problems in the paper.
+                        If possible, keep your replies within 200 words.'''
+        },
+        {
+            "role": "user", 
+            "content": nett_input
+        },
+    ]
 
-#     assistant_response = outputs[0]["generated_text"]
+    outputs = pipe(
+        messages,
+        max_new_tokens=1028,
+        do_sample=True,
+    )
 
-#     framework_file.write(f"Question: {question}\n")
-#     framework_file.write(f"Answer: {answer}\n")
-#     framework_file.write(f"LLM Response: {assistant_response[2].get('content')}\n\n")
+    assistant_response = outputs[0]["generated_text"]
+    framework_file.write(f"{assistant_response[2].get('content')}\n\n")
 
-# pipe.model.save_pretrained(framework_model_save_dir)
-# pipe.tokenizer.save_pretrained(framework_model_save_dir)
+pipe.model.save_pretrained(framework_model_save_dir)
+pipe.tokenizer.save_pretrained(framework_model_save_dir)
 
 torch.cuda.empty_cache()

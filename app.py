@@ -31,9 +31,14 @@ def download_report(filename):
     else:
         return render_template('file_404.html'), 404
 
-@app.route('/chat')
-def chat():
-    return render_template('chat.html')
+@app.route('/chat/<filename>')
+def chat(filename):
+    framework_output_filepath = os.path.join(f'{llm_analyses_dir}/{filename}', "framework-analysis.txt")
+    if os.path.exists(framework_output_filepath):
+        return send_file(framework_output_filepath, as_attachment=True)
+    else:
+        return render_template('file_404.html'), 404
+        # return render_template('chat.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
