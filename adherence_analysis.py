@@ -1,52 +1,42 @@
-import transformers
 from transformers import pipeline
 import torch
-import faiss
-import numpy as np
-from gensim.models.doc2vec import Doc2Vec
-from nltk.tokenize import word_tokenize
-import nltk
 import os
-from vectordb_storage import documents_text
 from form_responses import form_questions, form_answers
+from rag_helper import load_doc2vec_model, read_faiss_index, retrieve_context, safe_filename, make_dir_file
 
-doc2vec_model = Doc2Vec.load("doc2vec_model.model")
-
-index = faiss.read_index("vector_db.faiss")
-
-def retrieve_context(query, top_k=3):
-    query_tokens = word_tokenize(query.lower())
-    query_vector = doc2vec_model.infer_vector(query_tokens).astype('float32').reshape(1, -1)
-    
-    distances, indices = index.search(query_vector, top_k)
-    
-    relevant_docs = []
-    for idx in indices[0]:
-        relevant_docs.append(documents_text[idx])
-    
-    return " ".join(relevant_docs)
+doc2vec_model = load_doc2vec_model("doc2vec_model.model")
+index = read_faiss_index("vector_db.faiss")
 
 torch.cuda.empty_cache()
 
-model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-pipe = pipeline(
-    "text-generation",
-    model=model_id,
-    model_kwargs={"torch_dtype": torch.float16},
-    device="cuda",
-)
-adherence_system_context_from_faiss = retrieve_context("Belmont Report, IRB Guidelines, How should an IRB function?, Adherence")
-framework_system_context_from_faiss = retrieve_context('''Deontology, Utilitarian, Rights, Common Good, Consequentialism, 
-                                                       Fairness, Justice, Virtue Ethics, Feminism''')
+adherence_model_save_dir = "./adherence_model"
 
-def safe_filename(s):
-    return "".join(c if c.isalnum() or c in (' ', '-', '_') else '_' for c in s)
+if os.path.exists(adherence_model_save_dir):
+    pipe = pipeline(
+        "text-generation",
+        model=adherence_model_save_dir,
+        tokenizer=adherence_model_save_dir,
+        model_kwargs={"torch_dtype": torch.float16},
+        device="cuda",
+    )
+    print(f"Model loaded from {adherence_model_save_dir}")
+
+else:
+    adherence_model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    pipe = pipeline(
+        "text-generation",
+        model=adherence_model_id,
+        model_kwargs={"torch_dtype": torch.float16},
+        device="cuda",
+    )
+
+adherence_system_context_from_faiss = retrieve_context(doc2vec_model=doc2vec_model,
+                                                       query="Belmont Report, IRB Guidelines, How should an IRB function?, Adherence",
+                                                       faiss_index=index)
 
 filename = safe_filename(form_answers[0])
-llm_analyses_dir = './llm_analyses'
-os.makedirs(llm_analyses_dir, exist_ok=True)
-os.makedirs(f'{llm_analyses_dir}/{filename}', exist_ok=True)
-adherence_output_filepath = os.path.join(f'{llm_analyses_dir}/{filename}', "adherence-analysis.txt")
+filetype = 'adherence-analysis'
+adherence_output_filepath = make_dir_file(filename, filetype)
 
 with open(adherence_output_filepath, "w") as adherence_file:
   for question, answer in zip(form_questions, form_answers):
@@ -77,10 +67,12 @@ with open(adherence_output_filepath, "w") as adherence_file:
     )
 
     assistant_response = outputs[0]["generated_text"]
-    # print(assistant_response[2].get('content'))
 
     adherence_file.write(f"Question: {question}\n")
     adherence_file.write(f"Answer: {answer}\n")
     adherence_file.write(f"LLM Response: {assistant_response[2].get('content')}\n\n")
+
+pipe.model.save_pretrained(adherence_model_save_dir)
+pipe.tokenizer.save_pretrained(adherence_model_save_dir)
 
 torch.cuda.empty_cache()
