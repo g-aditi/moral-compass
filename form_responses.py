@@ -161,8 +161,75 @@ form_questions = [
     '''
 ]
 
-form_answers = []
+form_answers = [
+    '''AI Ethics Interview Framework: Enhancing Ethical Decision-Making in AI Development.''',
+    '''This project aims to develop an AI Ethics Interview Framework designed to assess the ethical considerations of AI systems 
+        in development. The specific research questions include: How do AI developers prioritize ethical considerations during the 
+        design process? What challenges do they face in implementing ethical guidelines? How can structured interviews enhance 
+        understanding of these challenges? By addressing these questions, the project seeks to create a comprehensive framework 
+        that can guide developers in aligning their AI projects with ethical standards.
+        
+        Participants may experience minimal risks, such as discomfort when discussing ethical dilemmas. However, the potential benefits 
+        include contributing to the advancement of ethical practices in AI development, which can lead to safer and more responsible AI 
+        systems. Additionally, participants will receive insights into current ethical frameworks and the opportunity to influence 
+        future AI governance.
+        
+        Previous studies relevant to this research include ID #2034, which examined ethical considerations in AI decision-making processes 
+        at Stanford University, and ID #4015, focusing on AI ethics training in tech firms conducted at MIT. These studies underscore 
+        the need for ongoing research in AI ethics and provide a foundation for the current project.''',
+        '''The data generated from this project will be used for a publication in a peer-reviewed journal, presentations at conferences, 
+        and as part of a dissertation on ethical frameworks in AI development.''',
+        '''Participants will include adults aged 18 and over who have experience in AI development and ethics. Excluded populations will 
+        consist of minors, adults unable to consent, prisoners, and economically or educationally disadvantaged individuals.
+        Excluding these special populations is essential to ensure informed consent and protect vulnerable individuals from potential 
+        ethical dilemmas. Inclusion criteria will be determined through pre-screening questionnaires assessing participants' professional 
+        background and capacity to provide informed consent.''',
+        '''We expect to recruit and enroll a total of 50 participants for the study.''',
+        '''Recruitment will be conducted by the research team, which includes faculty and graduate students experienced in ethical 
+        research practices.
+        Potential participants will be identified through professional networks and AI-related conferences, with recruitment occurring 
+        via email invitations and social media posts.
+        Recruitment materials will include an informational flyer and consent form, which will clearly outline the study’s purpose, 
+        procedures, and participant rights.''',
+        '''The study will involve several key steps: (1) initial recruitment via email and social media, (2) screening for eligibility 
+        using a pre-screening questionnaire, (3) obtaining informed consent, (4) conducting structured interviews with participants, 
+        (5) collecting qualitative data through audio recordings, and (6) analyzing the data for ethical themes. All supporting materials 
+        relevant to this section are uploaded as "supporting_documents_22-10-2024."
+        The research team will conduct the interviews via video conferencing platforms, allowing flexibility for participants' locations. 
+        Each interview will last approximately 60 minutes, during which participants will discuss their experiences and perspectives on 
+        ethical practices in AI development. Data collection will involve audio recordings and written notes, ensuring accurate capture 
+        of participant insights.
+        The total duration for participant involvement is expected to be around two months, including recruitment, interviews, and data 
+        analysis. Follow-ups may occur for clarification of responses or additional insights, scheduled within two weeks post-interview.
+        As this study focuses on primary data collection through interviews, no secondary public datasets will be used. The dataset will 
+        consist of interview transcripts and audio recordings stored securely, accessible only to the research team. Data use agreements 
+        will be established to ensure confidentiality and ethical handling of participant information.''',
+        '''Participants will receive $50 compensation after completing the interview, funded by the research grant, distributed via 
+        electronic payment methods.''',
+        '''Participants may experience discomfort when discussing sensitive ethical issues, potential emotional distress from recalling 
+        challenging situations in AI development, and concerns about confidentiality. Additionally, participants may encounter time 
+        constraints due to their professional commitments, which could lead to inconvenience when scheduling interviews or completing 
+        pre-screening questionnaires.''',
+        '''Participants may gain insights into ethical considerations in AI development, enhancing their understanding of best practices. 
+        They will have the opportunity to contribute to the advancement of ethical frameworks in the field, potentially improving their 
+        professional practices and fostering a greater commitment to responsible AI development in their organizations.''',
+        '''To protect participants' privacy, access to data will be restricted to the research team only. Data will be stored on ASU's 
+        secure server for a minimum of five years, with audio recordings encrypted and de-identified. Signed consent forms will be kept 
+        separate, secured in locked files. Identifying information, including contact details for follow-up, will be protected and 
+        de-identified using randomized IDs. No existing datasets requiring a Data Use Agreement will be accessed, ensuring compliance 
+        with all privacy regulations.''',
+        '''The research team, including trained faculty and graduate students, will be responsible for obtaining consent from participants. 
+        The consent process will occur via video conferencing prior to the interview. Consent will be obtained through digital signatures 
+        on a secure platform, ensuring participants understand data management and sharing in line with the 2023 NIH Data Management and 
+        Sharing policy.''',
+        '''Research procedures will be conducted via video conferencing, allowing interactions with participants in their preferred 
+        locations. No site-specific regulations or local review structures apply, as all activities will adhere to ASU's ethical 
+        standards and guidelines for remote research.''',
+        '''The research team includes Dr. Jane Smith, Prof. John Doe, and graduate student Alex Lee, all of whom are ASU affiliates.''',
+        '''None of the team members have a financial interest in any entity involved in the project under this IRB study.'''
+]
 
 def get_form_inputs(input_list):
     print(f"Received form responses")
     form_answers = input_list
+    print(form_answers)

@@ -9,7 +9,10 @@
 <body>
     <div class="submit-pg-txt">
         <h1>Form submitted successfully!</h1>
-        <h2>Please wait while Moral Compass generates a report for you.</h2>
+        <div class="button-container">
+            <button onclick="window.location.href='/download-report/{{ filename }}'">Download Compliance Analysis</button>
+            <button onclick="window.location.href='/chat'">Open Chat for Ethical Analysis</button>
+        </div>
     </div>
 </body>
 </html>
