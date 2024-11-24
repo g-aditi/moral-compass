@@ -4,28 +4,15 @@ import os
 from form_responses import form_questions, form_answers
 from rag_helper import load_doc2vec_model, read_faiss_index, retrieve_context, safe_filename, make_dir_file
 
-doc2vec_model = load_doc2vec_model("doc2vec_model.model")
-index = read_faiss_index("vector_db.faiss")
+doc2vec_model = load_doc2vec_model()
+index = read_faiss_index()
 
 torch.cuda.empty_cache()
 
-framework_model_save_dir = "./framework_model"
-
-if os.path.exists(framework_model_save_dir):
-    pipe = pipeline(
+framework_model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+pipe = pipeline(
         "text-generation",
-        model=framework_model_save_dir,
-        tokenizer=framework_model_save_dir,
-        model_kwargs={"torch_dtype": torch.float16},
-        device="cuda",
-    )
-    print(f"Model loaded from {framework_model_save_dir}")
-
-else:
-    adherence_model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-    pipe = pipeline(
-        "text-generation",
-        model=adherence_model_id,
+        model=framework_model_id,
         model_kwargs={"torch_dtype": torch.float16},
         device="cuda",
     )
@@ -50,7 +37,7 @@ TBD:
 
 """
 
-full_form_responses = '\n'.join(form_answers)
+full_form_responses = '\n'.join(ans for ans in [form_answers[0], form_answers[1]])
 # print(full_form_responses)
 
 with open(framework_output_filepath, "w") as framework_file:
@@ -61,10 +48,27 @@ with open(framework_output_filepath, "w") as framework_file:
             "role": "system",
             "content": f'''You are the preliminary step to an Institutional Review Board of an organization. 
                         Guided by the values in {framework_system_context_from_faiss}, analyze the answers to the question
-                        and provide some feedback on their position with respect to various ethical frameworks. At the very least,
-                        you should cover the ethical framworks mentioned in the the system content. Also identify potential 
-                        ethical dilemmas or trolley problems in the paper.
-                        If possible, keep your replies within 200 words.'''
+                        and provide some feedback on their position with respect to various ethical frameworks. Mainly, focus your
+                        analysis on the answer to IRB: 2. I also want you to analyze the proposed research, its areas and 
+                        methods apart from focusing on the participants and their ethical rights. Here are some you can consider using in 
+                        your analysis: Consequentialism, Deontology, Utilitarianism, Virtue Ethics, Ethical Relativism, Social Contract 
+                        Theory, Care Ethics, Feminist Ethics, Justice, Fairness. 
+                        Follow this template: 
+                            Title of Project:
+                            Summary of Project:
+
+                            Ethical Framework(s) in Accordance: 
+                            Basis for Accordance of Framework(s):
+
+                            Ethical Framework(s) in Violation:
+                            Basis of Violation of Framework(s):
+
+                            Suggested Middle-Ground Ethical Framework(s):
+                            Basis for Suggestion(s):
+                        Also identify potential  ethical dilemmas or trolley problems in the paper. You are to give only valid, relevant,
+                        and important feedback - not feedback just for the sake of it. Equal focus is to be placed on both the participant
+                        ethical protection and the ethical framework compliance of the study itself.
+                        '''
         },
         {
             "role": "user", 
@@ -80,8 +84,6 @@ with open(framework_output_filepath, "w") as framework_file:
 
     assistant_response = outputs[0]["generated_text"]
     framework_file.write(f"{assistant_response[2].get('content')}\n\n")
-
-pipe.model.save_pretrained(framework_model_save_dir)
-pipe.tokenizer.save_pretrained(framework_model_save_dir)
+    print("Response generated")
 
 torch.cuda.empty_cache()

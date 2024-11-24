@@ -4,8 +4,8 @@ import os
 from form_responses import form_questions, form_answers
 from rag_helper import load_doc2vec_model, read_faiss_index, retrieve_context, safe_filename, make_dir_file
 
-doc2vec_model = load_doc2vec_model("doc2vec_model.model")
-index = read_faiss_index("vector_db.faiss")
+doc2vec_model = load_doc2vec_model()
+index = read_faiss_index()
 
 torch.cuda.empty_cache()
 

@@ -14,14 +14,6 @@ def read_faiss_index():
     index = faiss.read_index("vector_db.faiss")
     return index
 
-model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-pipe = pipeline(
-    "text-generation",
-    model=model_id,
-    model_kwargs={"torch_dtype": torch.float16},
-    device="cuda",
-)
-
 def retrieve_context(doc2vec_model, query, faiss_index, top_k=3):
     query_tokens = word_tokenize(query.lower())
     query_vector = doc2vec_model.infer_vector(query_tokens).astype('float32').reshape(1, -1)
