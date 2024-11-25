@@ -9,26 +9,13 @@ index = read_faiss_index()
 
 torch.cuda.empty_cache()
 
-adherence_model_save_dir = "./adherence_model"
-
-if os.path.exists(adherence_model_save_dir):
-    pipe = pipeline(
-        "text-generation",
-        model=adherence_model_save_dir,
-        tokenizer=adherence_model_save_dir,
-        model_kwargs={"torch_dtype": torch.float16},
-        device="cuda",
-    )
-    print(f"Model loaded from {adherence_model_save_dir}")
-
-else:
-    adherence_model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-    pipe = pipeline(
+adherence_model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+pipe = pipeline(
         "text-generation",
         model=adherence_model_id,
         model_kwargs={"torch_dtype": torch.float16},
         device="cuda",
-    )
+)
 
 adherence_system_context_from_faiss = retrieve_context(doc2vec_model=doc2vec_model,
                                                        query="Belmont Report, IRB Guidelines, How should an IRB function?, Adherence",
@@ -71,8 +58,5 @@ with open(adherence_output_filepath, "w") as adherence_file:
     adherence_file.write(f"Question: {question}\n")
     adherence_file.write(f"Answer: {answer}\n")
     adherence_file.write(f"LLM Response: {assistant_response[2].get('content')}\n\n")
-
-pipe.model.save_pretrained(adherence_model_save_dir)
-pipe.tokenizer.save_pretrained(adherence_model_save_dir)
 
 torch.cuda.empty_cache()
