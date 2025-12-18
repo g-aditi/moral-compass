@@ -1,0 +1,1934 @@
+ * Serving Flask app 'app.py'
+ * Debug mode: off
+2025-12-14 19:39:32,379 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-14 19:39:32,380 INFO [33mPress CTRL+C to quit[0m
+2025-12-14 19:39:33,035 INFO Received form responses; launching background generation
+2025-12-14 19:39:33,035 INFO Background report generation started
+2025-12-14 19:39:33,037 INFO 127.0.0.1 - - [14/Dec/2025 19:39:33] "POST /submit HTTP/1.1" 200 -
+Starting report generation
+2025-12-14 19:39:33,038 INFO Starting report generation
+Temporary hardcoded ANTHROPIC_API_KEY is set from llama_rag.py — remove after testing
+2025-12-14 19:39:33,038 WARNING Temporary hardcoded ANTHROPIC_API_KEY is set from llama_rag.py — remove after testing
+Could not import vectordb_storage.documents_text: No module named 'PyPDF2'
+2025-12-14 19:39:33,038 WARNING Could not import vectordb_storage.documents_text: No module named 'PyPDF2'
+Could not initialize retrieval stack (faiss/gensim/nltk)
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 251, in generate_report
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+2025-12-14 19:39:33,038 ERROR Could not initialize retrieval stack (faiss/gensim/nltk)
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 251, in generate_report
+    import faiss
+ModuleNotFoundError: No module named 'faiss'
+LLM_PROVIDER=anthropic; skipping local transformers pipeline initialization
+2025-12-14 19:39:33,039 INFO LLM_PROVIDER=anthropic; skipping local transformers pipeline initialization
+Processing question 1
+2025-12-14 19:39:33,039 INFO Processing question 1
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:33,039 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:33,282 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:33,699 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUJ1Ge578FYBraKq2u'}
+2025-12-14 19:39:33,700 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUJ1Ge578FYBraKq2u'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 1\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:33,737 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 1\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUJ1Ge578FYBraKq2u'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:34,028 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUJ1Ge578FYBraKq2u'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:34,033 INFO No LLM provider available; returning placeholder
+Processing question 2
+2025-12-14 19:39:34,035 INFO Processing question 2
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:34,036 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:34,062 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:34,359 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hULzbxv52ZTSDXW3cx'}
+2025-12-14 19:39:34,361 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hULzbxv52ZTSDXW3cx'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 2\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:34,364 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 2\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hULzbxv52ZTSDXW3cx'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:34,638 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hULzbxv52ZTSDXW3cx'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:34,642 INFO No LLM provider available; returning placeholder
+Processing question 3
+2025-12-14 19:39:34,645 INFO Processing question 3
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:34,646 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:34,667 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:35,359 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hURLns1Wocdp2vsehw'}
+2025-12-14 19:39:35,360 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hURLns1Wocdp2vsehw'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 3\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:35,361 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 3\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hURLns1Wocdp2vsehw'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:35,631 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hURLns1Wocdp2vsehw'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:35,633 INFO No LLM provider available; returning placeholder
+Processing question 4
+2025-12-14 19:39:35,636 INFO Processing question 4
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:35,636 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:35,665 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:36,468 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUTehdhxehZHMqdYB8'}
+2025-12-14 19:39:36,471 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUTehdhxehZHMqdYB8'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 4\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:36,473 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 4\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUTehdhxehZHMqdYB8'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:36,745 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUTehdhxehZHMqdYB8'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:36,748 INFO No LLM provider available; returning placeholder
+Processing question 5
+2025-12-14 19:39:36,750 INFO Processing question 5
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:36,751 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:36,781 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:37,026 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUYTRdcZstRdxKRFzr'}
+2025-12-14 19:39:37,027 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUYTRdcZstRdxKRFzr'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 5\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:37,029 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 5\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUYTRdcZstRdxKRFzr'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:37,316 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUYTRdcZstRdxKRFzr'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:37,320 INFO No LLM provider available; returning placeholder
+Processing question 6
+2025-12-14 19:39:37,323 INFO Processing question 6
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:37,323 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:37,352 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:37,612 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUayEH5r2VTrSmXgHW'}
+2025-12-14 19:39:37,615 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUayEH5r2VTrSmXgHW'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 6\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:37,619 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 6\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUayEH5r2VTrSmXgHW'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:37,868 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUayEH5r2VTrSmXgHW'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:37,870 INFO No LLM provider available; returning placeholder
+Processing question 7
+2025-12-14 19:39:37,871 INFO Processing question 7
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:37,871 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:37,888 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:38,109 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUd9xAwVwaK2jfcyUu'}
+2025-12-14 19:39:38,111 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUd9xAwVwaK2jfcyUu'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 7\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:38,114 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 7\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUd9xAwVwaK2jfcyUu'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:38,406 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUd9xAwVwaK2jfcyUu'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:38,408 INFO No LLM provider available; returning placeholder
+Processing question 8
+2025-12-14 19:39:38,410 INFO Processing question 8
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:38,410 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:38,431 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:38,787 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUffGEDiQEZiTJQ73J'}
+2025-12-14 19:39:38,787 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUffGEDiQEZiTJQ73J'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 8\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:38,788 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 8\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUffGEDiQEZiTJQ73J'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:39,165 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUffGEDiQEZiTJQ73J'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:39,169 INFO No LLM provider available; returning placeholder
+Processing question 9
+2025-12-14 19:39:39,171 INFO Processing question 9
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:39,171 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:39,201 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:39,494 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUivUAD8SYf13nxCxp'}
+2025-12-14 19:39:39,496 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUivUAD8SYf13nxCxp'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 9\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:39,499 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 9\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUivUAD8SYf13nxCxp'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:39,791 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUivUAD8SYf13nxCxp'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:39,800 INFO No LLM provider available; returning placeholder
+Processing question 10
+2025-12-14 19:39:39,801 INFO Processing question 10
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:39,801 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:39,820 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:40,059 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUmQ3WrEXR66heQpGx'}
+2025-12-14 19:39:40,060 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUmQ3WrEXR66heQpGx'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 10\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:40,064 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 10\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUmQ3WrEXR66heQpGx'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:40,352 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUmQ3WrEXR66heQpGx'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:40,356 INFO No LLM provider available; returning placeholder
+Processing question 11
+2025-12-14 19:39:40,359 INFO Processing question 11
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:40,359 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:40,388 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:40,627 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUosdD43KXdGVuH31P'}
+2025-12-14 19:39:40,628 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUosdD43KXdGVuH31P'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 11\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:40,629 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 11\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUosdD43KXdGVuH31P'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:42,636 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUosdD43KXdGVuH31P'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:42,642 INFO No LLM provider available; returning placeholder
+Processing question 12
+2025-12-14 19:39:42,643 INFO Processing question 12
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:42,644 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:42,665 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:42,929 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUydWCXriKesdp15yo'}
+2025-12-14 19:39:42,930 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUydWCXriKesdp15yo'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 12\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:42,932 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 12\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUydWCXriKesdp15yo'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:43,212 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hUydWCXriKesdp15yo'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:43,216 INFO No LLM provider available; returning placeholder
+Processing question 13
+2025-12-14 19:39:43,218 INFO Processing question 13
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:43,218 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:43,243 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:43,497 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV25b3v6ESKV5jBG9s'}
+2025-12-14 19:39:43,498 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV25b3v6ESKV5jBG9s'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 13\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:43,501 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 13\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV25b3v6ESKV5jBG9s'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:43,770 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV25b3v6ESKV5jBG9s'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:43,771 INFO No LLM provider available; returning placeholder
+Processing question 14
+2025-12-14 19:39:43,772 INFO Processing question 14
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:43,772 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:43,787 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:44,013 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV4KXiTGWGsHyiCRub'}
+2025-12-14 19:39:44,013 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV4KXiTGWGsHyiCRub'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 14\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:44,016 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 14\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV4KXiTGWGsHyiCRub'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:44,415 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV4KXiTGWGsHyiCRub'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:44,419 INFO No LLM provider available; returning placeholder
+Processing question 15
+2025-12-14 19:39:44,422 INFO Processing question 15
+sentence-transformers unavailable; using simple token-count embeddings
+2025-12-14 19:39:44,423 INFO sentence-transformers unavailable; using simple token-count embeddings
+Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:44,452 INFO Wrote Anthropic debug prompt to ./llm_analyses/debug_anthropic_prompt.txt
+2025-12-14 19:39:44,931 INFO HTTP Request: POST https://api.anthropic.com/v1/complete "HTTP/1.1 404 Not Found"
+Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV8Bwsan5HHrsMrvra'}
+2025-12-14 19:39:44,932 ERROR Anthropic python client failed; attempting HTTP fallback
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV8Bwsan5HHrsMrvra'}
+Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 15\n\nAnswer: Sample\n\nAssistant:"}
+2025-12-14 19:39:44,936 INFO Anthropic HTTP body preview: {"model": "claude-2", "prompt": "\n\nHuman:Context: \n\nQuestion: Question 15\n\nAnswer: Sample\n\nAssistant:"}
+Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV8Bwsan5HHrsMrvra'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+2025-12-14 19:39:45,874 ERROR Anthropic API call failed; falling back
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 181, in _call_llm
+    resp = client.completions.create(model=os.getenv('ANTHROPIC_MODEL', 'claude-2'),
+                                     prompt=anth_prompt,
+                                     max_tokens_to_sample=max_tokens)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/resources/completions.py", line 393, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/complete",
+        ^^^^^^^^^^^^^^^
+    ...<21 lines>...
+        stream_cls=Stream[Completion],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1326, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/anthropic/_base_client.py", line 1114, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-2'}, 'request_id': 'req_011CW7hV8Bwsan5HHrsMrvra'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/llama_rag.py", line 209, in _call_llm
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nihaarikaagarwal/Downloads/moral-compass/.venv/lib/python3.13/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.anthropic.com/v1/complete
+No LLM provider available; returning placeholder
+2025-12-14 19:39:45,876 INFO No LLM provider available; returning placeholder
+Wrote analysis to ./llm_analyses/Sample-llm-analysis.txt
+2025-12-14 19:39:45,879 INFO Wrote analysis to ./llm_analyses/Sample-llm-analysis.txt
+2025-12-14 19:39:45,879 INFO Report generation finished: ./llm_analyses/Sample-llm-analysis.txt

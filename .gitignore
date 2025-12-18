@@ -1,0 +1,9 @@
+
+# Ignore LightRAG working folder
+LightRAG/
+
+# Ignore virtual environments
+.venv/
+.venv*
+venv/
+venv*

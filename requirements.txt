@@ -1,0 +1,31 @@
+accelerate==0.29.3
+einops==0.7.0
+sentence-transformers==2.7.0
+transformers==4.39.3
+qdrant-client==1.9.0
+llama-index==0.10.32
+llama-index-agent-openai==0.2.3
+llama-index-cli==0.1.12
+llama-index-core==0.10.32
+# Removed llama-index-embeddings-fastembed (pulled a strict huggingface-hub==0.19.4)
+# The project doesn't reference fastembed in source files, so remove it to avoid
+# an unsatisfiable huggingface-hub pin. If you need FastEmbed later, add it back
+# and resolve huggingface-hub ranges accordingly.
+# llama-index-embeddings-fastembed==0.1.2
+# Pin huggingface-hub to a version compatible with transformers/llama-index
+huggingface-hub==0.20.3
+llama-index-legacy==0.9.48
+llama-index-llms-huggingface==0.1.4
+llama-index-vector-stores-qdrant==0.2.8
+faiss_cpu==1.9.0
+Flask==3.0.3
+gensim==4.3.3
+nltk==3.9.1
+numpy==1.25.2
+ollama==0.3.3
+pandas==2.2.3
+PyPDF2==3.0.1
+
+# NOTE: `faiss_gpu` removed for macOS (no CUDA). If you need GPU support on Linux
+# add `faiss_gpu` back on a CUDA-enabled system. Fastembed pinned to 0.1.2 which
+# is the available release compatible with this environment.

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+    <link rel="stylesheet" href="../static/css/submit_success.css">
+</head>
+<body>
+    <div class="submit-pg-txt">
+        <h1>Form submitted successfully!</h1>
+        <h2>Please wait while Moral Compass generates a report for you.</h2>
+    </div>
+    <div id="report-area" class="submit-pg-txt" style="margin-top:20px;">
+        <p id="report-status">Checking report status…</p>
+        <p id="report-link" style="display:none;"></p>
+    </div>
+    <script>
+        // Poll /reports/status every 3 seconds and show a link when ready
+        const statusEl = document.getElementById('report-status');
+        const linkEl = document.getElementById('report-link');
+
+        async function checkStatus(){
+            try{
+                const r = await fetch('/reports/status');
+                const j = await r.json();
+                if (j.ready){
+                    statusEl.textContent = 'Report ready — opening...';
+                    linkEl.innerHTML = '<a href="' + j.url + '" target="_blank">View generated report</a>';
+                    linkEl.style.display = 'block';
+                    // stop polling
+                    clearInterval(poller);
+                } else {
+                    statusEl.textContent = 'Report is still being generated — please wait.';
+                }
+            } catch(e){
+                statusEl.textContent = 'Error checking report status.';
+                console.error(e);
+            }
+        }
+
+        const poller = setInterval(checkStatus, 3000);
+        // kick one off immediately
+        checkStatus();
+    </script>
+</body>
+</html>
