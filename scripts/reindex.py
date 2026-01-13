@@ -28,8 +28,13 @@ def load_text_files(d: Path):
                 text = p.read_text(encoding='latin-1')
             except Exception:
                 text = ''
-        # store filename as path string (avoid relative_to errors)
-        docs.append({'id': len(docs), 'filename': str(p), 'text': text})
+        # store filename and a friendly source name (just the filename without path)
+        docs.append({
+            'id': len(docs), 
+            'filename': str(p), 
+            'source': p.name,  # short filename for citations
+            'text': text
+        })
     return docs
 
 

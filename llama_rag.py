@@ -41,17 +41,16 @@ def generate_report(form_answers: List[str]) -> str:
 
     logger.info('Starting report generation')
     # ------------------ ENV VAR CHECK ------------------
-    # For security, do NOT hardcode API keys in source. Instead ensure the
-    # `ANTHROPIC_API_KEY` env var is set in the shell that starts Flask.
-    # If it's not set, log a helpful message and continue (code will fall
-    # back to placeholders or other providers).
+    # Default to Ollama for local, no-API-key inference
+    # Set LLM_PROVIDER environment variable to override (e.g., 'anthropic', 'openai')
     try:
-        if not os.getenv('ANTHROPIC_API_KEY'):
-            logger.warning('ANTHROPIC_API_KEY not set in environment. Export it before starting the server to enable Anthropic API calls.')
-        # ensure LLM_PROVIDER defaults to 'anthropic' if the user hasn't set it
-        os.environ['LLM_PROVIDER'] = os.getenv('LLM_PROVIDER', 'anthropic')
+        # Default to 'ollama' if no provider is explicitly set
+        os.environ['LLM_PROVIDER'] = os.getenv('LLM_PROVIDER', 'ollama')
+        # Default to Llama 3.2 8B Instruct model (no API required, fully local)
+        os.environ['OLLAMA_MODEL'] = os.getenv('OLLAMA_MODEL', 'llama3.2:latest')
+        logger.info(f'Using LLM provider: {os.environ["LLM_PROVIDER"]} with model: {os.environ.get("OLLAMA_MODEL", "N/A")}')
     except Exception:
-        logger.exception('Failed to check Anthropic env vars')
+        logger.exception('Failed to set LLM provider env vars')
     # ----------------------------------------------------
     
     # --- simple file-based cache for LLM responses ---
@@ -134,8 +133,68 @@ def generate_report(form_answers: List[str]) -> str:
         except Exception:
             logger.exception('Cache lookup failed; continuing')
 
-        # prefer Anthropic (Claude) if configured
+        # provider selection
         provider = os.getenv('LLM_PROVIDER', '').lower()
+
+        # Support local Ollama (primary option for no-API-key usage)
+        if provider == 'ollama':
+            # Try Python ollama client first, then fall back to CLI 'ollama run'
+            model = os.getenv('OLLAMA_MODEL', 'llama3.2:latest')
+            try:
+                try:
+                    import ollama
+                    logger.info(f'Using Ollama Python client with model: {model}')
+                    # ollama.chat returns a dict-like object or string depending on client
+                    try:
+                        resp = ollama.chat(model=model, messages=[{"role": "user", "content": prompt}])
+
+                        # Extract ONLY the clean text content - ollama returns ChatResponse object
+                        text = None
+
+                        # Try to get content from response object attributes (ollama >= 0.6.0)
+                        if hasattr(resp, 'message') and hasattr(resp.message, 'content'):
+                            text = resp.message.content
+                        # Fallback for dict-like responses (older versions)
+                        elif isinstance(resp, dict):
+                            if 'message' in resp and isinstance(resp['message'], dict):
+                                text = resp['message'].get('content', '')
+                            else:
+                                text = resp.get('content') or resp.get('output')
+
+                        if text and isinstance(text, str):
+                            # Cache the clean text only (no metadata)
+                            cache[key] = {'response': text, 'ts': time.time(), 'provider': f'ollama-python:{model}'}
+                            _save_cache(cache)
+                            logger.info('Ollama Python client returned clean response')
+                            return text
+                        else:
+                            logger.warning(f'Could not extract content from response type: {type(resp)}')
+                    except Exception as e:
+                        # if python client shape differs, fall through to CLI
+                        logger.warning(f'Ollama Python client failed: {e}')
+                        pass
+                except Exception as e:
+                    logger.warning(f'Could not import ollama Python client: {e}')
+                    pass
+
+                # Fallback to CLI: `ollama run <model>` (sends prompt on stdin)
+                import subprocess
+                logger.info(f'Falling back to Ollama CLI with model: {model}')
+                cmd = ['ollama', 'run', model]
+                p = subprocess.run(cmd, input=prompt, text=True, capture_output=True, timeout=120)
+                if p.returncode == 0:
+                    text = p.stdout.strip() or p.stderr.strip() or ''
+                    if text:
+                        cache[key] = {'response': text, 'ts': time.time(), 'provider': f'ollama-cli:{model}'}
+                        _save_cache(cache)
+                        logger.info('Ollama CLI returned response')
+                        return text
+                else:
+                    logger.warning('ollama CLI failed: %s', p.stderr)
+            except Exception as e:
+                logger.exception('ollama provider failed: %s', str(e))
+
+        # prefer Anthropic (Claude) if configured
         if provider == 'anthropic' and os.getenv('ANTHROPIC_API_KEY'):
             try:
                 try:
@@ -173,22 +232,15 @@ def generate_report(form_answers: List[str]) -> str:
                     except Exception:
                         logger.exception('Failed to write Anthropic debug prompt')
 
-                    # use a compact completion call where available
-                    # Try a small list of candidate model names (the account may not have access
-                    # to every model name). If the env var ANTHROPIC_MODEL is set, try it first.
-                    model_env = os.getenv('ANTHROPIC_MODEL')
-                    candidates = []
-                    if model_env:
-                        candidates.append(model_env)
-                    # common Anthropic model names to try (order is intentionally conservative)
-                    candidates.extend(['claude-2', 'claude-3', 'claude-instant-v1', 'claude-instant-1'])
-                    last_exc = None
-                    for m in candidates:
+                    # Use the single configured Anthropic model with rate limit backoff
+                    model = os.getenv('ANTHROPIC_MODEL', 'claude-sonnet-4-20250514')
+                    max_retries = 3
+                    for attempt in range(max_retries):
                         try:
-                            logger.info('Trying Anthropic model (Messages API): %s', m)
+                            logger.info('Trying Anthropic model (Messages API): %s (attempt %d/%d)', model, attempt + 1, max_retries)
                             # Use the Messages API (modern) rather than Completions.
                             resp = client.messages.create(
-                                model=m,
+                                model=model,
                                 messages=[{"role": "user", "content": anth_prompt}],
                                 max_tokens=max_tokens,
                             )
@@ -272,94 +324,26 @@ def generate_report(form_answers: List[str]) -> str:
                                         text = '\n'.join(p for p in parts if p)
                             except Exception:
                                 pass
-                            cache[key] = {'response': text, 'ts': time.time(), 'provider': f'anthropic-messages:{m}'}
+                            cache[key] = {'response': text, 'ts': time.time(), 'provider': f'anthropic-messages:{model}'}
                             _save_cache(cache)
                             return text
                         except Exception as e:
-                            logger.warning('Anthropic Messages API model %s failed: %s', m, getattr(e, '__class__', str(e)))
-                            last_exc = e
-                    # if none of the candidate models worked, re-raise last exception
-                    if last_exc:
-                        raise last_exc
-                except Exception:
-                    logger.exception('Anthropic python client failed; attempting HTTP fallback')
-                    # If anthropic package not available, try HTTP call (best-effort)
-                    import requests
-                    url = 'https://api.anthropic.com/v1/complete'
-                    headers = {'x-api-key': os.getenv('ANTHROPIC_API_KEY'), 'Content-Type': 'application/json'}
-                    body = {
-                        'model': os.getenv('ANTHROPIC_MODEL', 'claude-2'),
-                        'prompt': anth_prompt,
-                        'max_tokens_to_sample': max_tokens,
-                    }
-                    try:
-                        # log a short preview of the body for debugging
-                        try:
-                            body_preview = json.dumps({'model': body.get('model'), 'prompt': body.get('prompt')[:200]})
-                        except Exception:
-                            body_preview = str({'model': body.get('model')})
-                        logger.info('Anthropic HTTP body preview: %s', body_preview)
-                    except Exception:
-                        pass
-                    # Try HTTP fallback across a set of model candidates
-                    model_env = os.getenv('ANTHROPIC_MODEL')
-                    candidates = []
-                    if model_env:
-                        candidates.append(model_env)
-                    candidates.extend(['claude-2', 'claude-3', 'claude-instant-v1', 'claude-instant-1'])
-                    last_exc = None
-                    for m in candidates:
-                        # For the Messages HTTP endpoint, send a messages array
-                        body = {
-                            'model': m,
-                            'messages': [{ 'role': 'user', 'content': anth_prompt }],
-                            'max_tokens': max_tokens,
-                        }
-                        try:
-                            # log a short preview of the body for debugging
-                            try:
-                                body_preview = json.dumps({'model': body.get('model'), 'messages': (body.get('messages')[0].get('content') or '')[:200]})
-                            except Exception:
-                                body_preview = str({'model': body.get('model')})
-                            logger.info('Anthropic HTTP body preview: %s', body_preview)
-                            r = requests.post('https://api.anthropic.com/v1/messages', headers=headers, json=body, timeout=30)
-                            logger.info('Anthropic HTTP response status: %s', r.status_code)
-                            logger.info('Anthropic HTTP response body (preview): %s', (r.text or '')[:500])
-                            r.raise_for_status()
-                            j = r.json()
-                            # Try common response shapes
-                            text = None
-                            if isinstance(j, dict):
-                                text = j.get('completion') or j.get('text')
-                                if not text:
-                                    # new messages responses might contain 'output' or 'choices'
-                                    out = j.get('output') or j.get('choices')
-                                    if isinstance(out, list) and out:
-                                        first = out[0]
-                                        if isinstance(first, dict):
-                                            text = first.get('content') or first.get('text') or first.get('message') or None
-                            if not text:
-                                text = str(j)
-                            # Normalize any Message/TextBlock reprs in the HTTP response
-                            try:
-                                if isinstance(text, str) and ("Message(" in text or "TextBlock(" in text or "content=[" in text):
-                                    import re
-                                    matches = re.findall(r'text=(?:"([^"]*)"|\'([^\']*)\')', text, flags=re.S)
-                                    if matches:
-                                        parts = [a or b for a,b in matches]
-                                        text = '\n'.join(p for p in parts if p)
-                            except Exception:
-                                pass
-                            cache[key] = {'response': text, 'ts': time.time(), 'provider': f'anthropic-http:{m}'}
-                            _save_cache(cache)
-                            return text
-                        except Exception as e:
-                            logger.warning('Anthropic HTTP model %s failed: %s', m, getattr(e, '__class__', str(e)))
-                            last_exc = e
-                    if last_exc:
-                        raise last_exc
+                            # If rate limit, wait and retry
+                            if 'RateLimitError' in str(type(e).__name__) or 'rate' in str(e).lower():
+                                wait_time = 30 + (attempt * 10)  # 30s, 40s, 50s for retries
+                                logger.warning('Rate limit hit; waiting %d seconds before retry', wait_time)
+                                time.sleep(wait_time)
+                                if attempt < max_retries - 1:
+                                    continue
+                            # If last attempt or non-rate-limit error, raise
+                            logger.error('Anthropic Messages API failed: %s', str(e))
+                            raise
+                except Exception as e:
+                    # No HTTP fallback - just fail cleanly
+                    logger.exception('Anthropic Messages API failed after %d attempts', max_retries)
             except Exception:
                 logger.exception('Anthropic API call failed; falling back')
+
 
         # fallback to OpenAI if available
         try:
@@ -386,11 +370,8 @@ def generate_report(form_answers: List[str]) -> str:
     documents_text = []
     doc2vec_model = None
     index = None
-    try:
-        from vectordb_storage import documents_text as _documents_text
-        documents_text = _documents_text
-    except Exception as e:
-        logger.warning(f'Could not import vectordb_storage.documents_text: {e}')
+    # Note: legacy vectordb_storage has been removed. We now rely solely on
+    # docs_meta.json and vector_db.faiss built by scripts/reindex.py.
 
     try:
         # Prefer FAISS + sentence-transformers retrieval when available. This will
@@ -419,9 +400,15 @@ def generate_report(form_answers: List[str]) -> str:
             logger.info('FAISS index not found; retrieval will use document text fallback')
 
         def retrieve_context(query, top_k=3):
+            """Return list of dicts with 'text', 'source', and 'score' keys."""
             try:
                 if index is None:
-                    return '\n\n'.join(documents_text[:top_k]) if documents_text else ''
+                    # fallback: return documents with generic source info
+                    results = []
+                    for i, txt in enumerate(documents_text[:top_k]):
+                        src = docs_meta[i].get('source', f'Document {i+1}') if docs_meta and i < len(docs_meta) else f'Document {i+1}'
+                        results.append({'text': txt, 'source': src, 'score': 0.0})
+                    return results
 
                 # embed the query using sentence-transformers (same model used for reindexing)
                 try:
@@ -430,37 +417,50 @@ def generate_report(form_answers: List[str]) -> str:
                     q_emb = model.encode([query], show_progress_bar=False)
                 except Exception:
                     logger.exception('sentence-transformers unavailable for query embedding; falling back to text')
-                    return '\n\n'.join(documents_text[:top_k]) if documents_text else ''
+                    results = []
+                    for i, txt in enumerate(documents_text[:top_k]):
+                        src = docs_meta[i].get('source', f'Document {i+1}') if docs_meta and i < len(docs_meta) else f'Document {i+1}'
+                        results.append({'text': txt, 'source': src, 'score': 0.0})
+                    return results
 
                 qv = np.array(q_emb, dtype='float32')
                 # normalize vector for inner-product (index built with normalized vectors)
                 faiss.normalize_L2(qv)
                 D, I = index.search(qv, top_k)
-                relevant = []
-                for idx in I[0]:
+                results = []
+                for score, idx in zip(D[0], I[0]):
                     if 0 <= idx < len(documents_text):
-                        relevant.append(documents_text[idx])
+                        txt = documents_text[idx]
+                        src = docs_meta[idx].get('source', f'Document {idx+1}') if docs_meta and idx < len(docs_meta) else f'Document {idx+1}'
+                        results.append({'text': txt, 'source': src, 'score': float(score)})
                     elif docs_meta and 0 <= idx < len(docs_meta):
-                        relevant.append(docs_meta[idx].get('text', ''))
-                return '\n\n'.join(relevant)
+                        txt = docs_meta[idx].get('text', '')
+                        src = docs_meta[idx].get('source', f'Document {idx+1}')
+                        results.append({'text': txt, 'source': src, 'score': float(score)})
+                return results
             except Exception:
                 logger.exception('Error during retrieve_context; falling back to empty context')
-                return ''
+                return []
 
     except Exception:
         # If faiss or other libs unavailable, provide a fallback retrieve_context
         logger.exception('Could not initialize retrieval stack (faiss/sentence-transformers)')
 
         def retrieve_context(query, top_k=3):
-            return '\n\n'.join(documents_text[:top_k]) if documents_text else ''
+            """Return list of dicts with 'text', 'source', and 'score' keys."""
+            results = []
+            for i, txt in enumerate(documents_text[:top_k] if documents_text else []):
+                results.append({'text': txt, 'source': f'Document {i+1}', 'score': 0.0})
+            return results
 
-    # try to initialize local HF LLM pipeline lazily, but skip if an API provider is configured
+    # try to initialize local HF LLM pipeline lazily, but skip if an API provider or Ollama is configured
     pipe = None
     system_context_from_faiss = retrieve_context('Belmont Report, IRB Guidelines, How should an IRB function?')
     try:
         provider = os.getenv('LLM_PROVIDER', '').lower()
-        # if an external API provider is set (anthropic/openai) prefer that and avoid local HF model init
-        if provider in ('anthropic', 'openai'):
+        # if an external provider (anthropic/openai/ollama) is set, skip HF transformers pipeline
+        # Ollama is preferred for local inference as it's much faster and easier to use
+        if provider in ('anthropic', 'openai', 'ollama'):
             logger.info(f'LLM_PROVIDER={provider}; skipping local transformers pipeline initialization')
             pipe = None
         else:
@@ -486,48 +486,67 @@ def generate_report(form_answers: List[str]) -> str:
                 q = f'Question {idx+1}'
                 logger.info(f'Processing question {idx+1}')
 
-                # initial retrieval (top_k candidates)
-                initial_ctx = []
+                # initial retrieval (top_k candidates) - now returns list of dicts
+                initial_results = []
                 try:
-                    raw = retrieve_context(q, top_k=10)
-                    # if retrieve_context returns concatenated text, split into candidate chunks heuristically
-                    if isinstance(raw, str):
-                        # naive split into paragraphs
-                        cand = [p.strip() for p in raw.split('\n\n') if p.strip()]
-                        if not cand and raw:
-                            # fallback split by sentence/lines
-                            cand = [line.strip() for line in raw.splitlines() if line.strip()]
-                        initial_ctx = cand[:10]
-                    elif isinstance(raw, list):
-                        initial_ctx = raw[:10]
+                    initial_results = retrieve_context(q, top_k=10)
                 except Exception:
                     logger.exception('Initial retrieval failed; using global documents')
-                    initial_ctx = documents_text[:10]
+                    for i, txt in enumerate(documents_text[:10]):
+                        initial_results.append({'text': txt, 'source': f'Document {i+1}', 'score': 0.0})
 
                 # if we have no candidates, use a small set of global docs
-                if not initial_ctx:
-                    initial_ctx = documents_text[:5]
+                if not initial_results:
+                    for i, txt in enumerate(documents_text[:5]):
+                        initial_results.append({'text': txt, 'source': f'Document {i+1}', 'score': 0.0})
 
-                # rerank candidates using embeddings (batch)
+                # rerank candidates using embeddings (batch) while preserving source metadata
                 try:
-                    texts_to_embed = [q] + initial_ctx
+                    texts_to_embed = [q] + [r['text'] for r in initial_results]
                     emb = _batch_embeddings(texts_to_embed)
                     q_vec = emb[0]
                     cand_vecs = emb[1:]
                     sims = [_cosine_sim(q_vec, c) for c in cand_vecs]
-                    ranked = [x for _, x in sorted(zip(sims, initial_ctx), key=lambda t: t[0], reverse=True)]
-                    top_ctx = ranked[:5]
+                    # sort by similarity, keeping full result dicts
+                    ranked_results = [x for _, x in sorted(zip(sims, initial_results), key=lambda t: t[0], reverse=True)]
+                    top_results = ranked_results[:5]
                 except Exception:
                     logger.exception('Reranking failed; using unranked candidates')
-                    top_ctx = initial_ctx[:5]
+                    top_results = initial_results[:5]
 
-                prompt_context = '\n\n'.join(top_ctx)
-                nett_input = f"Context: {prompt_context}\n\nQuestion: {q}\n\nAnswer: {answer}"
+                # build context text and source citations
+                prompt_context = '\n\n'.join([r['text'] for r in top_results])
+                sources_used = [r['source'] for r in top_results]
+
+                # Create source reference list for the prompt
+                source_refs = '\n'.join([f"[{i+1}] {src}" for i, src in enumerate(sources_used)])
+
+                # Enhanced prompt that instructs LLM to cite sources
+                irb_prompt = f"""You are an IRB (Institutional Review Board) compliance expert. Analyze the following study information using the provided context documents.
+
+Context Documents (cite these using [1], [2], etc.):
+{source_refs}
+
+Relevant Content:
+{prompt_context}
+
+Question: {q}
+Answer: {answer}
+
+Instructions:
+1. Identify key ethical considerations and potential IRB compliance issues
+2. Reference the context documents when applicable using citations like [1], [2]
+3. Highlight any concerns or strengths in the protocol
+4. Be specific and actionable in your analysis
+
+Analysis:"""
+
+                nett_input = irb_prompt
 
                 # prefer API-backed LLM if available; else try HF pipeline loaded earlier (pipe)
                 llm_response_text = None
                 try:
-                    # check cache and call API-backed LLM
+                    # check cache and call API-backed LLM (increased to 512 for proper citations and analysis)
                     llm_response_text = _call_llm(nett_input, max_tokens=512)
                     # If cache gave us placeholder, continue to HF pipeline fallback
                     if llm_response_text and 'LLM unavailable or failed' not in llm_response_text:
@@ -548,9 +567,28 @@ def generate_report(form_answers: List[str]) -> str:
                 if not llm_response_text:
                     llm_response_text = 'LLM unavailable or failed; no analysis generated.'
 
-                file.write(f'Question {idx+1}: {q}\n')
-                file.write(f'Answer: {answer}\n')
-                file.write(f'LLM Response: {llm_response_text}\n\n')
+                # Format the output with clear sections and proper line breaks
+                file.write(f'\n{"="*80}\n')
+                file.write(f'QUESTION {idx+1}\n')
+                file.write(f'{"="*80}\n\n')
+
+                file.write(f'USER INPUT:\n')
+                file.write(f'{"-"*80}\n')
+                file.write(f'{answer.strip()}\n')
+                file.write(f'{"-"*80}\n\n')
+
+                file.write(f'IRB COMPLIANCE ANALYSIS:\n')
+                file.write(f'{"-"*80}\n')
+                # Ensure proper line breaks in analysis
+                formatted_analysis = llm_response_text.strip()
+                file.write(f'{formatted_analysis}\n')
+                file.write(f'{"-"*80}\n\n')
+
+                file.write(f'REFERENCES & SOURCES:\n')
+                file.write(f'{"-"*80}\n')
+                for i, src in enumerate(sources_used, 1):
+                    file.write(f'  [{i}] {src}\n')
+                file.write(f'{"-"*80}\n\n')
 
         logger.info(f'Wrote analysis to {output_filepath}')
         # Also try to write a PDF version for easier sharing/viewing if reportlab is available

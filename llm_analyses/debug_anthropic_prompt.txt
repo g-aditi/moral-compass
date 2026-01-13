@@ -1,9 +1,0 @@
-
-
-Human:Context: 
-
-Question: Question 15
-
-Answer: 
-
-Assistant:
