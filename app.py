@@ -40,7 +40,12 @@ def reports_status():
     """Return JSON with whether a report is available and its URL (if ready)."""
     latest = _latest_analysis_file()
     if latest:
-        return jsonify({"ready": True, "url": "/reports/latest"})
+        # Check if completion marker exists
+        completion_marker = latest + '.complete'
+        if os.path.exists(completion_marker):
+            return jsonify({"ready": True, "url": "/reports/latest"})
+        else:
+            return jsonify({"ready": False, "message": "Report is still being generated"})
     return jsonify({"ready": False})
 
 
@@ -49,11 +54,20 @@ def reports_latest():
     latest = _latest_analysis_file()
     if not latest:
         abort(404)
+
+    # Check if download parameter is present
+    download = request.args.get('download', '0') == '1'
+
     # If the latest is a PDF, serve it as an attachment so browsers download it.
     if latest.lower().endswith('.pdf'):
         return send_file(latest, mimetype='application/pdf', as_attachment=True, download_name=os.path.basename(latest))
-    # otherwise serve plain text
-    return send_file(latest, mimetype='text/plain')
+
+    # For text files, check if user wants to download
+    if download:
+        return send_file(latest, mimetype='text/plain', as_attachment=True, download_name=os.path.basename(latest))
+    else:
+        # otherwise serve plain text for viewing in browser
+        return send_file(latest, mimetype='text/plain')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)

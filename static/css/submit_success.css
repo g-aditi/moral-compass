@@ -17,3 +17,54 @@ h2 {
     margin-left: 8vw;
     margin-top: 40vh;
 }
+
+/* Report buttons styling */
+.report-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-btn {
+    background-color: #ffc627;
+    color: #8d1c3f;
+    border: 2px solid #ffc627;
+}
+
+.view-btn:hover {
+    background-color: #ffb700;
+    border-color: #ffb700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn {
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #28a745;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+    border-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#report-status {
+    font-size: 24px;
+    color: #ffc627;
+    margin-bottom: 20px;
+}
+
+#report-buttons {
+    text-align: center;
+    margin-top: 30px;
+}

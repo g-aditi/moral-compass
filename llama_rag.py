@@ -480,11 +480,15 @@ def generate_report(form_answers: List[str]) -> str:
     output_filepath = os.path.join(llm_analyses_dir, f"{filename}-llm-analysis.txt")
 
     try:
+        # Filter out empty/None answers to only process filled questions
+        filled_questions = [(idx, answer) for idx, answer in enumerate(form_answers or []) if answer and answer.strip()]
+        logger.info(f'Processing {len(filled_questions)} filled questions out of {len(form_answers or [])} total')
+
         # We'll perform retrieval -> rerank -> LLM call per question, using batching where appropriate
         with open(output_filepath, 'w', encoding='utf-8') as file:
-            for idx, answer in enumerate(form_answers or []):
+            for filled_idx, (idx, answer) in enumerate(filled_questions):
                 q = f'Question {idx+1}'
-                logger.info(f'Processing question {idx+1}')
+                logger.info(f'Processing question {idx+1} ({filled_idx+1}/{len(filled_questions)})')
 
                 # initial retrieval (top_k candidates) - now returns list of dicts
                 initial_results = []
@@ -591,6 +595,13 @@ Analysis:"""
                 file.write(f'{"-"*80}\n\n')
 
         logger.info(f'Wrote analysis to {output_filepath}')
+
+        # Write completion marker so UI knows generation is done
+        completion_marker = output_filepath + '.complete'
+        with open(completion_marker, 'w') as marker:
+            marker.write('Generation complete')
+        logger.info(f'Wrote completion marker to {completion_marker}')
+
         # Also try to write a PDF version for easier sharing/viewing if reportlab is available
         try:
             pdf_path = os.path.splitext(output_filepath)[0] + '.pdf'

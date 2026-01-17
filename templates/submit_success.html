@@ -13,28 +13,40 @@
     </div>
     <div id="report-area" class="submit-pg-txt" style="margin-top:20px;">
         <p id="report-status">Checking report status…</p>
-        <p id="report-link" style="display:none;"></p>
+        <div id="report-buttons" style="display:none; margin-top:20px;">
+            <a id="view-btn" href="#" target="_blank" class="report-btn view-btn">📄 View Report</a>
+            <a id="download-btn" href="#" download class="report-btn download-btn">⬇️ Download Report</a>
+        </div>
     </div>
     <script>
-        // Poll /reports/status every 3 seconds and show a link when ready
+        // Poll /reports/status every 3 seconds and show buttons when ready
         const statusEl = document.getElementById('report-status');
-        const linkEl = document.getElementById('report-link');
+        const buttonsEl = document.getElementById('report-buttons');
+        const viewBtn = document.getElementById('view-btn');
+        const downloadBtn = document.getElementById('download-btn');
 
         async function checkStatus(){
             try{
                 const r = await fetch('/reports/status');
                 const j = await r.json();
                 if (j.ready){
-                    statusEl.textContent = 'Report ready — opening...';
-                    linkEl.innerHTML = '<a href="' + j.url + '" target="_blank">View generated report</a>';
-                    linkEl.style.display = 'block';
+                    statusEl.textContent = '✅ Report ready!';
+                    statusEl.style.color = '#28a745';
+                    statusEl.style.fontWeight = 'bold';
+
+                    // Set up buttons
+                    viewBtn.href = j.url;
+                    downloadBtn.href = j.url + '?download=1';
+                    buttonsEl.style.display = 'block';
+
                     // stop polling
                     clearInterval(poller);
                 } else {
-                    statusEl.textContent = 'Report is still being generated — please wait.';
+                    statusEl.textContent = '⏳ Report is still being generated — please wait...';
                 }
             } catch(e){
-                statusEl.textContent = 'Error checking report status.';
+                statusEl.textContent = '❌ Error checking report status.';
+                statusEl.style.color = '#dc3545';
                 console.error(e);
             }
         }
