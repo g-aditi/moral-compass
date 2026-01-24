@@ -3,57 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit</title>
+    <title>Generating Report - Moral Compass</title>
     <link rel="stylesheet" href="../static/css/submit_success.css">
 </head>
 <body>
-    <div class="submit-pg-txt">
-        <h1>Form submitted successfully!</h1>
-        <h2>Please wait while Moral Compass generates a report for you.</h2>
-    </div>
-    <div id="report-area" class="submit-pg-txt" style="margin-top:20px;">
-        <p id="report-status">Checking report status…</p>
-        <div id="report-buttons" style="display:none; margin-top:20px;">
-            <a id="view-btn" href="#" target="_blank" class="report-btn view-btn">📄 View Report</a>
-            <a id="download-btn" href="#" download class="report-btn download-btn">⬇️ Download Report</a>
+    <div class="container">
+        <div class="header-section">
+            <h1>Form submitted successfully!</h1>
+            <p id="progress-text">⏳ Preparing to generate your IRB analysis report...</p>
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="progress-detail"></p>
+        </div>
+
+        <div id="results-container">
+            <!-- Question results will be appended here dynamically -->
+        </div>
+
+        <div id="download-section" style="display:none;">
+            <h2>✅ Report Generation Complete!</h2>
+            <div id="report-buttons">
+                <a id="view-btn" href="#" target="_blank" class="report-btn view-btn">📄 View Full Report</a>
+                <a id="download-btn" href="#" download class="report-btn download-btn">⬇️ Download Report</a>
+            </div>
+            <div class="new-submission-section">
+                <a href="/" class="report-btn new-btn">🔄 Submit New Response</a>
+            </div>
         </div>
     </div>
+
     <script>
-        // Poll /reports/status every 3 seconds and show buttons when ready
-        const statusEl = document.getElementById('report-status');
-        const buttonsEl = document.getElementById('report-buttons');
+        const progressText = document.getElementById('progress-text');
+        const progressBar = document.getElementById('progress-bar');
+        const progressDetail = document.getElementById('progress-detail');
+        const resultsContainer = document.getElementById('results-container');
+        const downloadSection = document.getElementById('download-section');
         const viewBtn = document.getElementById('view-btn');
         const downloadBtn = document.getElementById('download-btn');
 
-        async function checkStatus(){
-            try{
-                const r = await fetch('/reports/status');
-                const j = await r.json();
-                if (j.ready){
-                    statusEl.textContent = '✅ Report ready!';
-                    statusEl.style.color = '#28a745';
-                    statusEl.style.fontWeight = 'bold';
+        let displayedQuestions = 0;
 
-                    // Set up buttons
-                    viewBtn.href = j.url;
-                    downloadBtn.href = j.url + '?download=1';
-                    buttonsEl.style.display = 'block';
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
 
-                    // stop polling
-                    clearInterval(poller);
+        function formatAnalysis(text) {
+            // First, strip any "References" section the LLM may have generated
+            let cleaned = text;
+            // Remove "References" or "References:" header and everything after it
+            cleaned = cleaned.replace(/\n\s*References:?\s*(\n|$).*/si, '');
+            // Remove standalone "References" at the end
+            cleaned = cleaned.replace(/\n\s*References\s*$/i, '');
+
+            // Convert markdown-like formatting to HTML
+            let html = escapeHtml(cleaned.trim());
+            // Bold text
+            html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+            // Line breaks
+            html = html.replace(/\n/g, '<br>');
+            return html;
+        }
+
+        function addQuestionResult(questionData) {
+            const questionDiv = document.createElement('div');
+            questionDiv.className = 'question-result fade-in';
+            questionDiv.innerHTML = `
+                <div class="question-header">
+                    <h3>Question ${questionData.question_number}</h3>
+                </div>
+                <div class="question-content">
+                    <div class="user-input-section">
+                        <h4>📝 Your Input:</h4>
+                        <div class="user-input-text">${escapeHtml(questionData.user_input)}</div>
+                    </div>
+                    <div class="analysis-section">
+                        <h4>🔍 IRB Compliance Analysis:</h4>
+                        <div class="analysis-text">${formatAnalysis(questionData.analysis)}</div>
+                    </div>
+                    <div class="sources-section">
+                        <h4>📚 References:</h4>
+                        <ul class="sources-list">
+                            ${questionData.sources.map((src, i) => `<li>[${i+1}] ${escapeHtml(src)}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+            resultsContainer.appendChild(questionDiv);
+
+            // Scroll to the new result
+            questionDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        async function checkProgress() {
+            try {
+                const response = await fetch('/reports/progress');
+                const progress = await response.json();
+
+                if (progress.total_questions > 0) {
+                    // Update progress bar
+                    const percent = (progress.completed_questions / progress.total_questions) * 100;
+                    progressBar.style.width = percent + '%';
+
+                    // Update progress text
+                    if (progress.is_complete) {
+                        progressText.textContent = '✅ All questions analyzed!';
+                        progressText.style.color = '#28a745';
+                        progressDetail.textContent = `Completed ${progress.completed_questions} of ${progress.total_questions} questions`;
+                    } else {
+                        progressText.textContent = `⏳ Analyzing your IRB protocol...`;
+                        progressDetail.textContent = `Processing question ${progress.current_question} of ${progress.total_questions}`;
+                    }
+
+                    // Display new question results
+                    if (progress.questions_content && progress.questions_content.length > displayedQuestions) {
+                        for (let i = displayedQuestions; i < progress.questions_content.length; i++) {
+                            addQuestionResult(progress.questions_content[i]);
+                        }
+                        displayedQuestions = progress.questions_content.length;
+                    }
+
+                    // Show download buttons when complete
+                    if (progress.is_complete) {
+                        downloadSection.style.display = 'block';
+                        viewBtn.href = '/reports/latest';
+                        downloadBtn.href = '/reports/latest?download=1';
+                        clearInterval(poller);
+
+                        // Scroll to download section
+                        setTimeout(() => {
+                            downloadSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }, 500);
+                    }
                 } else {
-                    statusEl.textContent = '⏳ Report is still being generated — please wait...';
+                    progressText.textContent = '⏳ Preparing to generate your IRB analysis report...';
+                    progressDetail.textContent = 'Initializing AI models...';
                 }
-            } catch(e){
-                statusEl.textContent = '❌ Error checking report status.';
-                statusEl.style.color = '#dc3545';
-                console.error(e);
+            } catch (e) {
+                console.error('Error checking progress:', e);
+                progressText.textContent = '⚠️ Checking status...';
             }
         }
 
-        const poller = setInterval(checkStatus, 3000);
-        // kick one off immediately
-        checkStatus();
+        // Poll every 2 seconds
+        const poller = setInterval(checkProgress, 2000);
+        // Initial check
+        checkProgress();
     </script>
 </body>
 </html>

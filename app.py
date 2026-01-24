@@ -1,9 +1,20 @@
 from flask import Flask, request, render_template, jsonify, send_file, abort
 from form_responses import get_form_inputs
 import os
+import json
 from typing import Optional
 
 app = Flask(__name__)
+
+# Global variable to track generation progress
+generation_progress = {
+    "total_questions": 0,
+    "completed_questions": 0,
+    "current_question": 0,
+    "questions_content": [],  # List of completed question analyses
+    "is_complete": False,
+    "report_path": None
+}
 
 @app.route('/')
 def home():
@@ -14,6 +25,19 @@ def submit():
     form_text = []
     for i in range(1,16):
         form_text.append(request.form.get(f'step{i}-text'))
+
+    # Reset progress file before starting new generation
+    progress_file = os.path.join(os.getcwd(), 'llm_analyses', 'generation_progress.json')
+    os.makedirs(os.path.dirname(progress_file), exist_ok=True)
+    with open(progress_file, 'w') as f:
+        json.dump({
+            "total_questions": 0,
+            "completed_questions": 0,
+            "current_question": 0,
+            "questions_content": [],
+            "is_complete": False,
+            "report_path": None
+        }, f)
 
     result = get_form_inputs(form_text)
     return render_template('submit_success.html')
@@ -47,6 +71,23 @@ def reports_status():
         else:
             return jsonify({"ready": False, "message": "Report is still being generated"})
     return jsonify({"ready": False})
+
+
+@app.route('/reports/progress')
+def reports_progress():
+    """Return JSON with current generation progress and any new content."""
+    global generation_progress
+
+    # Read from progress file if it exists
+    progress_file = os.path.join(os.getcwd(), 'llm_analyses', 'generation_progress.json')
+    if os.path.exists(progress_file):
+        try:
+            with open(progress_file, 'r') as f:
+                generation_progress = json.load(f)
+        except:
+            pass
+
+    return jsonify(generation_progress)
 
 
 @app.route('/reports/latest')

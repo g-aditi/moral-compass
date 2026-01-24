@@ -1,28 +1,201 @@
+/* Base styling */
 body {
     background-color: #8d1c3f;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header section */
+.header-section {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 h1 {
     color: #ffc627;
-    font-size: 10vh;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-h2 {
+#progress-text {
+    color: #ffc627;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+#progress-detail {
     color: #fff;
-    font-size: 4vh;
-    margin-top: -8vh;
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
-.submit-pg-txt {
-    margin-left: 8vw;
-    margin-top: 40vh;
+/* Progress bar */
+#progress-bar-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#progress-bar {
+    background: linear-gradient(90deg, #ffc627, #28a745);
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Results container */
+#results-container {
+    margin-top: 30px;
+}
+
+/* Individual question result cards */
+.question-result {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.question-header {
+    background-color: #8d1c3f;
+    padding: 15px 20px;
+}
+
+.question-header h3 {
+    color: #ffc627;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.question-content {
+    padding: 20px;
+}
+
+/* User input section */
+.user-input-section {
+    margin-bottom: 20px;
+}
+
+.user-input-section h4 {
+    color: #8d1c3f;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.user-input-text {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ffc627;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Analysis section */
+.analysis-section {
+    margin-bottom: 20px;
+}
+
+.analysis-section h4 {
+    color: #8d1c3f;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.analysis-text {
+    background-color: #f0f7ff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.analysis-text strong {
+    color: #8d1c3f;
+}
+
+/* Sources section */
+.sources-section h4 {
+    color: #8d1c3f;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.sources-list {
+    background-color: #fff8e1;
+    padding: 15px 15px 15px 35px;
+    border-radius: 8px;
+    border-left: 4px solid #ff9800;
+    margin: 0;
+}
+
+.sources-list li {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+/* Fade-in animation */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Download section */
+#download-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#download-section h2 {
+    color: #28a745;
+    margin-bottom: 20px;
 }
 
 /* Report buttons styling */
+#report-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .report-btn {
     display: inline-block;
     padding: 15px 30px;
-    margin: 10px;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
@@ -58,13 +231,47 @@ h2 {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-#report-status {
-    font-size: 24px;
-    color: #ffc627;
-    margin-bottom: 20px;
+/* New submission section */
+.new-submission-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
 }
 
-#report-buttons {
-    text-align: center;
-    margin-top: 30px;
+.new-btn {
+    background-color: #8d1c3f;
+    color: white;
+    border: 2px solid #8d1c3f;
+}
+
+.new-btn:hover {
+    background-color: #6d152f;
+    border-color: #6d152f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #progress-text {
+        font-size: 1.1rem;
+    }
+
+    .question-content {
+        padding: 15px;
+    }
+
+    .report-btn {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    #report-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
